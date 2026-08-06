@@ -1,0 +1,53 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      DB_HOST: mysql
+      DB_LOGIN: orangescrum
+      DB_PASSWORD: orangescrum
+      DB_DATABASE: orangescrum
+      # Points at MailHog by default so mail can be verified without real
+      # SMTP credentials. Override these to point at Gmail/SendGrid/etc.
+      SMTP_HOST: mailhog
+      SMTP_PORT: "1025"
+      SMTP_UNAME: ""
+      SMTP_PWORD: ""
+      SMTP_SECURE: "none"
+      WEB_DOMAIN: "localhost:8080"
+      SUB_FOLDER: ""
+      FROM_EMAIL: "noreply@localhost"
+      SUPPORT_EMAIL: "support@localhost"
+    volumes:
+      - ./app/tmp:/var/www/html/app/tmp
+      - ./app/webroot/files:/var/www/html/app/webroot/files
+      - ./app/webroot/img:/var/www/html/app/webroot/img
+    depends_on:
+      - mysql
+      - mailhog
+
+  mysql:
+    image: mysql:8.0
+    # mysql:5.7 has no arm64 image; PHP 7.4's older mysqlnd needs the legacy
+    # auth plugin to talk to MySQL 8's default caching_sha2_password.
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: orangescrum
+      MYSQL_USER: orangescrum
+      MYSQL_PASSWORD: orangescrum
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql:ro
+    ports:
+      - "3306:3306"
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025" # web UI - view caught mail at http://localhost:8025
+      - "1025:1025" # SMTP
+
+volumes:
+  db_data:

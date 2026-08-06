@@ -3,7 +3,29 @@ App::import('Component', 'Email');
 class SendgridComponent extends EmailComponent
 {
 	public $components = array('Session','Email', 'Cookie','Format','PhpMailer');
-	public $tls = array('smtp.office365.com');
+
+	/**
+	 * Decides STARTTLS/SSL for a given host:port instead of relying on a
+	 * hardcoded host whitelist (which never matched Gmail and most real
+	 * providers, so they always connected in plaintext and got rejected).
+	 * SMTP_SECURE ("tls"/"ssl"/"none") forces a mode; left blank/undefined
+	 * it auto-picks by port (465=ssl, 587/25=tls).
+	 */
+	function smtpEncryptionOptions($host, $port)
+	{
+		$secure = defined('SMTP_SECURE') ? strtolower(trim(SMTP_SECURE)) : '';
+		if ($secure === 'none') {
+			return array('host' => $host);
+		}
+		if ($secure === 'ssl' || (empty($secure) && (int)$port === 465)) {
+			return array('host' => 'ssl://' . $host);
+		}
+		if ($secure === 'tls' || (empty($secure) && in_array((int)$port, array(587, 25)))) {
+			return array('host' => $host, 'tls' => true);
+		}
+		return array('host' => $host);
+	}
+
 	function sendGridEmail($from,$to,$subject,$message,$type,$fromname=NULL, $chkpoint=0)
 	{
 		App::import('helper', 'Format');
@@ -36,27 +58,23 @@ class SendgridComponent extends EmailComponent
 		if(defined('SMTP_UNAME') && defined('SMTP_PWORD') && SMTP_PWORD !== "******") {
 			$email_array = array(
 				'port' => SMTP_PORT,
-				'host' => SMTP_HOST,
-				'timeout'=>'30', 
-				'client' => WEB_DOMAIN
+				'timeout'=>'30',
+				'client' => WEB_DOMAIN,
+				'username' => SMTP_UNAME,
+				'password' => SMTP_PWORD,
 			);
-			$email_array['username'] = SMTP_UNAME;
-			$email_array['password'] = SMTP_PWORD;
-			if (in_array(SMTP_HOST, $this->tls)) {
-                $email_array['tls'] = true;
-            }
+			$email_array += $this->smtpEncryptionOptions(SMTP_HOST, SMTP_PORT);
 		}
 		else {
-			$email_array = array(
-				'port' => SMTP_PORT,
-				'host'=> SMTP_HOST
-			);
+			$email_array = array('port' => SMTP_PORT);
+			$email_array += $this->smtpEncryptionOptions(SMTP_HOST, SMTP_PORT);
 		}
 		$this->Email->smtpOptions = $email_array;
 			try{
 		$response = $this->Email->send($message);
 				$response = true;
 			} catch (Exception $e) {
+				CakeLog::write('error', 'SendgridComponent::sendGridEmail SMTP send failed to ' . $to . ' via ' . SMTP_HOST . ':' . SMTP_PORT . ' - ' . $e->getMessage());
 				if($chkpoint){
 					return $e->getMessage();
 				}else{
@@ -64,29 +82,24 @@ class SendgridComponent extends EmailComponent
 				}
 			}
 		return $response;
-	}	
-	}	
+	}
+	}
 	function sendgridsmtp($email, $chkpoint=0){
 		$email->replyTo = FROM_EMAIL;
 		$email->delivery = EMAIL_DELIVERY;
 		if(defined('SMTP_UNAME') && defined('SMTP_PWORD') && SMTP_PWORD !== "******") {
 			$email_array = array(
 				'port' => SMTP_PORT,
-				'host' => SMTP_HOST,
-				'timeout'=>'30', 
-				'client' => WEB_DOMAIN
+				'timeout'=>'30',
+				'client' => WEB_DOMAIN,
+				'username' => SMTP_UNAME,
+				'password' => SMTP_PWORD,
 			);
-			$email_array['username'] = SMTP_UNAME;
-			$email_array['password'] = SMTP_PWORD;
-			if (in_array(SMTP_HOST, $this->tls)) {
-                $email_array['tls'] = true;
-            }
+			$email_array += $this->smtpEncryptionOptions(SMTP_HOST, SMTP_PORT);
 		}
 		else {
-			$email_array = array(
-				'port' => SMTP_PORT,
-				'host'=> SMTP_HOST
-			);
+			$email_array = array('port' => SMTP_PORT);
+			$email_array += $this->smtpEncryptionOptions(SMTP_HOST, SMTP_PORT);
 		}
 		$email->smtpOptions = $email_array;
 		//$response = $email->send();
@@ -94,6 +107,7 @@ class SendgridComponent extends EmailComponent
 		$response = $email->send();
 			$response = true;
 		} catch (Exception $e) {
+            CakeLog::write('error', 'SendgridComponent::sendgridsmtp SMTP send failed via ' . SMTP_HOST . ':' . SMTP_PORT . ' - ' . $e->getMessage());
             if($chkpoint){
 				return $e->getMessage();
 			}else{
@@ -101,7 +115,7 @@ class SendgridComponent extends EmailComponent
 			}
         }
 		return $response;
-	}	
+	}
 	function sendEmail($from,$to,$subject,$message,$type)
 	{
 		App::import('helper', 'Format');

@@ -59,17 +59,21 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost', //ex. localhost
-		'login' => '', //root
-		'password' => '',
-		'database' => '',//orangescrum
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
-	
+	public $default = array();
+
+	function __construct() {
+		$this->default = array(
+			'datasource' => 'Database/Mysql',
+			'persistent' => false,
+			'host' => getenv('DB_HOST') !== false ? getenv('DB_HOST') : 'localhost',
+			'login' => getenv('DB_LOGIN') !== false ? getenv('DB_LOGIN') : '',
+			'password' => getenv('DB_PASSWORD') !== false ? getenv('DB_PASSWORD') : '',
+			'database' => getenv('DB_DATABASE') !== false ? getenv('DB_DATABASE') : '',
+			'prefix' => '',
+			//'encoding' => 'utf8',
+		);
+	}
+
 	/*public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,

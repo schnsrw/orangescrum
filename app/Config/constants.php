@@ -49,7 +49,7 @@ if(stristr($_SERVER['SERVER_NAME'], '/') && substr($_SERVER['SERVER_NAME'], -1) 
 	define('DOMAIN', $_SERVER['SERVER_NAME'] . "/");
 }
 /*Subfolder set up */
-define('SUB_FOLDER', '@SUB_FOLDER');
+define('SUB_FOLDER', getenv('SUB_FOLDER') !== false ? getenv('SUB_FOLDER') : '');
 
 define('HTTP_SERVER', PROTOCOL . DOMAIN);
 if(stristr(HTTP_SERVER, '/') && substr(HTTP_SERVER, -1) == '/' && SUB_FOLDER == '/'){
@@ -70,13 +70,16 @@ if($_SERVER['SERVER_NAME'] == 'localhost'){
 }
 
 /* SMTP credentials SET Ups Start*/
+/* All SMTP_* values below can be overridden via environment variables
+   (e.g. in docker-compose.yml) without editing this file. */
 
-//gmail SMTP
-define("SMTP_HOST", "smtp.sendgrid.net");
-define("SMTP_PORT", "587");
-define("SMTP_UNAME", "apikey");
-define("SMTP_PWORD", "your_password");
-define("SMTP_APIKEY", "");
+define("SMTP_HOST", getenv('SMTP_HOST') !== false ? getenv('SMTP_HOST') : "smtp.sendgrid.net");
+define("SMTP_PORT", getenv('SMTP_PORT') !== false ? getenv('SMTP_PORT') : "587");
+define("SMTP_UNAME", getenv('SMTP_UNAME') !== false ? getenv('SMTP_UNAME') : "apikey");
+define("SMTP_PWORD", getenv('SMTP_PWORD') !== false ? getenv('SMTP_PWORD') : "your_password");
+define("SMTP_APIKEY", getenv('SMTP_APIKEY') !== false ? getenv('SMTP_APIKEY') : "");
+// "tls", "ssl", or "none" to force plaintext. Leave blank to auto-pick by port (465=ssl, 587/25=tls).
+define("SMTP_SECURE", getenv('SMTP_SECURE') !== false ? getenv('SMTP_SECURE') : "");
 
 define("IS_SMTP", 0);
 define("IS_EML_VERIFY", 0);
@@ -86,16 +89,16 @@ define("IS_OTHERS", 1);
 define('EMAIL_DELIVERY', 'smtp');
 
 //Most required settings start
-define("SUPPORT_EMAIL", "");
-define("FROM_EMAIL", "");
-define("FROM_EMAIL_EC", "");
+define("SUPPORT_EMAIL", getenv('SUPPORT_EMAIL') !== false ? getenv('SUPPORT_EMAIL') : "");
+define("FROM_EMAIL", getenv('FROM_EMAIL') !== false ? getenv('FROM_EMAIL') : "");
+define("FROM_EMAIL_EC", getenv('FROM_EMAIL_EC') !== false ? getenv('FROM_EMAIL_EC') : "");
 
 //Send mail without smtp
-define("PHPMAILER", 0);
+define("PHPMAILER", getenv('PHPMAILER') !== false ? (int)getenv('PHPMAILER') : 0);
 
 /* SMTP credentials SET Ups end*/
 
-define("WEB_DOMAIN", "YourDomain.com"); //ex. demo.orangescrum.com
+define("WEB_DOMAIN", getenv('WEB_DOMAIN') !== false ? getenv('WEB_DOMAIN') : "YourDomain.com"); //ex. demo.orangescrum.com
 define('EMAIL_SUBJ', '[Orangescrum]');
 define('EMAIL_SUBJC', 'Orangescrum');
 define('SITE_NAME', '');

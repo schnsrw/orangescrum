@@ -97,7 +97,8 @@ if(!empty($_REQUEST['is_others']) && $_REQUEST['is_others']==1 ){
    header('Location:'.$actual_link);exit;
 }
  $check_constants_filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'constants.php';
- $check_file = fopen($check_constants_filename, "a+");
+ $check_file = @fopen($check_constants_filename, "r");
+ if ($check_file) {
   while (!feof($check_file)) {
     $check_line = fgets($check_file);
     if (stristr($check_line, 'define("SMTP_UNAME", "youremail@gmail.com");') || stristr($check_line, 'define("SMTP_PWORD", "******");')) {
@@ -106,6 +107,7 @@ if(!empty($_REQUEST['is_others']) && $_REQUEST['is_others']==1 ){
     }
 }
 fclose($check_file);
+ }
 if(!empty($settings['host']) && !empty($settings['login']) && !empty($settings['database'])){
     $conn = @new mysqli($settings['host'], $settings['login'], $settings['password'],$settings['database']);
         if (!empty($conn->connect_error)) { 

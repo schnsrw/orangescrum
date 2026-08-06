@@ -1545,7 +1545,7 @@ CREATE TABLE `email_settings` (
 --
 
 INSERT INTO `email_settings` (`id`, `company_id`, `user_id`, `host`, `port`, `is_smtp`, `email`, `password`, `from_email`, `reply_email`, `status`, `is_default`, `is_verified`, `created`, `modified`) VALUES
-(1, 1, 1, 'host', '25', 3, NULL, NULL, '', '', 1, 1, NULL, '2018-09-07 09:29:46', '2018-10-03 06:40:01');
+(1, 1, 1, '', '', 3, NULL, NULL, '', '', 1, 1, NULL, '2018-09-07 09:29:46', '2018-10-03 06:40:01');
 
 -- --------------------------------------------------------
 

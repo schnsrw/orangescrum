@@ -4,9 +4,20 @@ App::import('Vendor', 'PHPMailer', array('file' => 'PHPMailer' .DS. 'PHPMailerAu
 
 class PhpMailerComponent extends Component {
 
+ 	 /**
+ 	  * Picks SMTPSecure based on port since email_settings has no explicit
+ 	  * secure-mode column: 465 is always implicit SSL, everything else
+ 	  * (587/25/etc) uses STARTTLS, which is what Gmail/SendGrid/Office365 expect.
+ 	  * Without this, PHPMailer defaulted to no encryption and auth was rejected.
+ 	  */
+ 	 function smtpSecureForPort($port) {
+ 	 	return ((int)$port === 465) ? 'ssl' : 'tls';
+ 	 }
+
  	 function sendPhpMailer($from,$to,$subject,$message,$type,$fromname=NULL, $chkpoint=0){
  	 	$this->EmailSetting = ClassRegistry::init('EmailSetting');
- 	 	 $email_setting = $this->EmailSetting->find('first',array('conditions'=>array('EmailSetting.is_default'=>1,'EmailSetting.status'=>1,'EmailSetting.company_id'=>SES_COMP)));
+ 	 	$company_id = defined('SES_COMP') ? SES_COMP : 1;
+ 	 	 $email_setting = $this->EmailSetting->find('first',array('conditions'=>array('EmailSetting.is_default'=>1,'EmailSetting.status'=>1,'EmailSetting.company_id'=>$company_id)));
          if(!empty($email_setting) && $email_setting['EmailSetting']['is_smtp']==1){
             $password = $email_setting['EmailSetting']['password'];
             $from = !empty($email_setting['EmailSetting']['from_email'])?$email_setting['EmailSetting']['from_email']:$from;
@@ -27,6 +38,8 @@ class PhpMailerComponent extends Component {
             $mail->Port =$email_setting['EmailSetting']['port'];
             //Whether to use SMTP authentication
             $mail->SMTPAuth = true;
+            //Encrypt the connection (previously never set, so auth was sent in plaintext)
+            $mail->SMTPSecure = $this->smtpSecureForPort($mail->Port);
             //Username to use for SMTP authentication
             $mail->Username = $email_setting['EmailSetting']['email'];;
             //Password to use for SMTP authentication
@@ -49,7 +62,7 @@ class PhpMailerComponent extends Component {
 
             //send the message, check for errors
             if (!$mail->send()) {
-                //echo "Mailer Error: " . $mail->ErrorInfo;exit;
+                CakeLog::write('error', 'PhpMailerComponent::sendPhpMailer (is_smtp=1) send failed to ' . $to . ' via ' . $mail->Host . ':' . $mail->Port . ' - ' . $mail->ErrorInfo);
                 if($chkpoint){
 					return "Mailer Error: " . $mail->ErrorInfo;
 				}else{
@@ -84,8 +97,12 @@ class PhpMailerComponent extends Component {
 
 			//send the message, check for errors
 			if (!$mail->send()) {
-			    // echo "Mailer Error: " . $mail->ErrorInfo;
-			    return true;
+			    CakeLog::write('error', 'PhpMailerComponent::sendPhpMailer (is_smtp=2, sendmail) send failed to ' . $to . ' - ' . $mail->ErrorInfo);
+			    if($chkpoint){
+					return "Mailer Error: " . $mail->ErrorInfo;
+				}else{
+					return true;
+				}
 			} else {
 			    // echo "Message sent!";
 			     return true;
@@ -100,7 +117,7 @@ class PhpMailerComponent extends Component {
 				$from_reply = FROM_EMAIL_EC;
 			}else{
 				$from_reply = !empty($email_setting['EmailSetting']['reply_email'])?$email_setting['EmailSetting']['reply_email']:$from;
-			}			
+			}
 			$mail = new PHPMailer();
 			$mail->isSMTP();
 			$mail->SMTPDebug = 0;
@@ -108,6 +125,7 @@ class PhpMailerComponent extends Component {
 			$mail->Host = $email_setting['EmailSetting']['host'];
 			$mail->Port = $email_setting['EmailSetting']['port'];
 			$mail->SMTPAuth = false;
+			$mail->SMTPSecure = $this->smtpSecureForPort($mail->Port);
 			$mail->setFrom($from, 'OrangeScrum');
 			$mail->addReplyTo($from_reply, 'OrangeScrum');
 			$mail->addAddress($to);
@@ -115,6 +133,7 @@ class PhpMailerComponent extends Component {
 			$mail->msgHTML($message);
 			//$mail->AltBody = 'This is a plain-text message body';
 			if (!$mail->send()) {
+				CakeLog::write('error', 'PhpMailerComponent::sendPhpMailer (is_smtp=3) send failed to ' . $to . ' via ' . $mail->Host . ':' . $mail->Port . ' - ' . $mail->ErrorInfo);
 				if($chkpoint){
 					return "Mailer Error: " . $mail->ErrorInfo;
 				}else{
@@ -151,6 +170,8 @@ class PhpMailerComponent extends Component {
             $mail->Port =$email_setting['EmailSetting']['port'];
             //Whether to use SMTP authentication
             $mail->SMTPAuth = true;
+            //Encrypt the connection (previously never set, so auth was sent in plaintext)
+            $mail->SMTPSecure = $this->smtpSecureForPort($mail->Port);
             //Username to use for SMTP authentication
             $mail->Username = $email_setting['EmailSetting']['email'];;
             //Password to use for SMTP authentication
@@ -175,6 +196,7 @@ class PhpMailerComponent extends Component {
 			}
             //send the message, check for errors
             if (!$mail->send()) {
+                CakeLog::write('error', 'PhpMailerComponent::sendPhpMailerTemplate (is_smtp=1) send failed to ' . $email->to . ' via ' . $mail->Host . ':' . $mail->Port . ' - ' . $mail->ErrorInfo);
                 if($chkpoint){
 					return "Mailer Error: " . $mail->ErrorInfo;
 				}else{
@@ -210,6 +232,7 @@ class PhpMailerComponent extends Component {
 			}
 			//send the message, check for errors
 			if (!$mail->send()) {
+			    CakeLog::write('error', 'PhpMailerComponent::sendPhpMailerTemplate (is_smtp=2, sendmail) send failed to ' . $email->to . ' - ' . $mail->ErrorInfo);
 			    if($chkpoint){
 					return "Mailer Error: " . $mail->ErrorInfo;
 				}else{
@@ -237,6 +260,7 @@ class PhpMailerComponent extends Component {
 			$mail->Host = $email_setting['EmailSetting']['host'];
 			$mail->Port = $email_setting['EmailSetting']['port'];
 			$mail->SMTPAuth = false;
+			$mail->SMTPSecure = $this->smtpSecureForPort($mail->Port);
 			$mail->setFrom($from, 'OrangeScrum');
 			$mail->addReplyTo($from_reply, 'OrangeScrum');
 			$mail->addAddress($email->to);
@@ -246,8 +270,9 @@ class PhpMailerComponent extends Component {
 			//Attach an image file
 			if(isset($email->attachments)){
 				$mail->addAttachment($email->attachments);
-			}			
+			}
 			if (!$mail->send()) {
+				CakeLog::write('error', 'PhpMailerComponent::sendPhpMailerTemplate (is_smtp=3) send failed to ' . $email->to . ' via ' . $mail->Host . ':' . $mail->Port . ' - ' . $mail->ErrorInfo);
 				if($chkpoint){
 					return "Mailer Error: " . $mail->ErrorInfo;
 				}else{
@@ -266,11 +291,9 @@ class PhpMailerComponent extends Component {
         return $encrypted;
     } 
 
-    function decryptPassword($text){ 
-        $key = SALT;
-        $data = base64_decode($text);
-        return  $decrypted;
-    } 
+    function decryptPassword($text){
+        return base64_decode($text);
+    }
 }
 
 ?>
