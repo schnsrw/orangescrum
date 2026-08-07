@@ -1,5 +1,5 @@
 <?php
-define('RELEASE', 36); //Increase the release version on every code push
+define('RELEASE', 37); //Increase the release version on every code push
 //define('DISCOUNT',30);//% // Make sure that the same discount amount is there in "coupons" table
 define('BETA_RELEASE', 0); //on 21-12-2021
 define("USE_COUPON", 0);

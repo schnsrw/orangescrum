@@ -52,10 +52,18 @@
 	letter-spacing: -0.01em;
 }
 
+/* ---- Logo sizing (cap the SVG so it never dominates the page) ---------- */
 .login_sup_page h6 img,
+.login_sup_page .satsf_img img,
 .forgot_pwd_page .center_logo img {
-	max-height: 40px;
-	width: auto;
+	height: 40px !important;
+	width: auto !important;
+	max-width: 200px;
+}
+.login_sup_page h6,
+.login_sup_page .satsf_img {
+	text-align: center;
+	margin: 0 0 20px;
 }
 
 /* ---- Inputs ------------------------------------------------------------- */

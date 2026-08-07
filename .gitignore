@@ -5,3 +5,4 @@ app/tmp/logs/*
 app/tmp/cache/*
 nbproject/*
 app/webroot/cache/*
+app/webroot/error.check

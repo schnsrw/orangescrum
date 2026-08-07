@@ -20,9 +20,11 @@ services:
       FROM_EMAIL: "noreply@localhost"
       SUPPORT_EMAIL: "support@localhost"
     volumes:
-      - ./app/tmp:/var/www/html/app/tmp
-      - ./app/webroot/files:/var/www/html/app/webroot/files
-      - ./app/webroot/img:/var/www/html/app/webroot/img
+      # Bind-mount the whole source tree so code/view/CSS edits apply live
+      # (no image rebuild needed). app/tmp is a named volume so container-owned
+      # cache/logs don't fight host permissions.
+      - .:/var/www/html
+      - app_tmp:/var/www/html/app/tmp
     depends_on:
       - mysql
       - mailhog
@@ -31,7 +33,13 @@ services:
     image: mysql:8.0
     # mysql:5.7 has no arm64 image; PHP 7.4's older mysqlnd needs the legacy
     # auth plugin to talk to MySQL 8's default caching_sha2_password.
-    command: --default-authentication-plugin=mysql_native_password
+    # sql-mode is emptied because this app (like Orangescrum) requires STRICT
+    # mode OFF — it inserts zero-dates and relies on implicit column defaults
+    # that STRICT_TRANS_TABLES/NO_ZERO_DATE/ONLY_FULL_GROUP_BY would reject,
+    # which otherwise makes signup and many saves fail.
+    command: >-
+      --default-authentication-plugin=mysql_native_password
+      --sql-mode=
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: orangescrum
@@ -51,3 +59,4 @@ services:
 
 volumes:
   db_data:
+  app_tmp:
