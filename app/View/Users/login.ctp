@@ -1,3 +1,4 @@
+<?php echo $this->Html->css('opentask-modern.css?v='.RELEASE); ?>
 <style>
     .check_label{margin: 5px 0 0; color: #333; font-weight: 400;font-size: 14px;}
 .check_label input{display:inline-block;margin:0 5px 0 0;vertical-align:middle}

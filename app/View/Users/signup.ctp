@@ -10,6 +10,7 @@
 
     </script>
 <?php } ?>
+<?php echo $this->Html->css('opentask-modern.css?v='.RELEASE); ?>
 <style>
 .outer_cmn_wrapper.form-slider{width:70%}
 	#login_dialog h4{font-size:14px;text-align:center;margin:0 0 5px}

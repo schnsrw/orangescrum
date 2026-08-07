@@ -1,3 +1,4 @@
+<?php echo $this->Html->css('opentask-modern.css?v='.RELEASE); ?>
 <style type="text/css">
 .forgot_pwd_page .fpwd_page .cmn_bdr_shadow{background: transparent;box-shadow: rgb(0 0 0 / 10%) 0 0 10px;padding-bottom: 40px;}
 .forgot_pwd_page h1{color: #000d33;margin: 0 0 15px;}

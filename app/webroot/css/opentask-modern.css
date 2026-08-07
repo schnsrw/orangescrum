@@ -1,0 +1,144 @@
+/**
+ * OpenTask modern UI refresh — scoped to auth/entry pages.
+ *
+ * This is an additive layer loaded AFTER the legacy Bootstrap 3 / Material
+ * stylesheets on the login, signup and forgot-password views only. It
+ * modernises typography, colour, inputs, buttons, cards and spacing to match
+ * the new OpenTask indigo brand WITHOUT touching the underlying markup or the
+ * global stylesheets used by the rest of the app. Every rule is namespaced
+ * under an auth-page container so it cannot leak into other pages that happen
+ * to share generic class names like .form-control or .btn.
+ *
+ * Full framework migration to Bootstrap 5 is tracked separately and will
+ * replace this layer page-by-page.
+ */
+
+:root {
+	--ot-indigo: #4338CA;
+	--ot-indigo-600: #4f46e5;
+	--ot-indigo-500: #6366F1;
+	--ot-indigo-050: #eef2ff;
+	--ot-ink: #1e293b;
+	--ot-muted: #64748b;
+	--ot-border: #e2e8f0;
+	--ot-radius: 12px;
+	--ot-shadow: 0 10px 30px rgba(30, 41, 59, .08), 0 2px 6px rgba(30, 41, 59, .05);
+}
+
+/* ---- Page canvas -------------------------------------------------------- */
+.login_sup_page,
+.forgot_pwd_page {
+	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: var(--ot-ink);
+	background: linear-gradient(160deg, #f8fafc 0%, var(--ot-indigo-050) 100%);
+}
+
+/* ---- Card ---------------------------------------------------------------- */
+.login_sup_page .cmn_bdr_shadow,
+.forgot_pwd_page .cmn_bdr_shadow {
+	background: #fff;
+	border: 1px solid var(--ot-border);
+	border-radius: var(--ot-radius);
+	box-shadow: var(--ot-shadow);
+	padding: 32px;
+}
+
+/* ---- Headings ----------------------------------------------------------- */
+.login_sup_page h2,
+.forgot_pwd_page h1,
+.forgot_pwd_page h2 {
+	color: var(--ot-ink);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.login_sup_page h6 img,
+.forgot_pwd_page .center_logo img {
+	max-height: 40px;
+	width: auto;
+}
+
+/* ---- Inputs ------------------------------------------------------------- */
+.login_sup_page .form-control,
+.forgot_pwd_page .cmn_inp,
+.login_sup_page .log_sup_cnt input[type="text"],
+.login_sup_page .log_sup_cnt input[type="email"],
+.login_sup_page .log_sup_cnt input[type="password"] {
+	border: 1.5px solid var(--ot-border);
+	border-radius: 8px;
+	padding: 10px 14px;
+	font-size: 15px;
+	color: var(--ot-ink);
+	background: #fff;
+	transition: border-color .15s ease, box-shadow .15s ease;
+	box-shadow: none;
+}
+
+.login_sup_page .form-control:focus,
+.forgot_pwd_page .cmn_inp:focus,
+.login_sup_page .log_sup_cnt input:focus {
+	border-color: var(--ot-indigo-500);
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, .18);
+	outline: none;
+}
+
+/* ---- Primary buttons ---------------------------------------------------- */
+.login_sup_page .btn.btn_cmn_efect,
+.forgot_pwd_page .btn.btn_cmn_efect,
+.login_sup_page .btn_cmn_efect,
+.forgot_pwd_page .signin_btn {
+	background: var(--ot-indigo) !important;
+	background-image: linear-gradient(135deg, var(--ot-indigo-500), var(--ot-indigo)) !important;
+	border: none !important;
+	border-radius: 8px !important;
+	color: #fff !important;
+	font-weight: 600;
+	letter-spacing: .01em;
+	padding: 11px 22px !important;
+	box-shadow: 0 4px 12px rgba(67, 56, 202, .25);
+	transition: transform .08s ease, box-shadow .15s ease, filter .15s ease;
+}
+
+.login_sup_page .btn.btn_cmn_efect:hover,
+.forgot_pwd_page .btn.btn_cmn_efect:hover,
+.login_sup_page .btn_cmn_efect:hover,
+.forgot_pwd_page .signin_btn:hover {
+	filter: brightness(1.05);
+	box-shadow: 0 6px 18px rgba(67, 56, 202, .32);
+	transform: translateY(-1px);
+}
+
+.login_sup_page .btn.btn_cmn_efect:active,
+.forgot_pwd_page .signin_btn:active {
+	transform: translateY(0);
+}
+
+/* ---- Links -------------------------------------------------------------- */
+.login_sup_page .btn-link,
+.login_sup_page a,
+.forgot_pwd_page a {
+	color: var(--ot-indigo-600);
+}
+
+.login_sup_page .btn-link:hover,
+.login_sup_page a:hover,
+.forgot_pwd_page a:hover {
+	color: var(--ot-indigo);
+	text-decoration: none;
+}
+
+/* ---- Cancel / secondary link button ------------------------------------ */
+.forgot_pwd_page .cancel_link {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 11px 18px;
+	border-radius: 8px;
+	border: 1.5px solid var(--ot-border);
+	color: var(--ot-muted);
+	font-weight: 600;
+}
+
+.forgot_pwd_page .cancel_link:hover {
+	border-color: var(--ot-indigo-500);
+	color: var(--ot-indigo);
+}
