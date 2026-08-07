@@ -38,7 +38,7 @@ function txt_blur(obj,val){
 					<iframe width="640" height="360" src="https://www.youtube.com/embed/2Neml2PFLMk?rel=0" width="100%" height="100%" frameborder="0" class="frame-border" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 				</div>
 				<div style="display:none;" class="video_button" onClick="showVideo();ga_tracking_video('Bridge The Communication Gap');" >
-				<div style="display:none;" class="play_icn"><img src="<?php echo HTTP_ROOT; ?>img/home/icon-play.png?v=<?php echo RELEASE; ?>" width="48px" height="48px" /></div>
+				<div style="display:none;" class="play_icn"></div>
 				</div>
 			</div>
 			<div class="cb"></div>           
@@ -46,7 +46,7 @@ function txt_blur(obj,val){
 		<div class="hm_mcontent">
 			<h2>All Features</h2>
 			<span class="sub-title">
-				Increase Productivity using Orangescrum
+				Increase Productivity using OpenTask
 			</span>
 			<div <?php if($this->Session->read('Auth.User.id')==''){?> <?php } ?>>
 		        <table cellpadding="0" cellspacing="0">
@@ -56,7 +56,6 @@ function txt_blur(obj,val){
 		                    <p>Provides interactive summary of Projects.</p>
 		                </td>
 		                <td>
-		                	<img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/summary.png?v=<?php echo RELEASE; ?>" alt="" />
 		                </td>
 		            </tr>
 					<tr>
@@ -65,7 +64,6 @@ function txt_blur(obj,val){
 						<p>Consolidates, aggregates and arranges reports in a visual representation.</p>
 		                </td>
 		                 <td>
-		                 	<img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/visual.png?v=<?php echo RELEASE; ?>" alt="" />
 		                 </td>
 		            </tr>
 		            <tr>
@@ -74,7 +72,6 @@ function txt_blur(obj,val){
 		                  <p>Displayed on a single screen so information can be mentioned at a glance</p>
 		                </td>
 		                <td>
-		                	<img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/project.jpg?v=<?php echo RELEASE; ?>" alt="" />
 		                </td>
 		            </tr>
 					<tr>
@@ -83,7 +80,6 @@ function txt_blur(obj,val){
 		                  <p>Demonstrate to project managers where corrective action needs to b e taken</p>
 		                </td>
 		                <td>
-		                	<img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/screen.png?v=<?php echo RELEASE; ?>" alt="" />
 		                </td>
 		            </tr>
 		        </table>

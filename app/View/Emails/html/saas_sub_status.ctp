@@ -13,7 +13,7 @@
                                             <p>
                                                 Dear Sir,
                                             </p>
-											<p>Below are the Orangescrum SAAS Subscription Status.</p>
+											<p>Below are the OpenTask SAAS Subscription Status.</p>
 											<br />
 											<p> Total Customer Upgraded Today: <span style="color:green;font-weight:bold;"><?php echo $totUpgrd; ?></span> </p>
 											<p> Total Customer Downgraded Today: <span style="color:blue;font-weight:bold;"><?php echo $totDown; ?></span> </p>
@@ -28,13 +28,13 @@
 														<div><a href="https://app.orangescrum.com/users/login" style="background-color:#ffffff;border:1px solid #d4d4d4;border-radius:4px;color:#4f9cde;display:inline-block;font-family:sans-serif;font-size:13px;line-height:40px;text-align:center;text-decoration:none;width:120px" target="_blank">LOGIN</a></div>
 													</td>
 													<td align="center">
-														<div><a href="https://www.orangescrum.com/how-it-works" style="background-color:#ffffff;border:1px solid #d4d4d4;border-radius:4px;color:#4f9cde;display:inline-block;font-family:sans-serif;font-size:13px;line-height:40px;text-align:center;text-decoration:none;width:194px" target="_blank">Or Explore Orangescrum</a></div>
+														<div><a href="https://www.orangescrum.com/how-it-works" style="background-color:#ffffff;border:1px solid #d4d4d4;border-radius:4px;color:#4f9cde;display:inline-block;font-family:sans-serif;font-size:13px;line-height:40px;text-align:center;text-decoration:none;width:194px" target="_blank">Or Explore OpenTask</a></div>
 													</td>
 												</tr>
 											</table>
 										<p>
 											Thanks,<br/>
-											Orangescrum Team<br/>
+											OpenTask Team<br/>
 										</p>
 									</td>
 								</tr>

@@ -131,7 +131,7 @@ class UsersController extends AppController {
                     $samlResp = $this->SamlConfiguration->getDetailByDomain($this->request->data['domain']);
                     if(empty($samlResp) || !$samlResp['SamlConfiguration']['is_active']){
                         $retResp['status'] = 'error';
-                        $retResp['msg'] = __('Please contact your admin/owner to verify SSO configuration from the integration setting section of Orangescrumm.');
+                        $retResp['msg'] = __('Please contact your admin/owner to verify SSO configuration from the integration setting section of OpenTask.');
                     }else{
                         //prepare the redirect ul here
                         $protocol = stripos($_SERVER['SERVER_PROTOCOL'], 'https') === true ? 'https://' : 'http://';
@@ -424,7 +424,7 @@ class UsersController extends AppController {
                 $sus_comp = $this->Company->save($comp);
             } catch (Exception $e) {
                 $this->Company->delete($company_id);
-                $subject = "ORANGESCRUM DATABASE ERROR";
+                $subject = "OPENTASK DATABASE ERROR";
                 $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
                 //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "","");
                 echo "error";
@@ -473,7 +473,7 @@ class UsersController extends AppController {
                     }
                 } catch (Exception $e) {
                     $this->Company->delete($company_id);
-                    $subject = "ORANGESCRUM DATABASE ERROR";
+                    $subject = "OPENTASK DATABASE ERROR";
                     $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
                     //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
                     echo "error";
@@ -491,7 +491,7 @@ class UsersController extends AppController {
                     } catch (Exception $e) {
                         $this->Company->delete($company_id);
                         $this->User->delete($comp_usr['CompanyUser']['user_id']);
-                        $subject = "ORANGESCRUM DATABASE ERROR";
+                        $subject = "OPENTASK DATABASE ERROR";
                         $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
                         //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
                         echo "error";
@@ -562,7 +562,7 @@ class UsersController extends AppController {
                             $this->Company->delete($company_id);
                             $this->User->delete($comp_usr['CompanyUser']['user_id']);
                             $this->CompanyUser->delete($companyUid);
-                            $subject = "ORANGESCRUM DATABASE ERROR";
+                            $subject = "OPENTASK DATABASE ERROR";
                             $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
                             //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
                             echo "error";
@@ -589,7 +589,7 @@ class UsersController extends AppController {
                             //End
                             $to = $email;
                             $from = FROM_EMAIL;
-                            $subject = "Welcome to Orangescrum, " . ucfirst($name) . "!";
+                            $subject = "Welcome to OpenTask, " . ucfirst($name) . "!";
                             $activation_url = HTTP_ROOT . "users/confirmation/" . $vstr;
                             $create_project = HTTP_ROOT. "users/create_project?project_url=create_project";
                             $web_address = HTTP_ROOT;
@@ -626,7 +626,7 @@ class UsersController extends AppController {
 								$this->Email->set_variables = $this->render('/Emails/html/signup',false);
 								$this->PhpMailer->sendPhpMailerTemplate($this->Email);
 																
-								$subject = "Orangescrum Account Confirmation";
+								$subject = "OpenTask Account Confirmation";
 								$this->Email->subject = $subject;
 								$this->set('usrname', ucfirst($name));
 								$this->Email->set_variables = $this->render('/Emails/html/email_activation',false);	
@@ -634,7 +634,7 @@ class UsersController extends AppController {
 							}else{							
 								$this->Sendgrid->sendgridsmtp($this->Email);
 								$this->Email->template = 'email_activation';
-								$subject = "Orangescrum Account Confirmation";
+								$subject = "OpenTask Account Confirmation";
 								$this->Email->subject = $subject;
 								$this->set('usrname', ucfirst($name));
 								$this->Sendgrid->sendgridsmtp($this->Email);
@@ -673,7 +673,7 @@ class UsersController extends AppController {
             }
 
             $arr_project = array();
-                $arr_project['name'] = __('Getting Started Orangescrum',true);
+                $arr_project['name'] = __('Getting Started OpenTask',true);
             $arr_project['short_name'] = 'GSO';
             $arr_project['validate'] = 1;
             $arr_project['members'] = array($comp_usr['CompanyUser']['user_id']);
@@ -758,7 +758,7 @@ class UsersController extends AppController {
             $support_email = urldecode($this->request->data['support_email']);
             $support_name = urldecode($this->request->data['support_name']);
             $support_msg = urldecode($this->request->data['support_msg']);
-            $subject = "Feedback on Orangescrum by " . stripslashes(strip_tags($support_name));
+            $subject = "Feedback on OpenTask by " . stripslashes(strip_tags($support_name));
             $ip = $this->Format->getRealIpAddr();
             $location = $this->Format->iptoloccation($ip);
             /* $tags = get_meta_tags('http://www.geobytes.com/IpLocator.htm?GetLocation&template=php3.txt&IpAddress='.$ip);
@@ -772,7 +772,7 @@ class UsersController extends AppController {
               } */
             $message = "<p style='font-family:Arial;font-size:14px;'>
                   <p style='font-family:Arial;font-size:14px;'>Dear site administrator,<p>
-                  <p style='font-family:Arial;font-size:14px;'>You're lucky today; you've got feedback on Orangescrum.</p>
+                  <p style='font-family:Arial;font-size:14px;'>You're lucky today; you've got feedback on OpenTask.</p>
                   <p>&nbsp;</p>
                   <p style='font-family:Arial;font-size:14px;'><b>Company:</b> " . CMP_SITE . "</p>
                   <p style='font-family:Arial;font-size:14px;'><b>Name:</b> " . $support_name . "</p>
@@ -794,12 +794,12 @@ class UsersController extends AppController {
             $support_name = urldecode($this->request->data['support_name']);
             $support_msg = urldecode($this->request->data['support_msg']);
             $support_ref_url = urldecode($this->request->data['support_refurl']);
-            $subject = "Feedback on Orangescrum by " . stripslashes(strip_tags($support_name));
+            $subject = "Feedback on OpenTask by " . stripslashes(strip_tags($support_name));
             $ip = $this->Format->getRealIpAddr();
             $location = $this->Format->iptoloccation($ip);
             $message = "<p style='font-family:Arial;font-size:14px;'>
 				    <p style='font-family:Arial;font-size:14px;'>Dear site administrator,<p>
-				    <p style='font-family:Arial;font-size:14px;'>You're lucky today; you've got feedback on Orangescrum.</p>
+				    <p style='font-family:Arial;font-size:14px;'>You're lucky today; you've got feedback on OpenTask.</p>
 				    <p>&nbsp;</p>
 				    <p style='font-family:Arial;font-size:14px;'><b>Company:</b> " . CMP_SITE . "</p>
 				    <p style='font-family:Arial;font-size:14px;'><b>Name:</b> " . $support_name . "</p>
@@ -1329,7 +1329,7 @@ class UsersController extends AppController {
                     $sentAt = $tmzone->GetDateTime(5, -8, 1, "P", $curdate, "datetime");
                     $sentAt = date('m/d/Y g:i A', strtotime($sentAt));
                     $to = SUPPORT_EMAIL;
-                    $subject = "[Feedback on Orangescrum] " . $sbject;
+                    $subject = "[Feedback on OpenTask] " . $sbject;
                     $ip = $this->Format->getRealIpAddr();
                     $location = $this->Format->iptoloccation($ip);
                     /* $tags = get_meta_tags('http://www.geobytes.com/IpLocator.htm?GetLocation&template=php3.txt&IpAddress='.$ip);
@@ -1747,10 +1747,10 @@ class UsersController extends AppController {
 
                 $ext_user = '';
                 if (!$getUser['User']['password']) {
-                    $subject = $fromName . " added you to " . $comp['Company']['name'] . " on Orangescrum";
+                    $subject = $fromName . " added you to " . $comp['Company']['name'] . " on OpenTask";
                     $ext_user = 1;
                 } else {
-                    $subject = $fromName . " added you to join on Orangescrum";
+                    $subject = $fromName . " added you to join on OpenTask";
                 }
 
                 $this->Email->delivery = 'smtp';
@@ -2013,7 +2013,7 @@ class UsersController extends AppController {
             
             $this->Email->delivery = 'smtp';
             $this->Email->to = $data['email'];
-            $this->Email->subject = "Thank you for posting feedback about Orangescrum";
+            $this->Email->subject = "Thank you for posting feedback about OpenTask";
             $this->Email->from = FROM_EMAIL;
             $this->Email->template = 'feedback_email';
             $this->Email->sendAs = 'html';
@@ -2025,7 +2025,7 @@ class UsersController extends AppController {
             $this->Email->bcc = ADMIN_EMAIL;//MARKETING_EMAIL;
             $this->Email->from = FROM_EMAIL;
             $this->Email->template = 'feedback_email_admin';
-            $this->Email->subject = "Feedback from ". ucfirst($data['username'])." about Orangescrum SAAS Application";
+            $this->Email->subject = "Feedback from ". ucfirst($data['username'])." about OpenTask SAAS Application";
             $this->set('data', $data);
             $this->Sendgrid->sendgridsmtp($this->Email);
             /** End **/
@@ -2197,7 +2197,7 @@ class UsersController extends AppController {
             $sus_comp = $this->Company->save($comp);
         } catch (Exception $e) {
             $this->Company->delete($company_id);
-            $subject = "ORANGESCRUM DATABASE ERROR";
+            $subject = "OPENTASK DATABASE ERROR";
             $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
             //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
             echo "error";
@@ -2226,7 +2226,7 @@ class UsersController extends AppController {
                 $sus_user = $this->User->save($usr);
             } catch (Exception $e) {
                 $this->Company->delete($company_id);
-                $subject = "ORANGESCRUM DATABASE ERROR";
+                $subject = "OPENTASK DATABASE ERROR";
                 $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
                 //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
                 echo "error";
@@ -2244,7 +2244,7 @@ class UsersController extends AppController {
                 } catch (Exception $e) {
                     $this->Company->delete($company_id);
                     $this->User->delete($comp_usr['CompanyUser']['user_id']);
-                    $subject = "ORANGESCRUM DATABASE ERROR";
+                    $subject = "OPENTASK DATABASE ERROR";
                     $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
                     //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
                     echo "error";
@@ -2281,7 +2281,7 @@ class UsersController extends AppController {
                         $this->Company->delete($company_id);
                         $this->User->delete($comp_usr['CompanyUser']['user_id']);
                         $this->CompanyUser->delete($companyUid);
-                        $subject = "ORANGESCRUM DATABASE ERROR";
+                        $subject = "OPENTASK DATABASE ERROR";
                         $message = "A user is trying to register into OS But not able to proceed due to below error <br/><font color='#EE0000'>" . $e->getMessage() . "</font><br/>Email: " . $email . "<br/>Domain: " . HTTP_ROOT;
                         //$this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
                         echo "error";
@@ -2289,7 +2289,7 @@ class UsersController extends AppController {
                     }
                     $to = $email;
                     $from = FROM_EMAIL;
-                    $subject = "Welcome to Orangescrum!";
+                    $subject = "Welcome to OpenTask!";
 
                     $activation_url = HTTP_ROOT . "users/confirmation/" . $activation_id;
 
@@ -2343,7 +2343,7 @@ class UsersController extends AppController {
 
                     /* $message = "<div style='font-family:Arial;font-size:14px;'>
                       <h3>Hi ".$name.",</h3>
-                      Welcome to Orangescrum and thanks for signing up!
+                      Welcome to OpenTask and thanks for signing up!
                       <br/>
                       <div>Click to confirm your account </div>
                       <br/><br/>
@@ -2361,10 +2361,10 @@ class UsersController extends AppController {
                       <br/>
                       <br/>
                       <div style='font-size:11px;color:#999999;'>
-                      You're getting this email because you requested an account on Orangescrum.com using this email address.
+                      You're getting this email because you requested an account on OpenTask using this email address.
                       <br> If you didn't intend to do this, just ignore this email; no account has been created yet.
                       </div>
-                      <br/><div style='line-height:20px;padding-top:10px;color:#999999;'>Regards,<br/>The Orangescrum Team</div><br/>
+                      <br/><div style='line-height:20px;padding-top:10px;color:#999999;'>Regards,<br/>The OpenTask Team</div><br/>
                       </div>";
 
                       $this->Sendgrid->sendGridEmail($from,$to,$subject,$message,"UserReg");
@@ -2693,10 +2693,10 @@ class UsersController extends AppController {
 
                                     $ext_user = '';
                                     if (@$findEmail['User']['id'] && @$findEmail['User']['password']) {
-                                        $subject = $fromName . " added you to " . $comp['Company']['name'] . " on Orangescrum";
+                                        $subject = $fromName . " added you to " . $comp['Company']['name'] . " on OpenTask";
                                         $ext_user = 1;
                                     } else {
-                                        $subject = $fromName . " created your account on Orangescrum";
+                                        $subject = $fromName . " created your account on OpenTask";
                                     }
                                     if ($invited_emails == '') {
                                         $invited_emails = $to;
@@ -3014,10 +3014,10 @@ class UsersController extends AppController {
 
                         $ext_user = '';
                         if (@$findEmail['User']['id'] && @$findEmail['User']['password']) {
-                            $subject = $fromName . " added you to " . $comp['Company']['name'] . " on Orangescrum";
+                            $subject = $fromName . " added you to " . $comp['Company']['name'] . " on OpenTask";
                             $ext_user = 1;
                         } else {
-                            $subject = $fromName . " created your account on Orangescrum";
+                            $subject = $fromName . " created your account on OpenTask";
                         }
                         $uEmail = $this->User->getLoginUserEmail(SES_ID);
                         $this->Email->delivery = 'smtp';
@@ -3553,7 +3553,7 @@ class UsersController extends AppController {
                 $usrLogin_check = $this->User->find('first', array('conditions' => array('User.email' => $this->request->data['User']['email'], 'User.isactive' => 1)));
                 /*                 * **check email edited by admin or owner ***** */
                 if ($usrLogin_check['User']['updated_by'] == 1) {
-                    $this->Session->setFlash("Your email id has been changed to '" . $usrLogin_check['User']['update_email'] . "'. Please check '" . $usrLogin_check['User']['update_email'] . "' to confirm your account and access your Orangescrum account using your updated Email ID.", 'default', array('class' => 'error'));
+                    $this->Session->setFlash("Your email id has been changed to '" . $usrLogin_check['User']['update_email'] . "'. Please check '" . $usrLogin_check['User']['update_email'] . "' to confirm your account and access your OpenTask account using your updated Email ID.", 'default', array('class' => 'error'));
                     $this->redirect(HTTP_ROOT . "users/login");
                     exit;
                 }
@@ -4248,7 +4248,7 @@ function getSkills(){
                         $this->User->id = SES_ID;
                         $ut = $this->User->field('name');
                     }
-                    $subject = "Orangescrum profile information changed by $ut";
+                    $subject = "OpenTask profile information changed by $ut";
                     $this->Email->delivery = 'smtp';
                     $this->Email->to = $to;
                     $this->Email->subject = $subject;
@@ -4338,7 +4338,7 @@ function getSkills(){
             $qstr = $user['User']['update_random'];
             $to = $upd_email;
             $Name = $user['User']['name'];
-            $subject = "Orangescrum Login Email ID Confirmation";
+            $subject = "OpenTask Login Email ID Confirmation";
             $this->Email->delivery = 'smtp';
             $this->Email->to = $to;
             $this->Email->subject = $subject;
@@ -5154,7 +5154,7 @@ function getSkills(){
                     $sentAt = $tmzone->GetDateTime(5, -8, 1, "P", $curdate, "datetime");
                     $sentAt = date('m/d/Y g:i A', strtotime($sentAt));
                     $to = SUPPORT_EMAIL;
-                    $subject = "[Contact NOW on Orangescrum]";
+                    $subject = "[Contact NOW on OpenTask]";
                     $message = "<table cellpadding='0' cellspacing='0' align='left' width='100%'>
 
 								" . EMAIL_HEADER . "
@@ -5164,9 +5164,9 @@ function getSkills(){
 										<table cellpadding='2' cellspacing='2' align='left'>
 
 											<tr><td align='left' style='font-family:Arial;font-size:14px;'>Dear site administrator,</td></tr>
-											<tr><td align='left' style='font-family:Arial;font-size:14px;'>You're lucky today; An  User contacted you on Orangescrum.</td></tr>
+											<tr><td align='left' style='font-family:Arial;font-size:14px;'>You're lucky today; An  User contacted you on OpenTask.</td></tr>
 											<tr><td align='left' style='font-family:Arial;font-size:14px;padding-top:5px;'><b>User's Email:</b> " . $email . "</td></tr>
-											<tr><td align='left' style='font-family:Arial;font-size:14px;padding-top:5px;'><b>Hi, i am interested in Orangescrum.</td></tr>
+											<tr><td align='left' style='font-family:Arial;font-size:14px;padding-top:5px;'><b>Hi, i am interested in OpenTask.</td></tr>
 											<tr><td align='left' style='font-family:Arial;font-size:14px;padding-top:5px;'><b>Sent at:</b> " . $sentAt . " PST</td></tr>
 										</table>
 
@@ -5584,9 +5584,9 @@ function getSkills(){
         $expEmail = explode("@", $email);
         $expName = $expEmail[0];
         $qstr = md5($email);
-        $subject = "Welcome to Orangescrum - project collaboration made simple";
-        $invitationMsg = "<tr><td align='left'><br/></td></tr><tr><td align='left' style='font-family:Arial;font-size:14px;'>Thank you for showing interest on <b>Orangescrum</b>.</td></tr>
-						<tr><td align='left' style='font-family:Arial;font-size:14px;line-height:25px;'>You are just one step away to start exploring Orangescrum.</td></tr>
+        $subject = "Welcome to OpenTask - project collaboration made simple";
+        $invitationMsg = "<tr><td align='left'><br/></td></tr><tr><td align='left' style='font-family:Arial;font-size:14px;'>Thank you for showing interest on <b>OpenTask</b>.</td></tr>
+						<tr><td align='left' style='font-family:Arial;font-size:14px;line-height:25px;'>You are just one step away to start exploring OpenTask.</td></tr>
 						
 						<tr><td align='left'><br/></td></tr><tr>
 						";
@@ -6360,12 +6360,12 @@ function getSkills(){
      */
     function sendinvoicemail() {
         $to = $this->data['emailid'];
-            $subject = "Re: OrangeScrum Invoice for Transaction : " . $this->data['invoiceid'];
+            $subject = "Re: OpenTask Invoice for Transaction : " . $this->data['invoiceid'];
         $message = "Hi,<br/> Sending the invoice attachement for the transaction";
-        $file = "OrangeScrum_Invoice_" . $this->data['invoiceid'] . ".pdf";
+        $file = "OpenTask_Invoice_" . $this->data['invoiceid'] . ".pdf";
         $filePath = DIR_IMAGES . "pdf";
         if (!file_exists($filePath . "/" . $file)) {
-            exec(PDF_LIB_PATH . " " . HTTP_ROOT_INVOICE . "users/invoicePage/subscriptionId:" . $this->data['btsubscription_id'] . "/transactionId:" . $this->data['transactionid'] . " " . DIR_IMAGES . "pdf/OrangeScrum_Invoice_" . $this->data['invoiceid'] . ".pdf");
+            exec(PDF_LIB_PATH . " " . HTTP_ROOT_INVOICE . "users/invoicePage/subscriptionId:" . $this->data['btsubscription_id'] . "/transactionId:" . $this->data['transactionid'] . " " . DIR_IMAGES . "pdf/OpenTask_Invoice_" . $this->data['invoiceid'] . ".pdf");
         }
         $response = $this->Sendgrid->sendGridEmail(FROM_EMAIL, TO_DEV_EMAIL, $subject, $message, "",'');
         if ($response) {
@@ -6386,7 +6386,7 @@ function getSkills(){
      */
         function download_invoice($invoice_id, $company_id=null) {
         $path = DIR_IMAGES . "pdf/";
-        $file = "OrangeScrum_Invoice_" . $invoice_id . ".pdf";
+        $file = "OpenTask_Invoice_" . $invoice_id . ".pdf";
         $this->loadModel('Transactions');
 			if($company_id && SES_ID == '522'){
 				$trans = $this->Transactions->find('first', array('conditions' => array('company_id' => $company_id,'invoice_id' => $invoice_id)));
@@ -6572,7 +6572,7 @@ function getSkills(){
                     $Company = ClassRegistry::init('Company');
                     $comp = $Company->find('first', array('conditions' => array('Company.id' => SES_COMP), 'fields' => array('Company.id', 'Company.name', 'Company.uniq_id')));
 
-                    $subject = $fromName . " added you to " . $comp['Company']['name'] . " on Orangescrum";
+                    $subject = $fromName . " added you to " . $comp['Company']['name'] . " on OpenTask";
 
                     $uEmail = $this->User->getLoginUserEmail(SES_ID);
                     $this->Email->delivery = 'smtp';
@@ -7073,9 +7073,9 @@ function getSkills(){
         $multiple = 0;
         if (stristr($pjnames, ",")) {
             $multiple = 1;
-            $subject = "You have been added to multiple projects on Orangescrum";
+            $subject = "You have been added to multiple projects on OpenTask";
         } else {
-            $subject = "You have been added to " . $pjnames . " on Orangescrum";
+            $subject = "You have been added to " . $pjnames . " on OpenTask";
         }
 
         $this->Email->delivery = 'smtp';
@@ -7356,7 +7356,7 @@ function getSkills(){
         $getUsrData = $this->User->findById($user_ses['Auth']['User']['id']);
         $to = $getUsrData['User']['email'];
         $from = FROM_EMAIL;
-        $subject = "Orangescrum Account Confirmation";
+        $subject = "OpenTask Account Confirmation";
         $CompanyUser = ClassRegistry::init('CompanyUser');
         $checkCmnpyUsr = $CompanyUser->find('first', array('conditions' => array('CompanyUser.user_id' => $this->Auth->User("id"), 'CompanyUser.is_active' => 1), 'fields' => array('CompanyUser.company_id')));
         $cmpid = $checkCmnpyUsr['CompanyUser']['company_id'];
@@ -7787,8 +7787,8 @@ function getSkills(){
 		$mail->Host = "us-nyc-e2db.hwi.harrywinston.com";
 		$mail->Port = 25;
 		$mail->SMTPAuth = false;
-		$mail->setFrom('orangescrum@harrywinston.com', 'OrangeScrum');
-		$mail->addReplyTo('orangescrum@harrywinston.com', 'OrangeScrum');
+		$mail->setFrom('orangescrum@harrywinston.com', 'OpenTask');
+		$mail->addReplyTo('orangescrum@harrywinston.com', 'OpenTask');
 		$mail->addAddress('prabhudas.behera@andolasoft.co.in', 'John Doe');
 		$mail->Subject = 'PHPMailer SMTP without auth test';
 		$mail->msgHTML('testing email');
@@ -8323,7 +8323,7 @@ function getSkills(){
 				$d= $this->request->data['email'];	
 			    $to = $email;
 			    $from = FROM_EMAIL;
-			    $subject = "Thank you for your interest in Orangescrum Olympus.";			
+			    $subject = "Thank you for your interest in OpenTask Olympus.";
 				$this->Email->delivery = 'smtp';
 				$this->Email->to = $to;
 				$this->Email->subject = $subject;

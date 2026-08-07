@@ -18,11 +18,11 @@
 								if($existing_user)
 								{
 								?>
-									<p><b><a href="mailto:<?php echo $fromEmail; ?>"><?php echo $fromName; ?></a></b> <?php echo __("added you to");?> <b><?php echo $company_name; ?></b> <?php echo __("on");?> Orangescrum.</p>
-                                    
-									<p><?php echo __("Now you are in multiple company in Orangescrum. After login to your Orangescrum account, you can choose to access any of these Company.");?></p>
-									
-                                    <p><?php echo __("You can also login to a specific company in Orangescrum using the Company URL. Please click the below button to access");?> <b><?php echo $company_name; ?></b></p>
+									<p><b><a href="mailto:<?php echo $fromEmail; ?>"><?php echo $fromName; ?></a></b> <?php echo __("added you to");?> <b><?php echo $company_name; ?></b> <?php echo __("on");?> OpenTask.</p>
+
+									<p><?php echo __("Now you are in multiple company in OpenTask. After login to your OpenTask account, you can choose to access any of these Company.");?></p>
+
+                                    <p><?php echo __("You can also login to a specific company in OpenTask using the Company URL. Please click the below button to access");?> <b><?php echo $company_name; ?></b></p>
                                     
 									<a style="font-weight:bold; text-decoration:none;" href="<?php echo HTTP_APP.'users/invitation/'.$qstr;?>" target='_blank'><div style="display:block; max-width:100% !important; width:auto !important;margin:auto; height:auto !important;background-color:#0EA426;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;border-radius:10px;color:#ffffff;font-size:16px;text-align:center"><?php echo __("Access");?> <?php echo $company_name; ?></div></a>
 									
@@ -30,7 +30,7 @@
 								}
 								else {
 								?>
-									<p><b><a href="mailto:<?php echo $fromEmail; ?>"><?php echo $fromName; ?></a></b> <?php echo __("has just setup an account for you on Orangescrum.");?></p>
+									<p><b><a href="mailto:<?php echo $fromEmail; ?>"><?php echo $fromName; ?></a></b> <?php echo __("has just setup an account for you on OpenTask.");?></p>
                                     
                                     <p><?php echo __("Your login details,");?>
                                     <br/>
@@ -38,9 +38,9 @@
                                     <?php echo __("Password:");?><b><?php echo $password; ?></b>
                                     </p>
                                     
-									<p><?php echo __("Please click the button below to start using Orangescrum.");?></p>
-									
-									<a style="font-weight:bold; text-decoration:none;" href="<?php echo HTTP_APP.'users/invitation/'.$qstr;?>" target='_blank'><div style="display:block; max-width:100% !important; width:auto !important;margin:auto; height:auto !important;background-color:#0EA426;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;border-radius:10px;color:#ffffff;font-size:16px;text-align:center"><?php echo __("Login to Orangescrum");?></div></a>
+									<p><?php echo __("Please click the button below to start using OpenTask.");?></p>
+
+									<a style="font-weight:bold; text-decoration:none;" href="<?php echo HTTP_APP.'users/invitation/'.$qstr;?>" target='_blank'><div style="display:block; max-width:100% !important; width:auto !important;margin:auto; height:auto !important;background-color:#0EA426;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;border-radius:10px;color:#ffffff;font-size:16px;text-align:center"><?php echo __("Login to OpenTask");?></div></a>
 								<?php
 								}
 								?>
@@ -52,7 +52,7 @@
 								<br/>
 								
 								<p><?php echo __("Regards,");?><br/>
-								<?php echo __("The Orangescrum Team");?></p>
+								<?php echo __("The OpenTask Team");?></p>
                             </td>
                         </tr>
                    </table>
@@ -66,14 +66,14 @@
 									if($existing_user)
 									{
 									?>
-										<?php echo __("You received this message because you are a Orangescrum customer. If you would prefer not to receive these emails in the future, you can ");?><a href='<?php echo $user_unsub_link; ?>'>unsubscribe</a> at any time.										
-										<?php /* You are receiving this email notification because you have an account on Orangescrum and<?php echo $fromName; ?> added you to his company. To unsubscribe, please email with subject 'Unsubscribe' to <a href='<?php echo HTTP_ROOT;?>unsubscribe/<?php echo $user_uid; ?>'>unsubscribe</a> */ ?>
+										<?php echo __("You received this message because you are a OpenTask customer. If you would prefer not to receive these emails in the future, you can ");?><a href='<?php echo $user_unsub_link; ?>'>unsubscribe</a> at any time.
+										<?php /* You are receiving this email notification because you have an account on OpenTask and<?php echo $fromName; ?> added you to his company. To unsubscribe, please email with subject 'Unsubscribe' to <a href='<?php echo HTTP_ROOT;?>unsubscribe/<?php echo $user_uid; ?>'>unsubscribe</a> */ ?>
 									<?php 
 									}
 									else {
 									?>
-									<?php echo __("You received this message because you are a Orangescrum customer. If you would prefer not to receive these emails in the future, you can");?> <a href='<?php echo $user_unsub_link; ?>'><?php echo __("unsubscribe");?></a> at any time.	
-										<?php /* Your email address is used to create an account on Orangescrum. To unsubscribe, please email with subject 'Unsubscribe' to <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a> */ ?>
+									<?php echo __("You received this message because you are a OpenTask customer. If you would prefer not to receive these emails in the future, you can");?> <a href='<?php echo $user_unsub_link; ?>'><?php echo __("unsubscribe");?></a> at any time.
+										<?php /* Your email address is used to create an account on OpenTask. To unsubscribe, please email with subject 'Unsubscribe' to <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a> */ ?>
 									<?php
 									}
 									?>
@@ -107,7 +107,7 @@
 		</p>
 		<p style="display:block;margin:0">
 			<?php echo __("Regards,");?><br/>
-			<?php echo __("The Orangescrum Team");?>
+			<?php echo __("The OpenTask Team");?>
 		</p>				
 	</div>
       </td>

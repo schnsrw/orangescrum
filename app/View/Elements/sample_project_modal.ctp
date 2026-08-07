@@ -23,7 +23,7 @@
 			<div class="modal-body">
 		<button type="button" class="close" data-dismiss="modal" onclick="closeSamplproj();">&times;</button>
 		<div class="modal-title"><?php echo __('Sample Project');?></div>
-		<p><?php echo __('See how your projects work in Orangescrum!');?></p>
+		<p><?php echo __('See how your projects work in OpenTask!');?></p>
 		<a href="javascript:void(0)" title="Thank You" data-dismiss="modal"  onclick="closeSamplproj();"><?php echo __('Thank You');?></a>
 			</div>
 		</div>		

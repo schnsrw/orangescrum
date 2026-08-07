@@ -254,8 +254,8 @@
                     <div class="element_body">
                         <table>
                             <tbody>
-                                <tr><td><a href="javascript:void(0);"  data-backdrop="false" data-toggle="modal" data-target="#helpvideo" onclick="setVideoContent();trackEventLeadTracker('Header Link', 'Help', 'jaikumar231@gmail.com');"><?php echo __('How OrangeScrum Works');?></a></td></tr>
-                                <tr><td><a href="<?php echo KNOWLEDGEBASE_URL;?>getting-started-orangescrum/" target="_blank"><?php echo __('How OrangeScrum Helpdesk');?></a></td></tr>
+                                <tr><td><a href="javascript:void(0);"  data-backdrop="false" data-toggle="modal" data-target="#helpvideo" onclick="setVideoContent();trackEventLeadTracker('Header Link', 'Help', 'jaikumar231@gmail.com');"><?php echo __('How OpenTask Works');?></a></td></tr>
+                                <tr><td><a href="<?php echo KNOWLEDGEBASE_URL;?>getting-started-orangescrum/" target="_blank"><?php echo __('How OpenTask Helpdesk');?></a></td></tr>
                                 <tr><td><a href="javascript:void(0);" data-toggle="modal" data-target="#feeback_modal" rel="tooltip_down" original-title="Feedback"><?php echo __('Share Your Feedback');?></a></td></tr>
                                 <tr><td><a href="https://www.capterra.com/reviews/136500/OrangeScrum/new" target="_blank"><?php echo __('Review Us On Capterra');?></a></td></tr>
                                 <tr><td><a href="<?php echo CUSTOMER_SUPPORT_URL;?>" target="_blank"><?php echo __('Contact Us');?></a></td></tr>

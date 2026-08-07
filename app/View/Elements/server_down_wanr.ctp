@@ -19,7 +19,7 @@
 		<button type="button" class="close close-icon close_upgrd" data-dismiss="modal" onclick="downWarnClose();"><i class="material-icons">&#xE14C;</i></button>
 		<figure>
 		</figure>
-		<h5><?php echo __('Orangescrum service will be unavailable from') .' '.$downTimeDate.' '.__('for maintenance');?>. </h5>
+		<h5><?php echo __('OpenTask service will be unavailable from') .' '.$downTimeDate.' '.__('for maintenance');?>. </h5>
 		<p><?php echo __("If you have any queries, please contact us at").' <a style="color:#2525c9;" href="mailto:support&#64;orangescrum&#46;com"> support&#64;orangescrum&#46;com</a>';?></p>
 	</div>
 </div>

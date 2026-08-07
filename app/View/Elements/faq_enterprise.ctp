@@ -9,14 +9,14 @@
 	<tbody>
 		<tr>
 			<td>
-				<h5><?php echo __('What is Orangescrum Self-Hosted');?>?</h5>
+				<h5><?php echo __('What is OpenTask Self-Hosted');?>?</h5>
 				<p>
-					<?php echo __('Orangescrum Self-Hosted (on Premises) is the self- hosted version of Orangescrum cloud');?>. 
+					<?php echo __('OpenTask Self-Hosted (on Premises) is the self- hosted version of OpenTask cloud');?>.
 				</p>
 			</td>
 			<td class="space_td"></td>
 			<td>
-				<h5><?php echo __('Is there a self-hosted version of Orangescrum with all of the latest features');?>?</h5>
+				<h5><?php echo __('Is there a self-hosted version of OpenTask with all of the latest features');?>?</h5>
 				<p>
 					<?php echo __('You will get all the features in Self-Hosted version as that in the Cloud.However the Resource Availability, Mobile API and Chat features will need to be purchased separately');?>.
 				</p>
@@ -24,15 +24,15 @@
 		</tr>
 		<tr>
 			<td>
-				<h5><?php echo __('Does Orangescrum Self-Hosted support plugins');?>?</h5>
+				<h5><?php echo __('Does OpenTask Self-Hosted support plugins');?>?</h5>
 				<p>
-					<?php echo __('No, just like the existing');?> <a href="<?php echo HTTP_ROOT;?>" title="<?php echo __('Orangescrum cloud version');?>"><?php echo __('cloud version');?></a> <?php echo __("of Orangescrum, it doesn’t have plugins.However, we can customize as per your requirement with additional cost");?>. <?php echo __('So you can build Orangescrum according to your business need');?>.
+					<?php echo __('No, just like the existing');?> <a href="<?php echo HTTP_ROOT;?>" title="<?php echo __('OpenTask cloud version');?>"><?php echo __('cloud version');?></a> <?php echo __("of OpenTask, it doesn’t have plugins.However, we can customize as per your requirement with additional cost");?>. <?php echo __('So you can build OpenTask according to your business need');?>.
 					
 				</p>
 			</td>
 			<td class="space_td"></td>
 			<td>
-				<h5><?php echo __('What are the recommended specs for Orangescrum Self-Hosted');?>?</h5>
+				<h5><?php echo __('What are the recommended specs for OpenTask Self-Hosted');?>?</h5>
 				<p>
 					<?php echo __('It can be used on');?> <a href="https://www.orangescrum.org/installation-guide" target="_blank" title="<?php echo __('Linux');?>"><?php echo __('Linux');?></a> <?php echo __('operating system(Ex: Ubuntu Server 16.04 LTS x64, CentOS_7.2_x64) and Windows, Mac with minimum 4 GB RAM, 20 GB Disk space, 2.8 GHz or faster processor.');?>.
 				</p>
@@ -46,17 +46,17 @@
 		</tr>
 		<tr>
 			<td>
-				<h5><?php echo __('Is Orangescrum Self-Hosted a separate product from Orangescrum Cloud');?>?</h5>
+				<h5><?php echo __('Is OpenTask Self-Hosted a separate product from OpenTask Cloud');?>?</h5>
 				<p>
-					<?php echo __('No, Orangescrum Self-Hosted is the self-hosted version of Orangescrum cloud. You will get all the features in Self-Hosted version as that in Cloud.However the Resource Availability, Mobile API and Chat will need to be purchased separately. This version is especially for those who want to keep the project management data in-house and away from public view');?>.
+					<?php echo __('No, OpenTask Self-Hosted is the self-hosted version of OpenTask cloud. You will get all the features in Self-Hosted version as that in Cloud.However the Resource Availability, Mobile API and Chat will need to be purchased separately. This version is especially for those who want to keep the project management data in-house and away from public view');?>.
 				</p>
 				<p>
-					<?php echo __('Now, you can host');?> <a href="<?php echo HTTP_ROOT;?>" title="<?php echo __('Orangescrum cloud');?>"><?php echo __('Orangescrum cloud');?> </a><?php echo __('version on your own server');?>.  
+					<?php echo __('Now, you can host');?> <a href="<?php echo HTTP_ROOT;?>" title="<?php echo __('OpenTask cloud');?>"><?php echo __('OpenTask cloud');?> </a><?php echo __('version on your own server');?>.
 				</p>
 			</td>
 			<td class="space_td"></td>
 			<td>
-				<h5><?php echo __('Will Orangescrum Self-Hosted get automatic updates like cloud');?>?</h5>
+				<h5><?php echo __('Will OpenTask Self-Hosted get automatic updates like cloud');?>?</h5>
 				 <p>
 					<?php echo __('No, given that Self-Hosted will run on your own servers, updates are not automatically applied. However, we can update it around every 6 months with your permission');?>. <a href="https://www.orangescrum.org/our-support-plan" target="_blank"><?php echo __('Our Support Team');?></a> <?php echo __('will carry this out');?>.
 				</p>
@@ -71,15 +71,15 @@
 			</td>
 			<td class="space_td"></td>
 			<td>
-				<h5><?php echo __('Can I evaluate Orangescrum Self-Hosted before purchasing');?>?</h5>
+				<h5><?php echo __('Can I evaluate OpenTask Self-Hosted before purchasing');?>?</h5>
 				<p><?php echo __('Yes, you can begin a');?> <a href="<?php echo HTTP_ROOT ;?><?php echo SIGNUP_CTA_LINK; ?>" style="text-decoration:none" title="<?php echo __('trial of our cloud version');?>"><strong><?php echo __('Trial of our cloud version');?> </strong></a><?php echo __('to understand the functionality provided by Self-Hosted');?>. <?php echo __('If you have other requirements, then');?> <a href="javascript:void(0)" style="text-decoration:none" onclick="order_now(4)" title="<?php echo __('Get in Touch');?>"><strong><?php echo __('Get in Touch');?></strong></a> <?php echo __('with us and we can help you');?>.</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<h5><?php echo __('How is Orangescrum Self-Hosted licensed');?>?</h5>
+				<h5><?php echo __('How is OpenTask Self-Hosted licensed');?>?</h5>
 				<p>
-					<?php echo __('Orangescrum Self-Hosted is licensed under a subscription model. Licenses are');?> <a href="<?php echo HTTP_ROOT;?>pricing/#self-hosted" title="self-hosted"><?php echo __('purchased');?></a> <?php echo __('for a one-year period, which includes full support and access to all updates via regular upgrades');?>.
+					<?php echo __('OpenTask Self-Hosted is licensed under a subscription model. Licenses are');?> <a href="<?php echo HTTP_ROOT;?>pricing/#self-hosted" title="self-hosted"><?php echo __('purchased');?></a> <?php echo __('for a one-year period, which includes full support and access to all updates via regular upgrades');?>.
 				</p>
 			</td>
 			<td class="space_td"></td>
@@ -94,7 +94,7 @@
 			<td>
 				<h5><?php echo __('Does the license include access to the source code');?>?</h5>
 				<p>
-					<?php echo __('Of course, we can install Orangescrum in your environment for an Installation Fee of $99. Contact us for');?> <a href="<?php echo HTTP_ROOT;?>users/community_installation_support" title="<?php echo __('on-premise installation');?>"><?php echo __('on-premise installation');?></a>.  
+					<?php echo __('Of course, we can install OpenTask in your environment for an Installation Fee of $99. Contact us for');?> <a href="<?php echo HTTP_ROOT;?>users/community_installation_support" title="<?php echo __('on-premise installation');?>"><?php echo __('on-premise installation');?></a>.  
 				</p>
 			</td>
 			<td class="space_td"></td>

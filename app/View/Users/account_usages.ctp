@@ -31,7 +31,7 @@
     <?php
 	$all_paid_plan = Configure::read('ALL_PAID_PLANS_REVISED');
 	if(array_key_exists($user_sub[0]['UserSubscription']['subscription_id'],$all_paid_plan)) { ?>
-    <div style="font-size:11px;"><?php echo __('You will be charged after your').' '.TRIAL_DAY_TXT.' -'.__('day use of Orangescrum. The charge on your credit card statement will be from "ANDOLASOFT INC"');?></div>
+    <div style="font-size:11px;"><?php echo __('You will be charged after your').' '.TRIAL_DAY_TXT.' -'.__('day use of OpenTask. The charge on your credit card statement will be from "ANDOLASOFT INC"');?></div>
     <?php } ?>
 	<div class="drwline"></div>
 	<div class="subscription_info">

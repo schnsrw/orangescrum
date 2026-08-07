@@ -17,7 +17,7 @@
                                             <p><?php echo __("Please find the attached invoice");?> <b><?php echo $invo_file_name ?></b></p>
 					    <p>
 						<?php echo __("Cheers!");?><br/> 
-						<?php echo __("The Orangescrum Team");?>
+						<?php echo __("The OpenTask Team");?>
 					    </p>
 					</td>
 				    </tr>

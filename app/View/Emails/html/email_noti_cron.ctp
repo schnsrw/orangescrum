@@ -78,7 +78,7 @@
 	</tr>
 	<tr>
 		<td align='left' style='font:10px Arial;padding-top:2px;color:#737373'>
-		 <?php echo __("You are receiving this email notification because you have subscribed to Orangescrum Task Status E-mail notification, to unsubscribe, please click");?> <a href='<?php echo $comp_url;?>/users/email_reports' target='_blank'><?php echo __("Unsubscribe Email Notification");?></a>
+		 <?php echo __("You are receiving this email notification because you have subscribed to OpenTask Task Status E-mail notification, to unsubscribe, please click");?> <a href='<?php echo $comp_url;?>/users/email_reports' target='_blank'><?php echo __("Unsubscribe Email Notification");?></a>
 		</td>	  
 	</tr>
 </table>

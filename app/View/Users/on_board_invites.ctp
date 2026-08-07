@@ -1,6 +1,6 @@
 <div class="onboard_page_wrap">
      <div class="logo">
-        <a href=""  title="Orangescrum Project Mamangemet Tool">
+        <a href=""  title="OpenTask Project Mamangemet Tool">
             <img src="<?php echo HTTP_ROOT ?>img/header/orangescrum-logo.png" alt="#1 Productivity Tool" title="#1 Productivity Tool" width="200" height="58">
         </a>
     </div>

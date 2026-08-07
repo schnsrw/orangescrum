@@ -35,7 +35,7 @@ body{margin:0;padding:0}
 <section class="error_page">
 	<div class="error_type_item">
 		<aside class="lft">
-			<a href="<?php echo HTTP_ROOT; ?>"><img src="https://www.orangescrum.com/img/header/orangescrum-cloud-logo.svg" alt="Orangescrum.com" title="Orangescrum.com" width="200" height="50"></a>
+			<a href="<?php echo HTTP_ROOT; ?>"><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" alt="OpenTask" title="OpenTask" width="200" height="50"></a>
 			<h1>Oh hi.</h1>
 			<p>How did you get here ?</p>
 			<div class="info">You might find one of these pages helpful.</div>
@@ -43,15 +43,15 @@ body{margin:0;padding:0}
 			<a href="<?php echo BLLOG_OS_URL;?>ebook" title="eBooks">eBooks</a>
 			<a href="https://www.orangescrum.com/contact-support/" title="Contact Us">Contact Us</a></p>
 			<ul>
-				<li><a href="https://www.facebook.com/OrangeScrum" target="_blank" alt="Orangescrum on facebook" title="Orangescrum on facebook" class="cmn_hf_sp facebook"></a></li>
-				<li><a href="https://www.linkedin.com/company/the-orangescrum" target="_blank" alt="Orangescrum on linkedin" title="Orangescrum on linkedin" class="cmn_hf_sp linkdin hover_scale"></a></li>
-				<li><a href="https://twitter.com/theorangescrum" target="_blank" alt="Orangescrum on twitter" title="Orangescrum on twitter" class="cmn_hf_sp twitter hover_scale"></a></li>
+				<li><a href="https://www.facebook.com/OrangeScrum" target="_blank" alt="OpenTask on facebook" title="OpenTask on facebook" class="cmn_hf_sp facebook"></a></li>
+				<li><a href="https://www.linkedin.com/company/the-orangescrum" target="_blank" alt="OpenTask on linkedin" title="OpenTask on linkedin" class="cmn_hf_sp linkdin hover_scale"></a></li>
+				<li><a href="https://twitter.com/theorangescrum" target="_blank" alt="OpenTask on twitter" title="OpenTask on twitter" class="cmn_hf_sp twitter hover_scale"></a></li>
 			</ul>
 			<div class="os_apps">
-				<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1390552311&amp;mt=8" target="_blank" title="Orangescrum in App store">
+				<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1390552311&amp;mt=8" target="_blank" title="OpenTask in App store">
 					<span class="cmn_hf_sp app_store"></span>
 				</a>
-				<a href="https://play.google.com/store/apps/details?id=com.andolasoft.orangescrum&amp;hl=en" target="_blank" title="Orangescrum in play store">
+				<a href="https://play.google.com/store/apps/details?id=com.andolasoft.orangescrum&amp;hl=en" target="_blank" title="OpenTask in play store">
 					<span class="cmn_hf_sp play_store"></span>
 				</a>
 			</div>

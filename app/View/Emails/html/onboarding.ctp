@@ -15,15 +15,15 @@
                                 </p>
 								
 								<p>I hope you are doing well.
-                                <br/>I'm Prakash, Product Manager of Orangescrum.</p>
+                                <br/>I'm Prakash, Product Manager of OpenTask.</p>
                                 
-                                <p>We've got some valuable feedback from the people like you and simplified our  <b>Onboarding</b> process.<br/>We have been working hard to make your experience as smooth as possible. <br/>Now you can Create Projects, Invite your Team and Start using Orangescrum within a minute.</p>
+                                <p>We've got some valuable feedback from the people like you and simplified our  <b>Onboarding</b> process.<br/>We have been working hard to make your experience as smooth as possible. <br/>Now you can Create Projects, Invite your Team and Start using OpenTask within a minute.</p>
                                 
-                                <p>We have introduced LIVE support in Orangescrum, you can chat with us in a single click. 24*7 - 5 days a week</p>
-                                <p><a href="https://<?php echo $seo_url;?>.orangescrum.com/users/login" target='_blank'><b>Login</b></a> to your Orangescrum account and start using it right away. <br/><a href="https://<?php echo $seo_url;?>.orangescrum.com/users/forgotpassword/?email=<?php echo urlencode($email);?>" target='_blank'><b>Forgot your password?</b> No problem, you can set your new password right away.</p>
+                                <p>We have introduced LIVE support in OpenTask, you can chat with us in a single click. 24*7 - 5 days a week</p>
+                                <p><a href="https://<?php echo $seo_url;?>.orangescrum.com/users/login" target='_blank'><b>Login</b></a> to your OpenTask account and start using it right away. <br/><a href="https://<?php echo $seo_url;?>.orangescrum.com/users/forgotpassword/?email=<?php echo urlencode($email);?>" target='_blank'><b>Forgot your password?</b> No problem, you can set your new password right away.</p>
                                 
                                 <br/>
-                                <p>Allow me to suggest you how to get best out of Orangescrum. Just reply to this and I will take care of the rest :) </p>
+                                <p>Allow me to suggest you how to get best out of OpenTask. Just reply to this and I will take care of the rest :) </p>
                                 
                             </td>
                         </tr>
@@ -35,7 +35,7 @@
                             	<p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; margin-top:0; padding:0; font-weight:normal;padding-top:5px;">
 									<?php echo NEW_EMAIL_FOOTER; ?>
 									
-									You are receiving this email notification because you have subscribed to Orangescrum, to unsubscribe, please email with subject 'Unsubscribe' to <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
+									You are receiving this email notification because you have subscribed to OpenTask, to unsubscribe, please email with subject 'Unsubscribe' to <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
 									
                                 </p>
                             </td>

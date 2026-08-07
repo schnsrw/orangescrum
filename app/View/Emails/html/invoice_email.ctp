@@ -51,7 +51,7 @@
     <table border="0" cellspacing="0" cellpadding="10" width="100%" style="margin-top:0px;border-top:3px solid #3DBB89;color:#ccc;">
         <tr>
             <td width="100%" bgcolor="#ffffff" style="text-align:left;">
-                <em>Powered By: </em><b>Orangescrum</b>
+                <em>Powered By: </em><b>OpenTask</b> &mdash; <em>Powered by Orangescrum</em>
             </td>
 	</tr>
         <tr>

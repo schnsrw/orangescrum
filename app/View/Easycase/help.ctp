@@ -44,7 +44,7 @@ function open_invoice(){
 	<?php echo $this->element('help_tabbs');?>
 	
 	<div class="wrapper_help">
-	<div class="help-type-hd" style="font-size:17px;text-align:center;color:#666666;"><?php echo __('Welcome to the Orangescrum knowledge base');?>.</div>
+	<div class="help-type-hd" style="font-size:17px;text-align:center;color:#666666;"><?php echo __('Welcome to the OpenTask knowledge base');?>.</div>
 	<div style="font-size:17px;text-align:center;color:#666666;"><?php echo __('What can we help you with today');?>?</div>
 	
 	<div class="search_help">
@@ -238,7 +238,7 @@ body {
 
 <?php echo $this->element('help_tabbs');?>
 	<!--<div style="font-size:17px;padding-left:12px;text-align:center;">Here are some answers to the most common questions we've been asked.</div>-->
-	<div class="help-type-hd" style="font-size:17px;padding-left:12px;text-align:center;color:#666666;"><?php echo __('Welcome to the Orangescrum knowledge base');?>.</div>
+	<div class="help-type-hd" style="font-size:17px;padding-left:12px;text-align:center;color:#666666;"><?php echo __('Welcome to the OpenTask knowledge base');?>.</div>
 	<div style="font-size:17px;padding-left:12px;text-align:center;color:#666666;"><?php echo __('What can we help you with today');?>?</div>
 	
 	<?php /*if(defined('SES_ID') && SES_ID){ ?><div style="font-size:17px;padding-left:12px;text-align:center;">If you still have questions? <a href="javascript:void(0);" class="support-popup" style="outline:none;text-decoration:underline;color:#00F">Ask Us</a></div><?php } else {

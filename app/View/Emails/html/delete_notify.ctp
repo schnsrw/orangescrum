@@ -14,15 +14,15 @@
                                  <?php echo __("Hi");?> <?php echo $data['User']['name']." ".$data['User']['last_name'];?>,
                                 </p>
 								
-								<p><?php echo __("You deleted your account a while ago. We thank you for giving us a try and appreciate your interest in Orangescrum.com, hope you'll continue to visit often");?></p>
-								
-								<p><?php echo __("If you have a minute, we'd appreciate your thoughts on how we can do better. Your feedback will help us to improve Orangescrum :)");?></p>
+								<p><?php echo __("You deleted your account a while ago. We thank you for giving us a try and appreciate your interest in OpenTask, hope you'll continue to visit often");?></p>
+
+								<p><?php echo __("If you have a minute, we'd appreciate your thoughts on how we can do better. Your feedback will help us to improve OpenTask :)");?></p>
 								
 								<p><?php echo __("We look forward to hearing from you. Please write us at <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a> or just reply to this email.");?></p>
 								<br/>
 								
 								<p><?php echo __("Regards,");?><br/>
-								<?php echo __("The Orangescrum Team");?></p>
+								<?php echo __("The OpenTask Team");?></p>
                             </td>
                         </tr>
                    </table>
@@ -51,11 +51,11 @@
    <tr><td align='left' style='font-family:Arial;font-size:14px;'>&nbsp;</td></tr>
    <tr><td align='left' style='font-family:Arial;font-size:14px;'><?php echo __("Hi");?> <?php echo $data['User']['name']." ".$data['User']['last_name'];?>,</td></tr>
    <tr><td align='left' style='font-family:Arial;font-size:14px;'>&nbsp;</td></tr>
-   <tr><td align='left' style='font-family:Arial;font-size:14px;'><?php echo __("You have deleted your account with Orangescrum.");?></td></tr>
+   <tr><td align='left' style='font-family:Arial;font-size:14px;'><?php echo __("You have deleted your account with OpenTask.");?></td></tr>
    <tr><td align='left' style='font-family:Arial;font-size:14px;'>&nbsp;</td></tr>
    <tr><td align='left' style='font-family:Arial;font-size:14px;'><?php echo __("We will be happy to hear more about the reason of deletion of account.");?></td></tr>
    <tr><td align='left' style='font-family:Arial;font-size:14px;'><?php echo __("You can send your feedback on ");?>support&#64;orangescrum&#46;com</td></tr>
    <tr height='15px'><td align='left' style='font-family:Arial;font-size:14px;'>&nbsp;</td></tr>
-   <tr><td align='left' style='font-family:Arial;font-size:14px;'><?php echo __("Thank you for using Orangescrum.");?></td></tr>
+   <tr><td align='left' style='font-family:Arial;font-size:14px;'><?php echo __("Thank you for using OpenTask.");?></td></tr>
    <?php echo EMAIL_FOOTER;?>
 </table><?php */?>

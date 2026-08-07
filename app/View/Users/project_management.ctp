@@ -59,9 +59,6 @@ $(document).ready(function() {
 				</div>
 			</div>
 			<div class="col-md-6 baner-image">
-				<figure class="text-right">
-					<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/pm-bnr-topimg.png" alt="Timelog" title="Timelog" width="" height="">
-				</figure>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -75,7 +72,7 @@ $(document).ready(function() {
 					<p>Great solutions need Greater Collaboration!</p>
 				</div>
 				<div class="d_tble_cell">
-					<a href="javascript:void(0)" onclick="regularsignup();" title="Try Orangescrum Project Management" class="join_btn">Try&nbsp;&nbsp;it&nbsp;&nbsp;Now<span class="glyphicon glyphicon-send"></span></a>
+					<a href="javascript:void(0)" onclick="regularsignup();" title="Try OpenTask Project Management" class="join_btn">Try&nbsp;&nbsp;it&nbsp;&nbsp;Now<span class="glyphicon glyphicon-send"></span></a>
 				</div>
 			</div>
 			</div>
@@ -83,12 +80,9 @@ $(document).ready(function() {
 	</section>
 	<section class="collaborate_role">
 		<div class="cmn_wrapper">
-			<h2>Numerous Projects? Dispersed Teams? Broken Communications? Ever-demanding Clients?<br> No Problem! Orangescrum solves it ALL!</h2>
-			<!--<h2>OrangeScrum helps to collaborate people with different roles and responsibilities <br>amid varied objectives towards one single goal</h2>-->
+			<h2>Numerous Projects? Dispersed Teams? Broken Communications? Ever-demanding Clients?<br> No Problem! OpenTask solves it ALL!</h2>
+			<!--<h2>OpenTask helps to collaborate people with different roles and responsibilities <br>amid varied objectives towards one single goal</h2>-->
 			<div class="cmn_padt_40">
-			<figure class="wow bounceInUp" data-wow-delay="0.2s">
-				<img src="<?php echo HTTP_ROOT?>img/home/p-collaborate.png" alt="Orangescrum Project Management Tool" title="Orangescrum Project Management Tool" width="" height="">
-			</figure>
 			</div>
 		</div>
 	</section>
@@ -101,16 +95,13 @@ $(document).ready(function() {
 				<div class="cmn_padt_40">
 				<div class="steps_table dtbl">
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-left wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home/Project-management-planning.png" alt="Project Planning" title="Project Planning" width="" height="">
-						</figure>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_40">
 						<h3>Project Planning</h3>
 						<p>
-							Failing to Plan is Planning to Fail! Orangescrum helps you lay out your projects into the minutest of tasks making you Invincible. Never again do you have to worry about missing key client requirements & instructions. Intuitive <span>Kanban boards</span> with <span>Task Groups</span> is made for quick project plan with well-defined task groupings and task statuses. Keep your Teams and Client in-sync. Transparency Simplified!
+							Failing to Plan is Planning to Fail! OpenTask helps you lay out your projects into the minutest of tasks making you Invincible. Never again do you have to worry about missing key client requirements & instructions. Intuitive <span>Kanban boards</span> with <span>Task Groups</span> is made for quick project plan with well-defined task groupings and task statuses. Keep your Teams and Client in-sync. Transparency Simplified!
 						</p>
-						<a href="<?php echo HTTP_ROOT;?>signup/free" title="Try OrangeScrum" class="bdy_try_os_btn">Try OrangeScrum</a>
+						<a href="<?php echo HTTP_ROOT;?>signup/free" title="Try OpenTask" class="bdy_try_os_btn">Try OpenTask</a>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -120,21 +111,18 @@ $(document).ready(function() {
 		
 		<section class="description">
 			<div class="cmn_wrapper">
-				<!--<h2>OrangeScrum: Project Management Made Easy</h2>-->
+				<!--<h2>OpenTask: Project Management Made Easy</h2>-->
 				<div class="steps_table dtbl">
 					<div class="col-md-6 dtbl_cell cell_40">
 						<h3>Sprint Planning Made Easy</h3>
 						<p>
-							Run all your agile projects with Orangescrum's Scrum methodology! Create & plan sprints, assign tasks to the right team member to improve team performance & reduce your backlog steadily.
+							Run all your agile projects with OpenTask's Scrum methodology! Create & plan sprints, assign tasks to the right team member to improve team performance & reduce your backlog steadily.
 						</p>
 						<p>
 						Scrum board & Scrum reports make it easy for Scrum Masters to prioritize & track sprint progress for quicker execution of projects. 
 						</p>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/sprint-planning-in-orangescrum.png" alt="Sprint Planning Made Easy" title="Sprint Planning Made Easy" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -143,7 +131,7 @@ $(document).ready(function() {
 		
 		<section class="description">
 			<div class="cmn_wrapper">
-				<!--<h2>OrangeScrum: Project Management Made Easy</h2>-->
+				<!--<h2>OpenTask: Project Management Made Easy</h2>-->
 				<div class="steps_table dtbl">
 					<div class="col-md-6 dtbl_cell cell_40">
 						<h3>Task Management</h3>
@@ -152,9 +140,6 @@ $(document).ready(function() {
 						</p>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home/Task-Management.png" alt="Task Management" title="Task Management" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -164,9 +149,6 @@ $(document).ready(function() {
 			<div class="cmn_wrapper">
 				<div class="steps_table dtbl">
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home/Project-management-ganttchart.png" alt="Gantt Charts" title="Gantt Charts" width="" height="">
-						</figure>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_40">
 						<h3>Gantt Charts</h3>
@@ -184,16 +166,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/Fabio.jpg"  alt="Fabio" title="Fabio" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Fabio Guimarães</h6>
 								  <small class="address">CEO - FGX, Brazil</small>
 								  <p class="quote">
-									Orangescrum controls our projects in a way we did not find in any other platform. As an open source project management software, the feature list is quite surprising...
+									OpenTask controls our projects in a way we did not find in any other platform. As an open source project management software, the feature list is quite surprising...
 								   </p>
 							   </div>
 							</li>
@@ -202,16 +179,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/Jamei.png" alt="Jamie Smith" title="Jamie Smith" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Jamie Smith</h6>
 								  <small class="address">Director of Marketing Automation, SFCG, Texas, USA</small>
 								  <p class="quote">
-									Orangescrum simplifies the process of project management for our organization with its power collaboration tools. We couldn't be happier with Orangescrum! 
+									OpenTask simplifies the process of project management for our organization with its power collaboration tools. We couldn't be happier with OpenTask! 
 								   </p>
 							   </div>
 							</li>
@@ -220,16 +192,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/anil-kumar.png"  alt="Anil Kumar" title="Anil Kumar" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Anil Kumar</h6>
 								  <small class="address">CEO, Saral Technologies</small>
 								  <p class="quote">
-									OrangeScrum made our project management tasks and timesheets so much easier and support provided by team is awesome. 
+									OpenTask made our project management tasks and timesheets so much easier and support provided by team is awesome. 
 								   </p>
 							   </div>
 							</li>
@@ -238,16 +205,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/pedro.png"  alt="Pedro Artur Oliveira" title="Pedro Artur Oliveira" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Pedro Artur Oliveira</h6>
 								  <small class="address">Gestor de clientes (Manager) | CAIXA, Lda.</small>
 								  <p class="quote">
-									Maintaining a logical understanding of the project before the Orangescrum was a task that was time consuming. With Orangescrum this is not a concern. 
+									Maintaining a logical understanding of the project before the OpenTask was a task that was time consuming. With OpenTask this is not a concern. 
 								   </p>
 							   </div>
 							</li>
@@ -256,16 +218,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/brent.png"  alt="Brent Kerr" title="Brent Kerr" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Brent Kerr</h6>
 								  <small class="address">CEO, Kewico GmbH</small>
 								  <p class="quote">
-									I work with Freelancers to get the CAD jobs done. Orangescrum provided me with a way for them to track and bill their time... 
+									I work with Freelancers to get the CAD jobs done. OpenTask provided me with a way for them to track and bill their time... 
 								   </p>
 							   </div>
 							</li>
@@ -274,16 +231,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/bala.png"  alt="Bala" title="Bala" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Bala</h6>
 								  <small class="address">Consultant | IPneeti</small>
 								  <p class="quote">
-									Orangescrum replaced our complex excel time log to a simple web log, and further,the invoice generation facility reduces most of the work of managers! 
+									OpenTask replaced our complex excel time log to a simple web log, and further,the invoice generation facility reduces most of the work of managers! 
 								   </p>
 							   </div>
 							</li>
@@ -292,16 +244,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/Sadanand.png"  alt="Sadanand Suresh Walte" title="Sadanand Suresh Walte" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Sadanand Suresh Walte</h6>
 								  <small class="address">Delivery Head,Technex Technologies Pvt Ltd, Pune, India.</small>
 								  <p class="quote">
-									OrangeScrum helped us to be highly effective with - People & tasks planning, Tracking and Communication and updates... 
+									OpenTask helped us to be highly effective with - People & tasks planning, Tracking and Communication and updates... 
 								   </p>
 							   </div>
 							</li>
@@ -310,11 +257,6 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/Kuda-Msipa.png"  alt="Kuda Msipa" title="Kuda Msipa" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Kuda Msipa</h6>
 								  <small class="address">Cutmec</small>
@@ -328,16 +270,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/Khululekani.png"  alt="Khululekani" title="Khululekani" width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Khululekani</h6>
 								  <small class="address">Director | Thebe Media Solutions | South Africa</small>
 								  <p class="quote">
-									Orangescrum provided us with the perfect solution to collaborate on line, keeping track of task statuses, responsibilities...
+									OpenTask provided us with the perfect solution to collaborate on line, keeping track of task statuses, responsibilities...
 								   </p>
 							   </div>
 							</li>
@@ -346,16 +283,11 @@ $(document).ready(function() {
 					<div class="slide">
 						<ul>
 							<li>
-							  <div class="pfl-img_blk">
-								<figure class="pfl-img">
-									<img src="<?php echo HTTP_ROOT; ?>img/app-service/robert-koszorus.jpg"  alt="Robert Koszorus E.V." title="Robert Koszorus E.V." width="" height="">
-								</figure>
-							  </div>
 							  <div class="quote_txt_blk">
 								  <h6>Robert Koszorus E.V.</h6>
 								  <small class="address">Development Agency, Hungary</small>
 								  <p class="quote">
-									Orangescrum is one of the most usable, flexible and interactive of the project management systems I know. Me and my team can easily manage our projects...
+									OpenTask is one of the most usable, flexible and interactive of the project management systems I know. Me and my team can easily manage our projects...
 								   </p>
 							   </div>
 							</li>
@@ -368,15 +300,12 @@ $(document).ready(function() {
 			<div class="cmn_wrapper">
 				<div class="steps_table dtbl">
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-left wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home/Project-management-collaboration.png" alt="Collaborate" title="Collaborate" width="" height="">
-						</figure>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_40">
 						<h3>Project Collaboration</h3>
 						<p>
 							Lenthy Emails -NO! Lost files - NO! Missing Task Updates - No!
-							Orangescrum <span>Daily Catch-up</span>, <span>Task notifications</span>, <span>In-App Chat</span> all ensure that you never miss a beat on your projects. From <span>task updates</span>, <span>re-assignments</span>, status changes to comments and replies by clients and teams are all tracked and updated in real-time. You are always in the thick of things whether you are at office or home. The iOS and Android apps simplify these benefits further. Collaboration and Success was never so easy!
+							OpenTask <span>Daily Catch-up</span>, <span>Task notifications</span>, <span>In-App Chat</span> all ensure that you never miss a beat on your projects. From <span>task updates</span>, <span>re-assignments</span>, status changes to comments and replies by clients and teams are all tracked and updated in real-time. You are always in the thick of things whether you are at office or home. The iOS and Android apps simplify these benefits further. Collaboration and Success was never so easy!
 						</p>
 					</div>
 					<div class="clearfix"></div>
@@ -388,25 +317,15 @@ $(document).ready(function() {
 				<div class="steps_table dtbl">
 					<div class="col-md-6 dtbl_cell cell_40">
 						<h3>Reports & Analytics</h3>
-						<p>Orangescrum provides a host of insightful yet simple analytics to stay ahead of time. <span>Resource Utilization</span>, <span>Weekly Status metrics</span>, <span>live activity feeds</span>, <span>billable vs non-billable</span> project hours all come in handy while reviewing your project  team's performance. They also help provide true execution status and help in making timely decisive operational changes. Get all you need to stay ahead of your competition!</p>
+						<p>OpenTask provides a host of insightful yet simple analytics to stay ahead of time. <span>Resource Utilization</span>, <span>Weekly Status metrics</span>, <span>live activity feeds</span>, <span>billable vs non-billable</span> project hours all come in handy while reviewing your project  team's performance. They also help provide true execution status and help in making timely decisive operational changes. Get all you need to stay ahead of your competition!</p>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/graphic1.png" alt="Reports & Analytics" title="Reports & Analytics" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 			</div>
 		</section>
 	</div>
-<!--<div class="social_med_foot">
-	<div>
-    	<a target="_blank" title="Twitter" href="https://twitter.com/theorangescrum"><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/tw_soc_hm.png?v=<?php echo RELEASE; ?>" alt="" /></a>
-        <a target="_blank" class="fbook" title="Facebook" href="https://www.facebook.com/pages/Orangescrum/170831796411793"><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/face_soc_hm.png?v=<?php echo RELEASE; ?>" alt="" /></a>
-		<a target="_blank" class="google" title="Google" href="https://plus.google.com/103991755151199877447" rel="publisher"><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/go_soc_hm.png?v=<?php echo RELEASE; ?>" alt="" /></a>
-    </div>
-</div>-->
 <section class="cmn-outer-page" style="display:none">
 	<div class="explore-con">
 		<div class="btn-n btn-sign"> <a href="<?php echo HTTPS_HOME; ?>signup/free<?php echo $ablink; ?>" title="<?php echo SIGNUP_CTA_B; ?>"><?php echo SIGNUP_CTA_B; ?></a></div>

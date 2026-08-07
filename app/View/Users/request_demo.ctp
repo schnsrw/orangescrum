@@ -307,7 +307,7 @@ function loader() {
                         <?php echo $this->Form->create('DemoRequest',array('url'=>'/users/request_demo')); ?>
 						<?php echo $this->Form->hidden('timezone_id'); ?>
                         <h3 class="reg" style="font-size:33px;color:#333">Schedule a Demo</h3>
-                        <div style="font-size:22px;color:#333;font-family:'MyriadPro-Regular'; text-align:left">Contact Us Now to See What OrangeScrum Can Do For You!</div>
+                        <div style="font-size:22px;color:#333;font-family:'MyriadPro-Regular'; text-align:left">Contact Us Now to See What OpenTask Can Do For You!</div>
                         
                         <div class="gap10"></div>
                         <div class="gap10"></div>

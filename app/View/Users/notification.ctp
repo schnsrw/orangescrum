@@ -33,7 +33,7 @@ if(isset($allCases) && count($allCases))
 				<table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-size:13px;cursor:pointer;font-family:'PT Sans', Arial, sans-serif">
 					<tr>
 						<td valign="top">
-							<a href="<?php echo HTTP_ROOT; ?>dashboard/?project=<?php echo $pjArr['Project']['uniq_id']; ?>&case=<?php echo $easycase['Easycase']['uniq_id']; ?>" target="_blank" style="text-decoration:none;color:#000000;"><img src="<?php echo HTTP_IMAGES;?>images/logo_notification.png" alt="Orangescrum" title="Orangescrum" border="0"/></a>
+							<a href="<?php echo HTTP_ROOT; ?>dashboard/?project=<?php echo $pjArr['Project']['uniq_id']; ?>&case=<?php echo $easycase['Easycase']['uniq_id']; ?>" target="_blank" style="text-decoration:none;color:#000000;"><img src="<?php echo HTTP_IMAGES;?>images/logo_notification.png" alt="OpenTask" title="OpenTask" border="0"/></a>
 						</td>
 						<td valign="top">
 							<a href="<?php echo HTTP_ROOT; ?>dashboard/?project=<?php echo $pjArr['Project']['uniq_id']; ?>&case=<?php echo $easycase['Easycase']['uniq_id']; ?>" target="_blank" style="text-decoration:none;color:#000000">

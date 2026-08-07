@@ -17,8 +17,8 @@
           <table border="0" cellpadding="0" cellspacing="0" border="0" style="background:#fff;width:100%;margin:0;padding:0;">
 			<tr>
 				<td style="padding:10px">
-					<a href="https://www.orangescrum.com/" target="_blank" style="text-decoration:none;width:200px;">
-						<img src="https://www.orangescrum.com/img/header/orangescrum-cloud-logo.svg" alt="#1 Productivity Tool" title="#1 Productivity Tool" width="142" height="42" style="max-width:100%">
+					<a href="<?php echo HTTP_ROOT; ?>" target="_blank" style="text-decoration:none;width:200px;">
+						<img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" alt="OpenTask" title="OpenTask" width="142" height="42" style="max-width:100%">
 					</a>
 				</td>
 			</tr>
@@ -33,11 +33,11 @@
 				<td style="text-align:center;padding-bottom:40px">
 					<h1 style="margin:20px 0;font-size:30px;line-height:30px;color:#333;font-weight:500">Email Confirmation</h1>
 					<p style="font-size:14px;line-height:22px;margin:0;">
-						Hey <?php echo $usrname; ?>, You're almost ready to start enjoying Orangescrum.<br>
+						Hey <?php echo $usrname; ?>, You're almost ready to start enjoying OpenTask.<br>
 						Simply click the big orange button below to verify your <br>mail address.
 					</p>
 					<a href="<?php echo $activation_url;?>" target="_blank" style="display:inline-block;margin:20px 0;padding:10px 20px;text-decoration:none;font-size:14px;color:#fff;text-align:center;background:#FF7E00;text-transform:capitalize;border-radius:5px">verify email address</a>
-					<h6 style="margin:15px 0 40px;font-size:18px;color:#777;font-weight:500;">Get the Orangescrum app</h6>
+					<h6 style="margin:15px 0 40px;font-size:18px;color:#777;font-weight:500;">Get the OpenTask app</h6>
 					<a href="https://play.google.com/store/apps/details?id=com.andolasoft.orangescrum&hl=en" target="_blank" style="display:inline-block;text-decoration:none;width:156px;height:52px;margin:0 10px 10px">
 						<img src="https://www.orangescrum.com/images/google-play.png" alt="Google play" width="" height="" style="max-width:100%;width:100%;height:100%">
 					</a>
@@ -71,9 +71,9 @@
 			<tr>
 				<td style="text-align:center">
 					<p style="font-size:12px;line-height:20px;color:#555;margin:5px 0 0">
-						<?php echo __("You received this message because you are a Orangescrum customer. If you would prefer not to receive these emails in the future, you can");?> <a href='<?php echo $user_unsub_link; ?>'><?php echo __("unsubscribe");?></a><?php echo __("at any time.");?>
+						<?php echo __("You received this message because you are a OpenTask customer. If you would prefer not to receive these emails in the future, you can");?> <a href='<?php echo $user_unsub_link; ?>'><?php echo __("unsubscribe");?></a><?php echo __("at any time.");?>
 					</p>
-					<p style="font-size:12px;line-height:20px;color:#555;margin:5px 0 0"><?php echo __("Email sent by Orangescrum");?><br><?php echo __("&copy; 2017 Orangescrum 2059 Camden, Ave, #118 San Jose, CA");?></p>
+					<p style="font-size:12px;line-height:20px;color:#555;margin:5px 0 0"><?php echo __("Email sent by OpenTask");?><br><?php echo __("&copy; 2017 Orangescrum 2059 Camden, Ave, #118 San Jose, CA");?></p>
 				</td>
 			</tr>
 		  </table>

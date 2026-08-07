@@ -236,7 +236,7 @@ background: linear-gradient(to right, #1CB5E0, #000046);}
                         <span class="icon-bar"></span>
                     </button>
                                                     
-                    <a href="/" class="navbar-brand brand scrool logo"><img src="<?php echo HTTP_ROOT; ?>img/home_outer/logo.png" alt="Task Management Software" title="Task Management Software" /></a>
+                    <a href="/" class="navbar-brand brand scrool logo"><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" alt="OpenTask" title="OpenTask" height="40" /></a>
                 </div>
                         
                 <div id="navbar-collapse-02" class="collapse navbar-collapse customnav-downarrow  pull-right cmpny-menu">
@@ -324,13 +324,13 @@ background: linear-gradient(to right, #1CB5E0, #000046);}
 										</span>
 										<ul>
 											<li><a href="<?php echo HTTP_HOME_ORG.'general-installation-guide'; ?>">General Installation Guide</a></li>
-											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-timelog-addon-in-orangescrum'; ?>">Orangescrum Time Log Add-on</a></li>
-											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-on-windows-using-xampp'; ?>">Orangescrum On Windows</a></li>
-											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-in-nginx'; ?>">Orangescrum On NGINX</a></li>
-											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-in-godaddy'; ?>">Orangescrum On GoDaddy</a></li>
-											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-on-centos'; ?>">Orangescrum On CentOS</a></li>
-											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-on-mac'; ?>">Orangescrum On Mac</a></li>
-											<!--<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-api-addon-in-orangescrum'; ?>">Orangescrum On API</a></li>-->
+											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-timelog-addon-in-orangescrum'; ?>">OpenTask Time Log Add-on</a></li>
+											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-on-windows-using-xampp'; ?>">OpenTask On Windows</a></li>
+											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-in-nginx'; ?>">OpenTask On NGINX</a></li>
+											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-in-godaddy'; ?>">OpenTask On GoDaddy</a></li>
+											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-on-centos'; ?>">OpenTask On CentOS</a></li>
+											<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-orangescrum-on-mac'; ?>">OpenTask On Mac</a></li>
+											<!--<li><a href="<?php echo HTTP_HOME_ORG.'how-to-install-api-addon-in-orangescrum'; ?>">OpenTask On API</a></li>-->
 										</ul>
 									</div>
 								</li>
@@ -352,7 +352,7 @@ background: linear-gradient(to right, #1CB5E0, #000046);}
 									<?php }else{ ?>
 									<li><a href="<?php echo HTTP_HOME_ORG; ?>">Opensource</a></li>								
 									<li><a href="<?php echo HTTPS_HOME; ?>updates">Product Updates</a></li>
-									<li><a href="<?php echo HTTPS_HOME; ?>compare-orangescrum/">Compare Orangescrum</a></li>
+									<li><a href="<?php echo HTTPS_HOME; ?>compare-orangescrum/">Compare OpenTask</a></li>
 								<?php } ?>
 								<li><a target="_blank" href="http://blog.orangescrum.com">Blog</a></li>
 								<li><a href="<?php echo HTTPS_HOME; ?>aboutus<?php echo $ablink; ?>">About Us</a></li>
@@ -396,8 +396,8 @@ background: linear-gradient(to right, #1CB5E0, #000046);}
 <div id="overlay_cnt_con"></div>
 <div style="display:none;" class="cnt_con_tm">
 	<div class="cls_team_cnt"><img src="<?php echo HTTP_ROOT; ?>img/close.png"/></div>
-	<h3>Contact the Orangescrum team</h3>
-	<p>We will be glad to help you out. Get in touch with the creators of Orangescrum. We always welcome feedback as it helps us to bring out the best within us. We would like to hear your thoughts or you want to share an idea or simply say Hello!</p>
+	<h3>Contact the OpenTask team</h3>
+	<p>We will be glad to help you out. Get in touch with the creators of OpenTask. We always welcome feedback as it helps us to bring out the best within us. We would like to hear your thoughts or you want to share an idea or simply say Hello!</p>
 	<div id="success_msg" style="margin-left:10px;display:none;color:green;"></div>
 	<form id="opensource_contact_form" method="post">
 		<!--<input type="text" placeholder="Your Name" />-->

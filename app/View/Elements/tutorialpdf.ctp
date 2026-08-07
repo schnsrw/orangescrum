@@ -51,9 +51,6 @@
 					<div class="modal-body">
 						<div class="digital_copy">
 							<h4 class="modal-title">Download your <br><span>FREE</span> Digital Copy</h4>
-							<figure class="tutorialcopy">
-								<img src="<?php echo HTTP_ROOT;?>img/home_outer/tutorial/orangescrum-tutorial.png" alt="Orangescrum Tutorial" width="238" height="300" />
-							</figure>
 							<div class="pdf_form">
 								<form class="formClas" action="javascript:void(0);" id="downloadFormId">
 									<input type="hidden" name="filename" value= "<?php echo $filename;?>"" " placeholder="Your Name" id="tusrname_file">
@@ -66,7 +63,7 @@
 									<p class="temail_error error" style="display: none;">Please enter your email.</p>
 									<input type="button" id ="attachBtn" value="Send" class="send_btn" onclick="sendTutorialAttachement();">
 								</form>
-							<p><small>We're committed to your privacy. Orangescrum uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time. For more information, check out our <a href="<?php echo HTTP_ROOT;?>privacypolicy" target="_blank">Privacy Policy</a>.</small></p>
+							<p><small>We're committed to your privacy. OpenTask uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time. For more information, check out our <a href="<?php echo HTTP_ROOT;?>privacypolicy" target="_blank">Privacy Policy</a>.</small></p>
 							</div>
 						</div>
 						<div class="thankyou" id="responseTutorialId" style="display:none;">

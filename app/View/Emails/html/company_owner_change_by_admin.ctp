@@ -24,7 +24,7 @@
                                                         <div><a href="https://app.orangescrum.com/users/login" style="background-color:#ffffff;border:1px solid #d4d4d4;border-radius:4px;color:#4f9cde;display:inline-block;font-family:sans-serif;font-size:13px;line-height:40px;text-align:center;text-decoration:none;width:120px" target="_blank">LOGIN</a></div>
                                                     </td>
                                                     <td align="center">
-                                                        <div><a href="https://www.orangescrum.com/how-it-works" style="background-color:#ffffff;border:1px solid #d4d4d4;border-radius:4px;color:#4f9cde;display:inline-block;font-family:sans-serif;font-size:13px;line-height:40px;text-align:center;text-decoration:none;width:194px" target="_blank">Or Explore Orangescrum</a></div>
+                                                        <div><a href="https://www.orangescrum.com/how-it-works" style="background-color:#ffffff;border:1px solid #d4d4d4;border-radius:4px;color:#4f9cde;display:inline-block;font-family:sans-serif;font-size:13px;line-height:40px;text-align:center;text-decoration:none;width:194px" target="_blank">Or Explore OpenTask</a></div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -32,7 +32,7 @@
                                                 <?php echo __("Thanks,");?><br/>
                                                  <?php echo __("Omkar");?><br/>
                                                 --<br/>
-                                                <?php echo __("Sr. Manager (Marketing), OrangeScrum.com");?><br/>
+                                                <?php echo __("Sr. Manager (Marketing), OpenTask");?><br/>
                                                 <?php echo __("2059 Camden Ave. #118,");?><br/>
                                                 <?php echo __("San Jose, CA - 95124, USA");?><br/>
                                             </p>

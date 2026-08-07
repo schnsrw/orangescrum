@@ -11,7 +11,7 @@
 	.request_callback_modal ul{margin:0;padding:0;list-style-type:none}
 	.request_callback_modal ul li{display:block;font-size:18px;line-height:30px;color:#fff;font-weight:500;position:relative;padding:0 0 0 30px;margin: 15px 0 0;}
 	.request_callback_modal ul li:first-child{margin:0}
-	.request_callback_modal ul li::before{content:'';background:url(../../img/home_outer/ok_circle1.png) no-repeat 0px 0px;width:20px;height:20px;background-size:100% 100%;display:inline-block;position:absolute;left:0;top:5px}
+	.request_callback_modal ul li::before{content:'';width:20px;height:20px;background-size:100% 100%;display:inline-block;position:absolute;left:0;top:5px}
 	.request_callback_modal .close{font-size: 50px;line-height: 20px;color: #fff;opacity: 1;font-weight: 300; right: -30px;position: absolute;top: -20px;outline: none;}
 </style>
 <div  class="request_callback_modal">

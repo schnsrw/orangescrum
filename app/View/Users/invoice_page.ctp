@@ -28,7 +28,7 @@ h1{margin:0px}
 	<?php $avl_discount = 0; ?> 
 	<div style="width:1040px;min-height:500px;margin:50px auto;">
     <div class="fl" style="width:600px;">
-        <div><img src="<?php echo HTTP_ROOT; ?>img/header/orangescrum-cloud-logo.svg"  border="0" alt="Orangescrum.com" title="Orangescrum.com" style="width:150px;height:80px;"/></div>
+        <div><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" border="0" alt="OpenTask" title="OpenTask" style="width:150px;height:80px;"/></div>
         <div>
         <table cellpadding="2" cellspacing="2" style="font-size:17px;margin-top:30px;">
         <tr>

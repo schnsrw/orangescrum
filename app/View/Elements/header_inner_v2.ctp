@@ -99,7 +99,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand nav-logo" href="<?php if ($_COOKIE['FIRST_LOGIN_1']) {echo 'javascript:void(0);';}else{ echo HTTP_ROOT . Configure::read('default_action');} ?>">
-					<img src="<?php echo HTTP_IMAGES; ?>logo/orangescrum-100-100.png" height="32" width="32"/>
+					<img src="<?php echo HTTP_IMAGES; ?>logo/opentask-icon.svg" height="32" width="32" alt="OpenTask"/>
 				</a>
 				<div class="logo_cmpany_name">
 					<ul class="nav navbar-nav">
@@ -572,7 +572,7 @@
 												</ul>
 											</li>
 										<?php } ?>										
-										<li><a href="javascript:void(0)" class="grp_ttle togle_link"><span class="cmn_cstm_set"><i class="material-icons">info</i></span> <?php echo __('Orangescrum Info');?></a>
+										<li><a href="javascript:void(0)" class="grp_ttle togle_link"><span class="cmn_cstm_set"><i class="material-icons">info</i></span> <?php echo __('OpenTask Info');?></a>
 											<ul class="grp_sub_item">
 												<li><a href="javascript:void(0);" onclick="trackEventLeadTracker('Top Setting','Getting Started Page','<?php echo $_SESSION['SES_EMAIL_USER_LOGIN'];?>');gettingStarted();"><?php echo __('Getting Started');?></a></li> 
 												<li><a href="https://www.orangescrum.com/schedule-a-demo" title="Talk to an Expert">Talk to an Expert</a></li> 

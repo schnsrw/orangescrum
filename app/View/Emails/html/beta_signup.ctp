@@ -6,7 +6,7 @@
 	<div style="color:#000;font-family:Arial;font-size:14px;line-height:1.8em;text-align:left;padding-top: 10px;">
 		<p style="display:block;margin:0 0 17px">Hi <?php echo $expName;?>,</p>
 		<p>
-			<div><?php echo __("Welcome to Orangescrum and thank you for signing up.");?> <?php if($plan_id != 1){ ?><?php echo __("This email contains valuable information to get you started.");?><?php }else{ ?><?php echo __("Glad you decided to give Orangescrum a try.");?><?php } ?></div>
+			<div><?php echo __("Welcome to OpenTask and thank you for signing up.");?> <?php if($plan_id != 1){ ?><?php echo __("This email contains valuable information to get you started.");?><?php }else{ ?><?php echo __("Glad you decided to give OpenTask a try.");?><?php } ?></div>
 		</p>
 		<p>
 			<div><?php echo __("Your Login Password:");?> <b><?php echo $password;?></a></div>
@@ -34,16 +34,16 @@
 			<div>><?php echo __("You can also refer our");?> <a href="<?php echo HTTP_ROOT.'easycases/help';?>" target='_blank' style="text-decoration:none;"><?php echo __("HELP");?></a><?php echo __("section.");?></div>
 		</p>
 		<p>
-			<?php echo __("To stay up-to-date on the latest Orangescrum news and events, you can read our ");?><a href="<?php echo BLLOG_OS_URL;?>" target='_blank' style="text-decoration:none;"><?php echo __("blog");?></a>, <a href="https://www.twitter.com" target='_blank' style="text-decoration:none;"><?php echo __("follow us on Twitter");?></a>, <a href="https://www.facebook.com" target='_blank' style="text-decoration:none;"><?php echo __("Like us on Facebook");?></a>.
+			<?php echo __("To stay up-to-date on the latest OpenTask news and events, you can read our ");?><a href="<?php echo BLLOG_OS_URL;?>" target='_blank' style="text-decoration:none;"><?php echo __("blog");?></a>, <a href="https://www.twitter.com" target='_blank' style="text-decoration:none;"><?php echo __("follow us on Twitter");?></a>, <a href="https://www.facebook.com" target='_blank' style="text-decoration:none;"><?php echo __("Like us on Facebook");?></a>.
 		</p>
 		<p style="display:block;margin:0">
 			<?php if($plan_id != 1){ ?>
-				<?php echo __("Thanks again for joining Orangescrum,");?>
+				<?php echo __("Thanks again for joining OpenTask,");?>
 			<?php }else{ ?>
 				<?php echo __("Enjoy your FREE trial.");?>
 			<?php } ?>
 			<br/>
-			<?php echo __("The Orangescrum Team");?>
+			<?php echo __("The OpenTask Team");?>
 		</p>				
 	</div>
       </td>

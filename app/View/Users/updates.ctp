@@ -144,8 +144,8 @@ ul, ol{
 	<div class="luf">
 		<div class="luf-cont">
 			<h1>Latest Updates & Fixes</h1>
-			<h2>These updates come straight from our Orangescrum Research & Development warehouse.<br/>
-			You can also subscribe to get the latest Orangescrum updates right in your inbox.
+			<h2>These updates come straight from our OpenTask Research & Development warehouse.<br/>
+			You can also subscribe to get the latest OpenTask updates right in your inbox.
 			</h2>
 		</div>
 	</div>

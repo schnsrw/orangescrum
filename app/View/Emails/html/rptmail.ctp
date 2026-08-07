@@ -15,7 +15,7 @@
                                 </p>
 								<p><b><?php echo $name;?></b> has <?php echo $type;?> the plan to  <b><?php echo $plan_name;?></b> for Company <b><?php echo CMP_SITE;?></b> , next billing date is on <b><?php echo $next_billing_date;?></b></p> 
 								<p>Regards,<br/>
-								The Orangescrum Team</p>
+								The OpenTask Team</p>
                             </td>
                         </tr>
                    </table>
@@ -26,7 +26,7 @@
                             	<p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; margin-top:0; padding:0; font-weight:normal;padding-top:5px;">
 									<?php echo NEW_EMAIL_FOOTER; ?>
 									
-									You are receiving this email notification because you have subscribed to Orangescrum, to unsubscribe, please email with subject 'Unsubscribe' to support
+									You are receiving this email notification because you have subscribed to OpenTask, to unsubscribe, please email with subject 'Unsubscribe' to support
                                 </p>
                             </td>
                         </tr>

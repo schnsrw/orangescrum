@@ -15,10 +15,10 @@ vertical-align: middle;line-height: 29px;}
 		<article>
 			<aside>
 				<?php /*<h2><?php echo __('Start Your');?></h2>
-				<h3><?php echo __('Orangescrum Journey');?></h3>*/ ?>
+				<h3><?php echo __('OpenTask Journey');?></h3>*/ ?>
 				<h3><?php echo __('Welcome!');?></h3>
 				<p>
-					<strong><?php echo __("Take a tour of what you can do with Orangescrum.");?></strong>
+					<strong><?php echo __("Take a tour of what you can do with OpenTask.");?></strong>
 					<small><?php echo __("All the focus you need to keep your team, projects and communication on track.");?></small>
 				</p>
 				<p><span id="tour_counter">0</span>/4 <?php echo __('Task completed');?></p>

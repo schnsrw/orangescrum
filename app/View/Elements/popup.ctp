@@ -33,13 +33,11 @@ var rsrch = "";
 					    <?php /*<div class="loader_dv" style="display: block;"><center><img src="<?php echo HTTP_IMAGES; ?>images/case_loader2.gif" alt="Loading..." title="Loading..." /></center></div> */?>
 						<div class="dtbl" target="javascript:void(0)">
 							<div class="dtbl_cel">
-								<img class="provider-icon os-provider-icon" alt="os logo" src="<?php echo HTTP_ROOT;?>img/github/orangescrum-64.png">
 							</div>
 							<div class="dtbl_cel">
 								<h5><?php echo __('Syncing');?>..</h5>
 							</div>
 							<div class="dtbl_cel">
-								<img class="provider-icon os-provider-icon" alt="git logo" src="<?php echo HTTP_ROOT;?>img/github/git-64.png">
 							</div>
 						</div>
 						<p class="note_hnt">
@@ -1014,7 +1012,7 @@ var rsrch = "";
                          <button type="button" class="close close-icon" data-dismiss="modal" onclick="closePopup();"><i class="material-icons">&#xE14C;</i></button>
                         <h4 style="color:#ff8600"><?php echo __("Congratulations!"); ?></h4>                    </div>
                     <div class="modal-body popup-container">
-                        <p style="font-size:14px; line-height: 20px;"><?php echo __("Now manage your Resources better with Orangescrum's Resource Availability feature. Track their availability, leave planning and utilization effortlessly");?>.</p>
+                        <p style="font-size:14px; line-height: 20px;"><?php echo __("Now manage your Resources better with OpenTask's Resource Availability feature. Track their availability, leave planning and utilization effortlessly");?>.</p>
                             <?php if(!$this->Format->isResourceAvailabilityOn()){ ?>
                             <p style="font-size:13px; line-height: 20px; margin-bottom: 20px; font-style: italic;"><strong><?php echo __('Note');?>:</Strong> <?php echo __('Resource Availability is not available in the Startup Plan');?></p>
                         <?php } ?>
@@ -1073,7 +1071,7 @@ var rsrch = "";
                          <button type="button" class="close close-icon" data-dismiss="modal" onclick="closePopup();"><i class="material-icons">&#xE14C;</i></button>
                         <h4 style="color:#ff8600"><?php echo __("Congratulations!"); ?></h4>                    </div>
                     <div class="modal-body popup-container">
-                        <p style="font-size:14px; line-height: 20px;"><?php echo __("Now manage your Timelog better with Orangescrum's");?> <a href="https://helpdesk.orangescrum.com/cloud-category/timesheet/" target="_blank"><?php echo __('Timesheet');?></a> <?php echo __('feature. Manage timelog effortlessly');?>.</p>
+                        <p style="font-size:14px; line-height: 20px;"><?php echo __("Now manage your Timelog better with OpenTask's");?> <a href="https://helpdesk.orangescrum.com/cloud-category/timesheet/" target="_blank"><?php echo __('Timesheet');?></a> <?php echo __('feature. Manage timelog effortlessly');?>.</p>
                         <p style="font-size:13px; line-height: 20px; margin-bottom: 20px; font-style: italic;"><strong>Note:</Strong> <a href="https://helpdesk.orangescrum.com/cloud-category/timesheet/" target="_blank">Timesheet</a> is not available in the Startup Plan</p>
                          <div class="popup-btn" style="text-align: right;">                           
                               <?php if(SES_TYPE < 2){ ?>
@@ -1711,22 +1709,22 @@ if(SES_COMP == ALLOWED_COMPANY || 1){ // add new popup for devop company
      <!-- <div id="template_mod_cases" style="position:fixed;left:0;top:0px;width:100%;position: absolute;background: white;" class="inner"></div>-->
 	 
 	 <?php if((SES_TYPE == 1 || SES_TYPE == 2) && defined('TWITTED') && TWITTED == 0 && !in_array(PAGE_NAME,array('onbording','profile','changepassword','email_notifications','email_reports'))){
-		$osTwAccount = 'TheOrangescrum';
+		$osTwAccount = 'TheOpenTask';
 		$tweetTexts = array(
-			'#Orangescrum is an Awesome Project Collaboration Tool that gives full visibility and control over your projects',
-			'Organize Projects, Tasks, Documents & Meeting Minutes in one place #Orangescrum'.' @'.$osTwAccount,
-			'Share of your ideas, feedbacks, questions and discussions across the team #Orangescrum'.' @'.$osTwAccount,
-			'See what\'s in progress, what needs to be done and what\'s been accomplished #Orangescrum'.' @'.$osTwAccount,
-			'Receive reminders, alert for close deadlines, manage tightly not to exceed budget #Orangescrum'.' @'.$osTwAccount,
-			'Break-down tasks into smaller ones, share documents using google Drive & Dropbox #Orangescrum'.' @'.$osTwAccount,
-			'Just sit back and keep on watching the Activity even while relaxing #Orangescrum'.' @'.$osTwAccount,
-			'Win your customer\'s confidence by keeping them informed with daily scrum #Orangescrum'.' @'.$osTwAccount,
-			'Keep your team on their toes by reminding them by automatic emails #Orangescrum'.' @'.$osTwAccount,
-			'Get instant notification on your cell and respond with your inputs in no time #Orangescrum'.' @'.$osTwAccount,
-			'Stay on top and get weekly usage report #Orangescrum'.' @'.$osTwAccount,
-			'Managing Project Effectively with project collaboration tool taming inbox #Orangescrum'.' @'.$osTwAccount,
-			'Get Daily Progress email from team without fail #Orangescrum'.' @'.$osTwAccount,
-			'#Orangescrum is a Awesome project management tool for You & Your Team'.' @'.$osTwAccount
+			'#OpenTask is an Awesome Project Collaboration Tool that gives full visibility and control over your projects',
+			'Organize Projects, Tasks, Documents & Meeting Minutes in one place #OpenTask'.' @'.$osTwAccount,
+			'Share of your ideas, feedbacks, questions and discussions across the team #OpenTask'.' @'.$osTwAccount,
+			'See what\'s in progress, what needs to be done and what\'s been accomplished #OpenTask'.' @'.$osTwAccount,
+			'Receive reminders, alert for close deadlines, manage tightly not to exceed budget #OpenTask'.' @'.$osTwAccount,
+			'Break-down tasks into smaller ones, share documents using google Drive & Dropbox #OpenTask'.' @'.$osTwAccount,
+			'Just sit back and keep on watching the Activity even while relaxing #OpenTask'.' @'.$osTwAccount,
+			'Win your customer\'s confidence by keeping them informed with daily scrum #OpenTask'.' @'.$osTwAccount,
+			'Keep your team on their toes by reminding them by automatic emails #OpenTask'.' @'.$osTwAccount,
+			'Get instant notification on your cell and respond with your inputs in no time #OpenTask'.' @'.$osTwAccount,
+			'Stay on top and get weekly usage report #OpenTask'.' @'.$osTwAccount,
+			'Managing Project Effectively with project collaboration tool taming inbox #OpenTask'.' @'.$osTwAccount,
+			'Get Daily Progress email from team without fail #OpenTask'.' @'.$osTwAccount,
+			'#OpenTask is a Awesome project management tool for You & Your Team'.' @'.$osTwAccount
 		);
 		if($user_subscription['is_free']==1 || ($user_subscription['project_limit'] == 'Unlimited' && $user_subscription['storage'] == 'Unlimited')){
 			$twHead = 'Tweet about us!';

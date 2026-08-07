@@ -21,8 +21,8 @@ $autorefreshflag =0;
 ?>
 <div class="steps_os">
 	<div class="steps_usr">
-		<h1><?php echo __('Welcome');?> <?php echo USERNAME; ?>!<br/> <?php echo __('Get started with your Orangescrum account');?></h1>
-		<h6><?php echo __("You're just 3 simple steps away from exploring Orangescrum");?>!</h6>
+		<h1><?php echo __('Welcome');?> <?php echo USERNAME; ?>!<br/> <?php echo __('Get started with your OpenTask account');?></h1>
+		<h6><?php echo __("You're just 3 simple steps away from exploring OpenTask");?>!</h6>
 	</div>
 	<table cellpadding="0" cellspacing="0" border="0" style="width:97%;padding-top: 20px;">
 		<tr>
@@ -107,7 +107,7 @@ $autorefreshflag =0;
 					</div>
 				<?php }elseif($totalusers<=1){?>
 					<h4 style="text-shadow:none; font-size: 26px;text-align:center"><?php echo __("Looks like it's just you in here");?><br/>
-					<?php echo __('Orangescrum works best when you add your Co-workers');?>.</h4>
+					<?php echo __('OpenTask works best when you add your Co-workers');?>.</h4>
 				<div class="on_brd_blue" style="margin-top:20px" <?php if(ACCOUNT_STATUS!=2){?> onclick="newUser('menuid1','loaderid1');" <?php }?>>					
 					<img src="<?php echo HTTP_ROOT;?>img/wright_icon.png" />
 					<a href="javascript:void(0);"  style="text-decoration: none;color: #fff; font-weight: bold;" > <?php echo __('Invite User');?></a>
@@ -119,8 +119,8 @@ $autorefreshflag =0;
 							<a href="javascript:void(0);" style="text-decoration: none;color: #fff; font-weight: bold;" ><?php echo __('Create Task');?></a>
 						</div>
 				<?php }else{ $autorefreshflag =1;?>
-						<h4 style="text-shadow:none; font-size: 26px;text-align:center"><?php echo __('Wow! You have completed all the basics of Orangescrum');?>.<br/>
-						<?php echo __('Now you can get started with Orangescrum');?>.</h4><br/>
+						<h4 style="text-shadow:none; font-size: 26px;text-align:center"><?php echo __('Wow! You have completed all the basics of OpenTask');?>.<br/>
+						<?php echo __('Now you can get started with OpenTask');?>.</h4><br/>
 						<h6>
 							<?php echo __('This page will automatically redirect to dashboard within');?> <span id="seccnt">25</span><?php echo __('Seconds');?><br>
 							<a href="<?php echo HTTP_ROOT;?>dashboard"><?php echo __('Click here');?></a> <?php echo __('to Redirect to the dashboard page');?>.

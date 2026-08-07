@@ -11,14 +11,14 @@
 				    <tr>
 					<td width="100%" bgcolor="#FFF" style="text-align:left;">
 					    <p>Hey <?php echo ucwords($data['name']); ?>,</p>
-					   <p>Thank you for purchasing On-Premises Installation & Support for your Orangescrum Community Edition.</p>
-					   <p>We're writing to let you know that your Orangescrum invoice (INV<?php echo $data['invoice_id']; ?>), is attached to this message as a PDF file. Your credit card has been charged <b>$<?php echo $data['amount']; ?></b> USD.</p>
+					   <p>Thank you for purchasing On-Premises Installation & Support for your OpenTask Community Edition.</p>
+					   <p>We're writing to let you know that your OpenTask invoice (INV<?php echo $data['invoice_id']; ?>), is attached to this message as a PDF file. Your credit card has been charged <b>$<?php echo $data['amount']; ?></b> USD.</p>
 					   
 					   <p>If you have any questions regarding this invoice, please contact us at <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>.</p>
 					   
 					    <p>
 						Cheers!<br/> 
-						The Orangescrum Team
+						The OpenTask Team
 					    </p>
 					</td>
 				    </tr>

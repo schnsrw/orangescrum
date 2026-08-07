@@ -29,7 +29,7 @@ pointer-events: none; z-index:9999;}
 </style>
 <div class="fl wd-l-con">
 <div class="left-board" id="my_left-board" <?php if(SES_TYPE == 1 || SES_TYPE == 2 || IS_MODERATOR == 1){ ?> style="display:block" <?php }else{ ?> style="display:none;" <?php } ?>>
-  <h4>Explore the power of Orangescrum</h4>
+  <h4>Explore the power of OpenTask</h4>
   <ul>
     <li><a href="javascript:void(0);" id="intro-to-video"><span><img src="<?php echo HTTP_IMAGES; ?>images/i-collaborate.png" title="Collaborate"/></span> <span><?php echo __('How to');?><br/><?php echo __('Collaborate');?></span></a></li>
     <li><a href="/task-type" target="_blank"><span><img src="<?php echo HTTP_IMAGES; ?>images/i-custom.png" title="Custom"/></span> <?php echo __('How to');?><br/><?php echo __('Customize Task');?></a></li>
@@ -279,7 +279,7 @@ pointer-events: none; z-index:9999;}
           #518: task status (new,resolved) 
         </span>
         <div class="cb"></div>
-        <span class="pro-no">Orangescrum</span>
+        <span class="pro-no">OpenTask</span>
       </div>
       <div class="cb"></div>
     </div>-->

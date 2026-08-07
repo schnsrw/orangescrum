@@ -1531,7 +1531,7 @@ class PostcaseComponent extends CookieComponent
         $message = "<table><tr><td><table cellpadding='0' cellspacing='0' align='left' border='0' style='border-collapse:collapse;border-spacing:0;text-align:left;width:600px;border:1px solid #3DBB89'>
 <tr style='background:#3DBB89;height:50px;'>
 <td style='font:bold 14px Arial;padding:10px;color:#FFFFFF;'>
-<span style='font-size:18px;'>Orangescrum</span> - Daily Catch-Up Alert
+<span style='font-size:18px;'>OpenTask</span> - Daily Catch-Up Alert
 </td>
 </tr>
 <tr>
@@ -1542,14 +1542,14 @@ Hi " . ucfirst(trim($user['name'])) . ",
 </tr>
 <tr>
 <td style='font:14px Arial;padding:10px;'>
-This is a reminder to post your today's updates to Orangescrum. Just reply to this email with the updates, it will be added to the project.
+This is a reminder to post your today's updates to OpenTask. Just reply to this email with the updates, it will be added to the project.
 <br/><br/><br/><b>NOTE:</b> DO NOT change the SUBJECT while replying.<br/><br/>
 </td>
 </tr>
 <tr>
 <td align='left' style='font:14px Arial;padding:15px 10px;border-top:1px solid #E1E1E1'>
 Thanks,<br/>
-Team Orangescrum
+Team OpenTask
 </td>	  
 </tr>
 </table></td></tr>
@@ -1739,10 +1739,10 @@ Team Orangescrum
                             $fromEmail = $loggedin_users['User']['email'];
                             $ext_user = '';
                             if (@$findEmail['User']['id'] && trim($findEmail['User']['password'])) {
-                                $subject = $fromName . " invited you to join " . $comp_name . " on Orangescrum";
+                                $subject = $fromName . " invited you to join " . $comp_name . " on OpenTask";
                                 $ext_user = 1;
                             } else {
-                                $subject = $fromName . " created your account on Orangescrum";
+                                $subject = $fromName . " created your account on OpenTask";
                             }
                             $this->Email->delivery = 'smtp';
                             $this->Email->to = $to;

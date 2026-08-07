@@ -47,9 +47,6 @@ $(document).ready(function() {
 				</div>
 			</div>
 			<div class="col-md-6 baner-image">
-				<figure class="text-right">
-					<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner.png" alt="Time Tracking Software" title="Time Tracking Software" width="" height="">
-				</figure>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -70,9 +67,6 @@ $(document).ready(function() {
 							</p>
 						</div>
 						<div class="col-md-6 dtbl_cell cell_60">
-							<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-								<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/t-section-1.png" alt="Time Tracking Save Time in NO Time" title="Time Tracking Save Time in NO Time" width="" height="">
-							</figure>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -88,12 +82,9 @@ $(document).ready(function() {
 							Easily mark your billable and non-billable hours in a click. View your team's time spend in a single view and confidently generate accurate 
 							<a href="<?php echo HTTP_ROOT;?>invoice-how-it-works" title="invoices">invoices</a> for your customers.
 						</p>
-						<a href="<?php echo HTTP_ROOT;?>signup/free" title="Try OrangeScrum" class="bdy_try_os_btn">Try OrangeScrum</a>
+						<a href="<?php echo HTTP_ROOT;?>signup/free" title="Try OpenTask" class="bdy_try_os_btn">Try OpenTask</a>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-left wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner-1.png" alt="Time Tracking Charge your team’s true worth!" title="Time Tracking Charge your team’s true worth!" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -111,9 +102,6 @@ $(document).ready(function() {
 						<a href="https://calendly.com/priyankagarwal/15min" target="_blank" title="Request A Demo" class="bdy_rqst_demo_btn">Request A Demo</a>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner.png" alt="Your Teams's day in a snapshot" title="Your Teams's day in a snapshot" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -129,46 +117,8 @@ $(document).ready(function() {
 						</p>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-left wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/t-section-4.png" alt="Utilize your Resources to the Optimum" title="Utilize your Resources to the Optimum" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
-				</div>
-			</div>
-		</section>
-		<section class="screenshot_slide cmn_padtb_60">
-			<div class="cmn_wrapper">
-				<h2>Time Tracking Screenshots</h2>
-				<p class="sub-hd">Take a look at the productivity features designed for you</p>
-				<div class="slider-wh">
-				<ul class="slack_screnshot_slider">
-				  <li>
-				  	<figure>
-						<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner-1.png" alt="Time Tracking Software" title="Time Tracking Software" width="" height="">
-					</figure>
-				  </li>
-				  <li>
-				  	<figure>
-						<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner-2.jpg" alt="Time Tracking Software" title="Time Tracking Software" width="" height="">
-					</figure>
-				  </li>
-				  <li>
-				  	<figure>
-						<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner-3.png" alt="Time Tracking Software" title="Time Tracking Software" width="" height="">
-					</figure>
-				  </li>
-				  <li>
-				  	<figure>
-						<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner-4.png" alt="Time Tracking Software" title="Time Tracking Software" width="" height="">
-					</figure>
-				  </li>
-				  <li>
-				  	<figure>
-						<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Touter-banner-5.png" alt="Time Tracking Software" title="Time Tracking Software" width="" height="">
-					</figure>
-				  </li>
-				</ul>
 				</div>
 			</div>
 		</section>

@@ -247,23 +247,23 @@ class CronController extends AppController{
 						if($usr['UserNotification']['value'] == 1) {
 								$sb_title = 'Daily Task Status Updates';
 								if($sub) {
-										$subject = $sub." Tasks on Orangescrum - ".date("m/d",strtotime(GMT_DATE));
+										$subject = $sub." Tasks on OpenTask - ".date("m/d",strtotime(GMT_DATE));
 								} else {
-										$subject = 'Orangescrum Daily Task Status - '.date("m/d",strtotime(GMT_DATE));
+										$subject = 'OpenTask Daily Task Status - '.date("m/d",strtotime(GMT_DATE));
 								}
 						}elseif($usr['UserNotification']['value'] == 2) {
 								$sb_title = 'Weekly Task Status Updates';
 								if($sub) {
-										$subject = $sub." on Orangescrum - ".date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
+										$subject = $sub." on OpenTask - ".date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
 								} else {
-										$subject = 'Orangescrum Weekly Task Status - '.date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
+										$subject = 'OpenTask Weekly Task Status - '.date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
 								}
 						}elseif($usr['UserNotification']['value'] == 3) {
 							$sb_title = 'Monthly Task Status Updates';
 							if($sub) {
-									$subject = $sub." on Orangescrum - ".date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
+									$subject = $sub." on OpenTask - ".date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
 							} else {
-									$subject = 'Orangescrum Monthly Task Status - '.date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
+									$subject = 'OpenTask Monthly Task Status - '.date("m/d",strtotime($upto))." - ".date("m/d",strtotime(GMT_DATE));
 							}
 						}
 
@@ -320,7 +320,7 @@ class CronController extends AppController{
 												</tr>
 												<tr>
 														<td align='left' style='font:10px Arial;padding-top:2px;color:#737373'>
-																You are receiving this email notification because you have subscribed to Orangescrum Task Status E-mail notification, to unsubscribe, please click <a href='".$comp_url."/users/email_notifications' target='_blank'>Unsubscribe Email Notification</a>
+																You are receiving this email notification because you have subscribed to OpenTask Task Status E-mail notification, to unsubscribe, please click <a href='".$comp_url."/users/email_notifications' target='_blank'>Unsubscribe Email Notification</a>
 														</td>	  
 												</tr>
 										</table>";
@@ -473,7 +473,7 @@ class CronController extends AppController{
 							}
 							$taskduedt = $this->Format->dateFormatReverse($tmzone->GetDateTime($usr['User']['timezone_id'],$timezn['Timezone']['gmt_offset'],$timezn['Timezone']['dst_offset'],$timezn['Timezone']['code'],$gmt_datetime,"date"));
 
-							$subject = $sub." on Orangescrum - ".date("m/d",strtotime($taskduedt));
+							$subject = $sub." on OpenTask - ".date("m/d",strtotime($taskduedt));
 							//".EMAIL_HEADER."
 							$message = "<table cellpadding='0' cellspacing='0' align='left' style='width:100%;'>
 
@@ -506,7 +506,7 @@ class CronController extends AppController{
 														</tr>
 														<tr>
 																<td align='left' style='font:10px Arial;padding-top:2px;color:#737373'>
-																You are receiving this email notification because you have subscribed to Orangescrum, to unsubscribe, please click <a href='".$comp_url."/users/email_notifications' target='_blank'>Unsubscribe Email Notification</a>
+																You are receiving this email notification because you have subscribed to OpenTask, to unsubscribe, please click <a href='".$comp_url."/users/email_notifications' target='_blank'>Unsubscribe Email Notification</a>
 														</td>
 														</tr>
 												</table>";
@@ -709,7 +709,7 @@ class CronController extends AppController{
                                             $message = "<tr><td><table style='border-collapse:collapse;border-spacing:0;text-align:left;width:600px;border:1px solid #5191BD'>
                                                             <tr style='background:#5191BD;height:50px;'>
                                                                     <td style='font:bold 14px Arial;padding:10px;color:#FFFFFF;'>
-                                                                            <span style='font-size:18px;'>Orangescrum</span> - Daily Task Updates
+                                                                            <span style='font-size:18px;'>OpenTask</span> - Daily Task Updates
                                                                     </td>
                                                             </tr>
                                                             <tr>
@@ -720,7 +720,7 @@ class CronController extends AppController{
                                                             <tr>
                                                                     <td align='left' style='font:14px Arial;padding:10px;border-top:1px solid #E1E1E1'>
                                                                             Thanks,<br/>
-                                                                            Team Orangescrum
+                                                                            Team OpenTask
                                                                     </td>	  
                                                             </tr>
                                                     </table></td></tr>
@@ -914,7 +914,7 @@ class CronController extends AppController{
                     $lastDate = gmdate('Y-m-d');
                     $frmdt = date("m/d/Y",  (strtotime($dateCurnt)-(7*24*60*60)));
                     $todt = date("m/d/Y",  strtotime($dateCurnt)-(24*60*60));
-                    $subject = "Orangescrum Usage Report ".$frmdt." - ".$todt;
+                    $subject = "OpenTask Usage Report ".$frmdt." - ".$todt;
                     $header ='<div style="font-family:verdana;font-size:12px;color:#333;padding:0;margin:0;border:1px solid #ccc;float:left;width:600px;">
                     <div style="background:#555555;padding:5px 10px;margin-bottom:15px;">
                             <div style="float:left;color:#FFF;font-size:26px;font-weight:bold;">'.ucfirst($val['Company']['name']).'</div>
@@ -1257,7 +1257,7 @@ class CronController extends AppController{
                     </ul>
             </div><br/>';	
                             $message .="</div></div>";
-                            $message .="<div style='clear:both'></div><div style='font-size:11px;padding-top:10px;color:#737373'>Don't want to receive this email?<br/>Go to the Orangescrum <a href='".HTTP_ROOT."users/email_notifications'>notification settings</a> and say NO to <b>Weekly Usage Report</b></div>";
+                            $message .="<div style='clear:both'></div><div style='font-size:11px;padding-top:10px;color:#737373'>Don't want to receive this email?<br/>Go to the OpenTask <a href='".HTTP_ROOT."users/email_notifications'>notification settings</a> and say NO to <b>Weekly Usage Report</b></div>";
                             $mail_body = $message_top.$header.$statistics_div.$message;
                             if (!defined('CRON_DISPATCHER')) {
                                             //$to =$val['User']['email'];

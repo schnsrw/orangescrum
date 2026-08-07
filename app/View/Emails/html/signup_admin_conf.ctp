@@ -19,7 +19,7 @@ $addon_nams = Configure::read('AUTOMATE_ADDON');
 					   
 					    <p>
 						Cheers!<br/> 
-						The Orangescrum Team
+						The OpenTask Team
 					    </p>
 					</td>
 				    </tr>

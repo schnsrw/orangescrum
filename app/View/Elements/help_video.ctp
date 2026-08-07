@@ -47,7 +47,7 @@
                                         <div class="help_note"><p class="help_note_txt"><b><?php echo __('Note');?>:</b> <?php echo __('Please select 720p in the video settings for better visibility');?></p></div>
 				  </div>
 				  <!--div id="support">
-					<h5>Orangescrum Support</h5>
+					<h5>OpenTask Support</h5>
 					<p>Please visit our <a href="">customer support portal</a> to ask a question and view answers to common questions.</p>
 					<a href="javascript:void();" class="get_support_btn">Get Support</a>
 				  </div-->

@@ -57,8 +57,8 @@
 <div class="login_sup_page">
     <div class="wrapper_login">		
         <div class="login_side_logo"></div>
-        <h6><a href="<?php echo HTTPS_HOME; ?>"><img src="<?php echo HTTP_ROOT; ?>img/header/orangescrum-logo.svg?v=<?php echo RELEASE; ?>" border="0" alt="Orangescrum.com" title="Orangescrum.com" /></a></h6>
-        <h2>Login to your Orangescrum Account</h2>
+        <h6><a href="<?php echo HTTPS_HOME; ?>"><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg?v=<?php echo RELEASE; ?>" border="0" alt="OpenTask" title="OpenTask" /></a></h6>
+        <h2>Login to your OpenTask Account</h2>
         <div class="cmn_bdr_shadow">
             <div class="login_heading">
                 <div class="user_img">

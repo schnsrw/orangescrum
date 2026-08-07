@@ -26,7 +26,7 @@
 																					<br/>
 																					
 																					<p>Cheers!<br/>
-																					The Orangescrum Team</p>
+																					The OpenTask Team</p>
 																				</td>
 																		</tr>																		
                                 </table>

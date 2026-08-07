@@ -4833,7 +4833,7 @@ class FormatComponent extends Component
             try {
                 $service = new Google_Service_Calendar($client);
                 $channel =  new Google_Service_Calendar_Channel($client);
-                $channel->setId('orangescrum-'.SES_COMP.'-'.SES_ID.'-'.time()); //$calID
+                $channel->setId('opentask-'.SES_COMP.'-'.SES_ID.'-'.time()); //$calID
                 $channel->setType('web_hook');
                 $channel->setAddress(str_replace(array('http://app.','https://app.'), 'https://www.', HTTP_APP).'gcnotification');
 

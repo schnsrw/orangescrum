@@ -75,7 +75,7 @@ if( $is_active_proj || (SES_TYPE==3)){
                         <span class="icon-bar"></span>
                   </button>
                         <a class="navbar-brand nav-logo" href="<?php if ($_COOKIE['FIRST_LOGIN_1']) {echo 'javascript:void(0);';}else{ echo HTTP_ROOT . Configure::read('default_action');} ?>">
-                                <img src="<?php echo HTTP_IMAGES; ?>logo/orangescrum-100-100.png" height="32" width="32"/>
+                                <img src="<?php echo HTTP_IMAGES; ?>logo/opentask-icon.svg" height="32" width="32" alt="OpenTask"/>
                         </a>
                 </div>
                 <div class="navbar-collapse collapse navbar-inverse-collapse pad-left-non">

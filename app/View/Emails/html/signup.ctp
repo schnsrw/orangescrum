@@ -68,7 +68,7 @@
 					<div style="border-bottom:1px solid #ddd">
 						<h5 style="font-size:20px;line-height:30px;margin:0 0 20px">Ready to manage Your Project</h5>
 						<p style="font-size:14px;line-height:24px;color:#555;font-family:sans-serif">
-							Single collaborative Platform for you and Your customers, Sponsors, Stackholders and teams- Be Smart, Communicate smarter- Anytime ,Anywhere -Orangescrum!
+							Single collaborative Platform for you and Your customers, Sponsors, Stackholders and teams- Be Smart, Communicate smarter- Anytime ,Anywhere -OpenTask!
 						</p>
 						<a href="<?php echo $create_project;?>" target="_blank" style="display:inline-block;margin:20px 0 35px;padding:10px 20px;text-decoration:none;font-size:16px;line-height:20px;font-weight:600;color:#fff;text-align:center;background:#FF7E00;text-transform:capitalize;border-radius:5px">Create your project</a>
 					</div>
@@ -105,7 +105,7 @@
 			<tr>
 				<td style="text-align:center">
 					<div style="border-bottom:1px solid #ddd;padding-bottom:30px">
-						<h6 style="margin:15px 0 40px;font-size:18px;color:#222;font-weight:500;">Get the Orangescrum app</h6>
+						<h6 style="margin:15px 0 40px;font-size:18px;color:#222;font-weight:500;">Get the OpenTask app</h6>
 						<a href="https://play.google.com/store/apps/details?id=com.andolasoft.orangescrum&hl=en" target="_blank" style="display:inline-block;text-decoration:none;width:156px;height:52px;margin:0 10px 10px">
 							<img src="http://www.orangescrum.com/images/google-play.png" alt="Google play" width="" height="" style="max-width:100%;width:100%;height:100%">
 						</a>
@@ -142,7 +142,7 @@
 			</tr>
 			<tr>
 				<td style="text-align:center">
-					<p style="font-size:12px;line-height:20px;color:#555;margin:5px 0 0">Email sent by Orangescrum<br>&copy; 2017 Orangescrum 2059 Camden, Ave, #118 San Jose, CA</p>
+					<p style="font-size:12px;line-height:20px;color:#555;margin:5px 0 0">Email sent by OpenTask<br>&copy; 2017 Orangescrum 2059 Camden, Ave, #118 San Jose, CA</p>
 				</td>
 			</tr>
 		  </table>

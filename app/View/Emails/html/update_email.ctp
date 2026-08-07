@@ -13,7 +13,7 @@
 					    <p>
 						<?php echo __("Hi");?> <?php echo $Name; ?>,                    
 					    </p>
-					    <p><?php echo __("We've received a request to change the email address associated with your Orangescrum account. Please click the button below to confirm this email address. After confirmation, this will be your Login email address of Orangescrum.");?></p>
+					    <p><?php echo __("We've received a request to change the email address associated with your OpenTask account. Please click the button below to confirm this email address. After confirmation, this will be your Login email address of OpenTask.");?></p>
 					    <a style="font-weight:bold; text-decoration:none;" href="<?php echo HTTP_APP . 'users/emailUpdate/' . $qstr; ?>" target='_blank'><div style="display:block; max-width:100% !important; width:auto !important;margin:auto; height:auto !important;background-color:#0EA426;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;border-radius:10px;color:#ffffff;font-size:16px;text-align:center"><?php echo __("Confirm email address");?></div></a>
 					    
 					    <br/>
@@ -24,7 +24,7 @@
 					    <p><?php echo __("If you have any questions, please write us at");?> <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>, we will be happy to help you.</p>
 					    <br/>
 					    <p><?php echo __("Regards,");?><br/>
-				               <?php echo __("The Orangescrum Team");?></p>
+				               <?php echo __("The OpenTask Team");?></p>
 					</td>
 				    </tr>
 				</table>
@@ -37,11 +37,11 @@
 						echo NEW_EMAIL_FOOTER;
 						if ($existing_user) {
 						?>
-    						<?php echo __("You are receiving this email notification because you have subscribed to Orangescrum, to unsubscribe, please email with subject 'Unsubscribe' to");?> <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
+    						<?php echo __("You are receiving this email notification because you have subscribed to OpenTask, to unsubscribe, please email with subject 'Unsubscribe' to");?> <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
 						    <?php
 						} else {
 						    ?>
-    						<?php echo __("Your email address is used to invite you on Orangescrum. If you didn't intend to do this, just ignore this email; no account has been created yet.");?>
+    						<?php echo __("Your email address is used to invite you on OpenTask. If you didn't intend to do this, just ignore this email; no account has been created yet.");?>
 						    <?php
 						}
 						?>

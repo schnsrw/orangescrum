@@ -60,11 +60,11 @@
 	.whats_new_update .bx-wrapper .bx-viewport{border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;left:0;background:transparent}
 	.whats_new_update .item strong{display:block;font-size:24px;line-height:40px;color:#333;}
 	.whats_new_update .item span{font-weight:300;color:#555;display:block;margin:15px 0 30px}
-	.whats_new_update .bx-controls-direction .bx-prev{background: url(../../img/home/slider-nex-prev-arrow.png) no-repeat 0px -33px;
+	.whats_new_update .bx-controls-direction .bx-prev{
     width: 22px;height: 30px;z-index: 999;position: absolute;
     top: 45%;left: -75px;font-size: 0px;display: block;opacity: 1;}
 	.whats_new_update .bx-controls-direction .bx-prev:hover{background-position: 0px 0px;}
-	.whats_new_update .bx-controls-direction .bx-next{background: url(../../img/home/slider-nex-prev-arrow.png) no-repeat -44px -33px;
+	.whats_new_update .bx-controls-direction .bx-next{
     width: 22px;height: 30px;z-index: 999;position: absolute;
     top: 45%;right: -75px;font-size: 0px;display: block;opacity: 1;}
 	.whats_new_update .bx-controls-direction .bx-next:hover{background-position: -44px 0px;}
@@ -88,9 +88,9 @@
 </script>
 
 <div itemscope itemtype="http://schema.org/Organization" style="display:none">
-<a itemprop="url" href="https://www.orangescrum.com/aboutus"><div itemprop="name">Project and Task Management Software | Time and Resource Management Software | Orangescrum</div>
+<a itemprop="url" href="https://www.orangescrum.com/aboutus"><div itemprop="name">Project and Task Management Software | Time and Resource Management Software | OpenTask</div>
 </a>
-<div itemprop="description">Orangescrum is the awesome project and task management software gives an eagle's-eye view on the productivity and progress of your projects and team. Project Management, Task management, time and resource management can be done easily and also helps to generate invoice.</div>
+<div itemprop="description">OpenTask is the awesome project and task management software gives an eagle's-eye view on the productivity and progress of your projects and team. Project Management, Task management, time and resource management can be done easily and also helps to generate invoice.</div>
 </div>
 <div class="os_aboutus">
 	<section class="bnr">
@@ -99,7 +99,7 @@
 				<aside class="dtbl_cel lft">
 					<h1>
 						<small>We're #1 Collaboration & Productivity Management Platform </small>
-						How Orangescrum helped <br/>us at Andolasoft to increase</h1>
+						How OpenTask helped <br/>us at Andolasoft to increase</h1>
 					<!--<div class="hero_subtle">We increased our</div>-->
 					<div class="hero_tle">
 						<ul>
@@ -110,13 +110,13 @@
 						</ul>
 					</div>
 					<div class="combo_cta">
-						<a href="<?php echo HTTP_ROOT;?>signup" title="Explore Orangescrum" class="explore_cta">Explore Orangescrum</a>
+						<a href="<?php echo HTTP_ROOT;?>signup" title="Explore OpenTask" class="explore_cta">Explore OpenTask</a>
 						<a href="<?php echo HTTP_ROOT;?>watch-demo" target="_blank" title="Watch demo" class="demo_cta">Watch demo</a>
 					</div>
 				</aside>
 				<aside class="dtbl_cel rht">
 					<figure>
-						<img src="<?php echo HTTP_ROOT;?>img/aboutus-orangescum-team.png" alt="How Orangescum Team benefited from Orangescrum?" title="How Orangescum Team benefited from Orangescrum?">
+						<img src="<?php echo HTTP_ROOT;?>img/aboutus-orangescum-team.png" alt="How Orangescum Team benefited from OpenTask?" title="How Orangescum Team benefited from OpenTask?">
 					</figure>
 				</aside>
 			</article>
@@ -124,7 +124,7 @@
 	</section>
 	<section class="os_story">
 		<div class="wrapper">
-			<h2>Why we built Orangescrum?</h2>
+			<h2>Why we built OpenTask?</h2>
 			<article class="dtbl">
 				<aside class="dtbl_cel lft">
 					<h3>With hell lot of work, even we worked overtime, the results were far from satisfactory!</h3>
@@ -136,11 +136,11 @@
 						</li>
 						<li>Failure in timely projects delivery led to slip in revenue </li>
 					</ul>
-					<p style="padding:30px 0 0 20px">So we were pushed to ideate to find a solution...and today we have <br/>Orangescrum in place</p>
+					<p style="padding:30px 0 0 20px">So we were pushed to ideate to find a solution...and today we have <br/>OpenTask in place</p>
 				</aside>
 				<aside class="dtbl_cel rht">
 					<figure>
-						<img src="<?php echo HTTP_ROOT;?>img/Build-Orangescrum.svg" width="325" height="338" alt="Orangescrum Productivity Tool" title="Orangescrum Productivity Tool">
+						<img src="<?php echo HTTP_ROOT;?>img/Build-Orangescrum.svg" width="325" height="338" alt="OpenTask Productivity Tool" title="OpenTask Productivity Tool">
 					</figure>
 				</aside>
 			</article>
@@ -151,7 +151,7 @@
 	</section>
 	<section class="link_strip">
 		<div class="wrapper">
-			<p>Your guide to successful project management with Orangescrum <a href="<?php echo HTTP_ROOT;?>tutorial" target="_blank" title="Tutorial">Tutorial</a></p>
+			<p>Your guide to successful project management with OpenTask <a href="<?php echo HTTP_ROOT;?>tutorial" target="_blank" title="Tutorial">Tutorial</a></p>
 		</div>
 	</section>
 	<section class="whats_new_update">
@@ -159,9 +159,6 @@
 			<h2>Here's what's keeping us busy lately</h2>
 		  <article class="dtbl">
 			<aside class="dtbl_cel lft">
-			  <figure>
-				<img src="<?php echo HTTP_ROOT;?>img/home/updates-roadmaps.png" alt="Product Updates Roadmap" title="Product Updates Roadmap" width="250" height="250">
-			  </figure>
 			</aside>
 			<aside class="dtbl_cel rht">
 				<div class="whats_new_slider">
@@ -182,7 +179,7 @@
 					<div class="item">
 						<p>
 							<strong>GitHub Integration</strong>
-							<span>Integrate Orangescrum with GitHub to create, collaborate and manage all your GitHub issues directly from Orangescrum or Github instantly.</span>
+							<span>Integrate OpenTask with GitHub to create, collaborate and manage all your GitHub issues directly from OpenTask or Github instantly.</span>
 							<a href="<?php echo HTTP_ROOT;?>whats-new" class="cmn_learnmore_btn" title="Learn more">Learn more</a>
 						</p>
 					</div>
@@ -203,14 +200,14 @@
 					<div class="item">
 						<p>
 						<strong>Google Calendar Integration</strong>
-						<span>Take control of your project deadlines, appointments & tasks scheduled on your Google Calendar with a real-time, two-way integration with Orangescrum.</span> 
+						<span>Take control of your project deadlines, appointments & tasks scheduled on your Google Calendar with a real-time, two-way integration with OpenTask.</span> 
 						<a href="<?php echo HTTP_ROOT;?>whats-new" class="cmn_learnmore_btn" title="Learn more">Learn more</a>
 					  </p>
 					</div>
 					<div class="item">
 						<p>
-							<strong>Customize Orangescrum Theme</strong>
-							<span>Personalize your Orangescrum theme to your choice!</span>
+							<strong>Customize OpenTask Theme</strong>
+							<span>Personalize your OpenTask theme to your choice!</span>
 							<a href="<?php echo HTTP_ROOT;?>whats-new" class="cmn_learnmore_btn" title="Learn more">Learn more</a>
 						</p>
 					</div>
@@ -265,7 +262,7 @@
 							<img src="<?php echo HTTP_ROOT;?>img/logo/orangescrum-200-200.png" width="120" height="120" alt="Our journey to productivity" title="Our journey to productivity">
 						</figure>
 						<p>
-							So, we created Orangescrum which is an all-round project, time and resource management tool. Orangescrum brought us and our customers together. We connect with <a href="<?php echo HTTP_ROOT;?>success-story" title="our customers">our customers</a> effortlessly.
+							So, we created OpenTask which is an all-round project, time and resource management tool. OpenTask brought us and our customers together. We connect with <a href="<?php echo HTTP_ROOT;?>success-story" title="our customers">our customers</a> effortlessly.
 						</p>
 					</div>
 				</aside>

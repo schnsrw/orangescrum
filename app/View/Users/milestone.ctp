@@ -31,7 +31,7 @@
 		</a>
 		<div class="col-lg-4 proj_mng_div">
 			<div class="col-lg-12 contain">
-				<h3>Integrate Clickdesk withorangescrum.com</h3>
+				<h3>Integrate Clickdesk withopentask.com</h3>
 				<div class="tsk_updts">139 Tasks&nbsp; . &nbsp;20 Closed</div>
 				<div class="imprv_bar col-lg-12">
 					<div class="cmpl_green col-lg-4"></div>
@@ -47,7 +47,7 @@
 		</div>
 		<div class="col-lg-4">
 			<div class="col-lg-12 contain">
-				<h3>Integrate Clickdesk withorangescrum.com</h3>
+				<h3>Integrate Clickdesk withopentask.com</h3>
 				<div class="tsk_updts">139 Tasks&nbsp; . &nbsp;20 Closed</div>
 				<div class="imprv_bar col-lg-12">
 					<div class="cmpl_green col-lg-1"></div>
@@ -60,7 +60,7 @@
 	<div class="col-lg-12 m-left-20">
 		<div class="col-lg-4">
 			<div class="col-lg-12 contain">
-				<h3>Integrate Clickdesk withorangescrum.com</h3>
+				<h3>Integrate Clickdesk withopentask.com</h3>
 				<div class="tsk_updts">139 Tasks&nbsp;  .&nbsp;  20 Closed</div>	
 				<div class="imprv_bar col-lg-12">
 					<div class="cmpl_green col-lg-7"></div>
@@ -70,7 +70,7 @@
 		</div>
 		<div class="col-lg-4">
 			<div class="col-lg-12 contain">
-				<h3>Integrate Clickdesk withorangescrum.com</h3>
+				<h3>Integrate Clickdesk withopentask.com</h3>
 				<div class="tsk_updts">139 Tasks&nbsp; .&nbsp; 20 Closed</div>
 				<div class="imprv_bar col-lg-12">
 					<div class="cmpl_green col-lg-12"></div>
@@ -80,7 +80,7 @@
 		</div>
 		<div class="col-lg-4">
 			<div class="col-lg-12 contain">
-				<h3>Integrate Clickdesk withorangescrum.com</h3>
+				<h3>Integrate Clickdesk withopentask.com</h3>
 				<div class="tsk_updts">139 Tasks&nbsp;  .&nbsp; 20 Closed</div>
 				<div class="imprv_bar col-lg-12">
 					<div class="cmpl_green col-lg-3"></div>

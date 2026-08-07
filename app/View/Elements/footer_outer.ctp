@@ -18,10 +18,6 @@ ul.app-buttom li a{background-repeat: no-repeat;background-size: cover;
 box-shadow: 0 6px 9px 0 rgba(23,28,33,0.14);display: inline-block;
 height: 38px;-webkit-transition: all .25s ease;
 -moz-transition: all .25s ease;transition: all .25s ease;width: 128px;}
-ul.app-buttom li a.app-store{
-background-image: url('../img/home_outer/dwn-on-appstore.svg');}
-ul.app-buttom li a.gplay-store{
-background-image: url('../img/home_outer/google-play-btn.png');}
 ul.app-buttom li a:hover{opacity:0.7}
 .footer_keepin_touch .col-md-12,.footer_keepin_touch .col-md-12 .col-md-6{padding-left:0;padding-right:0} 
 .footer.footer_new{background:#F8FCFF;padding:15px 0 0;border-top:1px solid #bbb;}
@@ -81,9 +77,9 @@ sup {vertical-align: super;font-size: smaller;}
     <div class="footer_inner col-md-12 widt_1100">
         <div class="fl col-md-4 ft_btm_ul_new">
 
-                        <div class="ft_top_hd">About Orangescrum</div>
+                        <div class="ft_top_hd">About OpenTask</div>
                         <div class="cb"></div>
-                        <p class="pad_lft">Organize tasks, communicate with the team on important issues, and manage project documents effortlessly. Using Email is a recipe for project failure. Orangescrum offers a solution that will keep the projects, the team and the business healthy and active.</p>
+                        <p class="pad_lft">Organize tasks, communicate with the team on important issues, and manage project documents effortlessly. Using Email is a recipe for project failure. OpenTask offers a solution that will keep the projects, the team and the business healthy and active.</p>
                     </div>
                     <div class="fl col-md-4 width_500_foot">
                         <div class="ft_top_hd">Follow Us</div>
@@ -91,17 +87,13 @@ sup {vertical-align: super;font-size: smaller;}
                         <div class="and_os">
                             <div class="fl s-download-btn">
                                 <ul class="mks_social_widget_ul" style="text-align: left;">
-                                    <li><a href="https://twitter.com/theorangescrum" class="twitter_ico soc_square" target="_blank" alt="Orangescrum on twitter" title="Orangescrum on twitter" style="width: 40px; height: 40px;">twitter</a></li>
-                                    <li><a href="https://www.facebook.com/OrangeScrum" class="facebook_ico soc_square" target="_blank" alt="Orangescrum on facebook" title="Orangescrum on facebook" style="width: 40px; height: 40px;">facebook</a></li>
-                                    <li><a href="https://www.linkedin.com/company/the-orangescrum" class="linkedin_ico soc_square" target="_blank" alt="Orangescrum on linkedin" title="Orangescrum on linkedin" style="width: 40px; height: 40px;">linkedin</a></li>
-                                    <li><a href="https://plus.google.com/+Orangescrum-PMT/about" class="googleplus_ico soc_square" target="_blank" alt="Orangescrum on googleplus" title="Orangescrum on googleplus" style="width: 40px; height: 40px;">googleplus</a></li>                                   
+                                    <li><a href="https://twitter.com/theorangescrum" class="twitter_ico soc_square" target="_blank" alt="OpenTask on twitter" title="OpenTask on twitter" style="width: 40px; height: 40px;">twitter</a></li>
+                                    <li><a href="https://www.facebook.com/OrangeScrum" class="facebook_ico soc_square" target="_blank" alt="OpenTask on facebook" title="OpenTask on facebook" style="width: 40px; height: 40px;">facebook</a></li>
+                                    <li><a href="https://www.linkedin.com/company/the-orangescrum" class="linkedin_ico soc_square" target="_blank" alt="OpenTask on linkedin" title="OpenTask on linkedin" style="width: 40px; height: 40px;">linkedin</a></li>
+                                    <li><a href="https://plus.google.com/+Orangescrum-PMT/about" class="googleplus_ico soc_square" target="_blank" alt="OpenTask on googleplus" title="OpenTask on googleplus" style="width: 40px; height: 40px;">googleplus</a></li>
                                 </ul>   
 
                                 <div class="cb"></div>
-								<ul class="app-buttom">
-									<li><a href="https://itunes.apple.com/ph/app/id1132539893" target="_blank" class="app-store" alt="The Orangescrum in App Store" title="The Orangescrum in App Store"></a></li>
-									<li><a href="https://play.google.com/store/apps/details?id=com.andolasoft.orangescrum&hl=en" target="_blank" class="gplay-store" alt="The Orangescrum in Play Store" title="The Orangescrum in Play Store"></a></li>
-								</ul>
                             </div>
                         </div>
                     </div>
@@ -130,7 +122,7 @@ sup {vertical-align: super;font-size: smaller;}
 						<li><a href="<?php echo HTTPS_HOME; ?>invoice-how-it-works<?php echo $ablink; ?>" title="Invoice">Invoice</a></li>					
 						<li><a href="<?php echo HTTPS_HOME; ?>task-groups<?php echo $ablink; ?>" title="Task Groups">Task Groups</a></li>
 						<li><a href="<?php echo HTTPS_HOME; ?>kanban-view<?php echo $ablink; ?>" title="Kanban View">Kanban View</a></li>		
-						<li><a href="<?php echo HTTPS_HOME; ?>compare-orangescrum/" title="Compare Orangescrum">Compare Orangescrum</a></li>
+						<li><a href="<?php echo HTTPS_HOME; ?>compare-orangescrum/" title="Compare OpenTask">Compare OpenTask</a></li>
 						
 						<?php if(CONTROLLER == 'opensource'){ ?>
                         <li><a href="<?php echo $roadmaplink; ?><?php echo $referrer_link; ?>" title="Roadmap">Roadmap</a></li>

@@ -13,7 +13,7 @@
                                             <p>
                                               <?php echo __("Hi");?> <?php echo $name ?>,
                                             </p>
-                                            <p><?php echo __("Your account email has been updated by admin on Orangescrum.");?></p>
+                                            <p><?php echo __("Your account email has been updated by admin on OpenTask.");?></p>
                                             <p>
                                                <?php echo __("Old email:");?> <?php echo $old_email; ?><br/>
                                                <?php echo __("New email: ");?> <?php echo $email; ?>
@@ -28,7 +28,7 @@
                                             <p>
                                                <?php echo __("Thanks,");?><br/>
                                                 <?php echo __("Admin");?><br/>
-                                                OrangeScrum.com<br/>
+                                                OpenTask<br/>
                                             </p>
                                         </td>
                                     </tr>

@@ -53,7 +53,7 @@ if(count($usrArr)) {
 		</div>
 		<div class="steps_usr onboard" style="text-align:center;width:100%;">
 			<h1 style="color:#3DBB89"><?php echo __('Welcome');?> <?php echo USERNAME; ?>!</h1>
-			<h2 style="color:#3DBB89"><?php echo __('Get started with your Orangescrum account');?></h2>
+			<h2 style="color:#3DBB89"><?php echo __('Get started with your OpenTask account');?></h2>
 		</div>
 		<div class="cb" style="height:10px;"></div>
 		<div class="steps_usr onboard" style="text-align:center;width:100%;">
@@ -74,7 +74,7 @@ if(count($usrArr)) {
 			<h2 style="color:#455560"><?php echo __('Looks like its just you in here');?></h2>
 		</div>
 		<div class="steps_usr onboard" style="text-align:center;width:100%;">
-			<h1 style="color:#333"><?php echo __('Orangescrum works best when you add your team');?></h1>
+			<h1 style="color:#333"><?php echo __('OpenTask works best when you add your team');?></h1>
 		</div>
 		<!--<div style="text-align:center;position:absolute;left:44%"><img src="../img/arrow.png"></div>-->
 		<div class="cb" style="height:5px;"></div>

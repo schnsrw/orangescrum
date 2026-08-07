@@ -176,7 +176,7 @@ $(document).ready(function()
         	<div style="position:relative">
             	<div class="bg_logo_inner"></div>
                 <div class="logo_landing"> 
-                        <a href="<?php echo HTTP_HOME; ?>"><img src="<?php echo HTTP_ROOT; ?>img/logo/orangescrum-134-40.png"  border="0" alt="Orangescrum.com" title="Orangescrum.com"/></a>
+                        <a href="<?php echo HTTP_HOME; ?>"><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" border="0" alt="OpenTask" title="OpenTask"/></a>
                 </div>
     <div class="login_table">
         <div <?php if(PAGE_NAME == "home") { ?>class="home" <?php } else { ?>class="home_other" <?php } ?> style="height:100%;display:table">

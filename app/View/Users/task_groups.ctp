@@ -10,7 +10,7 @@ $(document).ready(function() {
 			<div class="col-md-6 baner_txt">
 				<h1><strong>Task Groups</strong></h1>
 				<h6>
-					<strong>Orangescrum helps to accomplish a specific task in a project in collaboration with proper information sharing in proper control without any conflict.</strong> 
+					<strong>OpenTask helps to accomplish a specific task in a project in collaboration with proper information sharing in proper control without any conflict.</strong>
 				</h6>
 				<div class="dual_baner_btn">
 					<a href="<?php echo HTTP_ROOT;?>signup/free" class="active" title="<?php echo SIGNUP_CTA_B; ?>"><?php echo SIGNUP_CTA_B; ?></a>
@@ -18,9 +18,6 @@ $(document).ready(function() {
 				</div>
 			</div>
 			<div class="col-md-6 baner-image">
-				<figure class="text-right">
-					<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/hwt-tskgp1.png" alt="Gantt chart" title="Gantt chart" width="" height="" style="height:350px">
-				</figure>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -28,7 +25,7 @@ $(document).ready(function() {
 	<div class="feature">
 		<section class="description">
 			<div class="cmn_wrapper">
-				<h2>OrangeScrum Task Groups for Better Productivity</h2>
+				<h2>OpenTask Task Groups for Better Productivity</h2>
 				<div class="cmn_padt_40">
 					<div class="steps_table dtbl">
 						<div class="col-md-6 dtbl_cell cell_40">
@@ -36,12 +33,9 @@ $(document).ready(function() {
 							<p>
 								Categorize and report project or task information in a variety of ways. Group tasks to view rolled-up summary in one place for identical tasks.
 							</p>
-							<a href="<?php echo HTTP_ROOT;?>signup/free" title="Try OrangeScrum" class="bdy_try_os_btn">Try OrangeScrum</a>
+							<a href="<?php echo HTTP_ROOT;?>signup/free" title="Try OpenTask" class="bdy_try_os_btn">Try OpenTask</a>
 						</div>
 						<div class="col-md-6 dtbl_cell cell_60">
-							<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-								<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/hwt-tskgp2.png" alt="Group Tasks or Resources by Criterion" title="Group Tasks or Resources by Criterion" width="" height="">
-							</figure>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -58,9 +52,6 @@ $(document).ready(function() {
 						</p>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-left wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/hwt-tskgp3.png" alt="GDrag and Drop Tasks to the Task Groups" title="Drag and Drop Tasks to the Task Groups" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>

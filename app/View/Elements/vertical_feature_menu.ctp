@@ -45,8 +45,8 @@
     color: #ff0000;font-weight: 600;animation: blinker 1s linear infinite;
     -webkit-animation: blinker 1s linear infinite;-moz-animation: blinker 1s linear infinite;}
 	.horizontal_feature_menu .owl-controls{margin:0}
-	.horizontal_feature_menu .owl-theme .owl-controls .owl-buttons .owl-prev{background: url(../../img/home/feature-nav-arrow.png) no-repeat 0px 0px;width: 12px;height: 22px;background-size: 10px 40px;z-index: 999;position: absolute;top:24px;left: -60px;font-size: 0px;display: block;opacity:1;margin:0}
-	.horizontal_feature_menu .owl-theme .owl-controls .owl-buttons .owl-next{background: url(../../img/home/feature-nav-arrow.png) no-repeat 0px -28px;width: 12px;height:22px;background-size: 12px 50px;z-index: 999;position: absolute;top:20px;right: -60px;font-size: 0px;display: block;opacity:1;margin:0}
+	.horizontal_feature_menu .owl-theme .owl-controls .owl-buttons .owl-prev{width: 12px;height: 22px;background-size: 10px 40px;z-index: 999;position: absolute;top:24px;left: -60px;font-size: 0px;display: block;opacity:1;margin:0}
+	.horizontal_feature_menu .owl-theme .owl-controls .owl-buttons .owl-next{width: 12px;height:22px;background-size: 12px 50px;z-index: 999;position: absolute;top:20px;right: -60px;font-size: 0px;display: block;opacity:1;margin:0}
 	.horizontal_feature_menu .owl-carousel .owl-item{width: auto !important;}
 	.horizontal_feature_menu .bx-controls-direction .owl-prev:hover,
 	.horizontal_feature_menu .bx-controls-direction .owl-next:hover{opacity:1}
@@ -198,7 +198,7 @@
         <a href="<?php echo HTTPS_HOME; ?>google-calendar-integration" title="Google Calendar" onclick="return setFeatureClik('gcalendar');">
           <span class="header_sp gcalendar"></span>
           <strong>Google Calendar</strong>
-          <small>Stay updated on your Orangescrum tasks with a 2-way sync with Google Calendar</small>
+          <small>Stay updated on your OpenTask tasks with a 2-way sync with Google Calendar</small>
           <span class="new">New</span>
         </a>
       </li>

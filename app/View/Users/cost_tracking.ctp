@@ -7,7 +7,7 @@
 #video2 { height:361px; width:642px; background:url("../../img/loading2.gif") no-repeat center;margin:30px auto; position:relative; z-index:1;}
 .closer{position:absolute; background-color:#999; color:#fff; text-align:center; line-height:22px; width:22px; border-radius:10px; top:-18px; right:-15px; font-weight:bold; cursor:pointer;}
 #video2_inner {width:60%; height:inherit; display:none; margin:0px auto;}
-.video_button {width:642px; height:361px;border:1px solid #ccc; margin:30px auto; display:block; cursor:pointer; background: url("../../img/home/video.jpg?v=1") no-repeat  center top #fff;}
+.video_button {width:642px; height:361px;border:1px solid #ccc; margin:30px auto; display:block; cursor:pointer; background: #fff;}
 .explore-con{width:473px;margin:0 auto 50px;}
 .btn-n a{border:1px solid #28a752;border-radius: 5px;display:block;font-size: 22px;text-align: center;text-decoration:none;padding:10px; font-family:'OPENSANS-REGULAR';}
 .btn-n.btn-sign a{background:#3cc168;color: #fff;}
@@ -16,7 +16,7 @@
 .btn-n.btn-explr a:hover{background:#28a752;color: #ffffff;}
 .explore-green-bg .btn-n.btn-explr a{background:none;color: #28a752;}
 .explore-green-bg .btn-n.btn-explr a:hover{background:#28a752;color:#ffffff;}
-.explore-green-bg{ background:url("../../img/home/bg-green.png") no-repeat center top; width:100%;padding:52px 0px;}
+.explore-green-bg{ width:100%;padding:52px 0px;}
 .explore-green-bg .btn-n {margin-right:30px;}
 .start-stil{font-size:16px;margin:5px 30px;color:#FFFFFF;font-family:'OPENSANS-REGULAR';}
 .start-til{font-size:24px;margin:0 30px;color:#FFFFFF;font-weight:bold;font-family:'OPENSANS-REGULAR';}
@@ -123,8 +123,8 @@ function txt_blur(obj,val){
 	<h3 class="awsm">Organize Projects, Tasks, Documents & Meeting Minutes in one place</h3>
 	<div class="bord_dash">
 		<h1 style="padding-top:0px;">Cost Tracking</h1>
-		<div class="i-prod">OrangeScrum keeps track of your budget assigned to the project and tracks cost with assigned with the team, task or activity.  </div>
-		<div class="i-prod" style="font-weight:bold;margin-top: 10px;">Orangescrum: Budget/Cost Management Made Easy</div>
+		<div class="i-prod">OpenTask keeps track of your budget assigned to the project and tracks cost with assigned with the team, task or activity.  </div>
+		<div class="i-prod" style="font-weight:bold;margin-top: 10px;">OpenTask: Budget/Cost Management Made Easy</div>
 	</div>
 </div>
  <div class="cb"></div>
@@ -156,12 +156,10 @@ function txt_blur(obj,val){
                 <td>
 					<h5>Cost Tracking</h5>
 								<p>Keep track of costs and expenses in real-time at the project or task phase. Track costs endured with respect to time spent on a particular task and manage your cost accordingly.<br/>Know if your cost is in track or not. Take immediate decisions and make modification to the cost distribution based on real-time information.</p>
-                	
+
                 </td>
-                <td><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/c-tracking.png?v=<?php echo RELEASE; ?>" alt="" /></td>
             </tr>
 						<tr>
-                <td><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/c-mgmt.png?v=<?php echo RELEASE; ?>" alt="" /></td>
 								<td>
 								<h5>Cost Management</h5>
                     <p>Manage your projects and tasks with planned target budget at the top level and track it with distributed channels in real-time. Analyse budget scenario in real-time. Forecast easily, if the project is in budget, below budget or can go beyond the estimated budget.</p>
@@ -172,22 +170,13 @@ function txt_blur(obj,val){
                 	<h5>Cost Control</h5>
                   <p>Control your cost with the time to cost variation model. Know where you stand now and what will be the cost incurred by your team or consultant by the end of the day. <br/>It gives a holistic approach on real-time scenario based on cost allocated to respective teams, tasks or individual.</p>
                 </td>
-                <td><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/c-control.png?v=<?php echo RELEASE; ?>" alt="" /></td>
             </tr>
 						<tr>
-                <td><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/cv-tracking.png?v=<?php echo RELEASE; ?>" alt="" /></td>
                 <td>
                 	<h5>Cost Variation Tracking</h5>
-                  <p>OrangeScrum helps you to get a deep eye on cost variations, as each cost can vary according to business, according to project and according to sector. This will help to take decisions and allocate or re-allocate cost according to scenario. </p>
+                  <p>OpenTask helps you to get a deep eye on cost variations, as each cost can vary according to business, according to project and according to sector. This will help to take decisions and allocate or re-allocate cost according to scenario. </p>
                 </td>
             </tr>
-         <!--   <tr>
-                <td>
-                	<h5>Time - Cost Budget Mapping</h5>
-                  <p>Track the exact cost incurred with respect to time spent for a team. Analyze budget scenario in real-time. Forecast easily, if the project is in budget, below budget or can go beyond the estimated budget.</p>
-                </td>
-                <td><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/tc-maping.png?v=<?php echo RELEASE; ?>" alt="" /></td>
-            </tr> -->
         </table>
 				<div class="explore-con">
 					<div class="fl btn-n btn-sign"> <a href="<?php echo HTTPS_HOME; ?><?php echo SIGNUP_CTA_LINK; ?><?php echo $ablink; ?>"><?php echo SIGNUP_CTA_B; ?></a></div>
@@ -204,39 +193,6 @@ function txt_blur(obj,val){
 </style>
 <div class="cb"></div>
 
-
-<!--<div class="quote_bg">
-	<h1>We Love Our Customers</h1>
-	<div class="sld_clients">
-		<div class="sld_clients_inner">
-			<div class="showcase_img">
-				<div id="wrap">
-				  <ul id="mycarousel1" class="jcarousel-skin-tango">
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/1i.jpg?v=<?php echo RELEASE; ?>" alt="" width="200" height="52" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/4i.jpg?v=<?php echo RELEASE; ?>" alt="" width="187px" height="63px" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/5i.jpg?v=<?php echo RELEASE; ?>" alt="" width="190px" height="63px" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/2i.jpg?v=<?php echo RELEASE; ?>" alt="" width="287" height="52" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/6i.jpg?v=<?php echo RELEASE; ?>" alt="" width="190px" height="63px" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/7i.jpg?v=<?php echo RELEASE; ?>" alt="" width="190px" height="63px" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/8i.jpg?v=<?php echo RELEASE; ?>" alt="" width="218px" height="63px" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/3i.jpg?v=<?php echo RELEASE; ?>" alt="" width="287" height="52" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/9i.jpg?v=<?php echo RELEASE; ?>" alt="" width="190px" height="63px" /></li>
-					<li><img src="<?php echo HTTP_ROOT; ?>img/home_a/sld_img/10i.jpg?v=<?php echo RELEASE; ?>" alt="" width="218px" height="63px" /></li>
-				  </ul>
-				</div>
-			</div>
-		</div>
-	 </div>
-</div>
-<div class="cb"></div>
-
-<div class="social_med_foot">
-	<div>
-    	<a target="_blank" title="Twitter" href="https://twitter.com/theorangescrum"><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/tw_soc_hm.png?v=<?php echo RELEASE; ?>" alt="" /></a>
-        <a target="_blank" class="fbook" title="Facebook" href="https://www.facebook.com/pages/Orangescrum/170831796411793"><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/face_soc_hm.png?v=<?php echo RELEASE; ?>" alt="" /></a>
-		<a target="_blank" class="google" title="Google" href="https://plus.google.com/103991755151199877447" rel="publisher"><img class="lazy" src="<?php echo HTTP_ROOT; ?>img/loading.gif?v=<?php echo RELEASE; ?>" data-src="<?php echo HTTP_ROOT; ?>img/home/go_soc_hm.png?v=<?php echo RELEASE; ?>" alt="" /></a>
-    </div>
-</div>-->
 
 <?php /*?><div class="quote_bg">
 	<h1>We Love Our Customers</h1>

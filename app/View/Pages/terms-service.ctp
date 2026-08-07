@@ -16,7 +16,7 @@ a, a:visited, a:active{color:#017fd3; text-decoration: underline;}
 				<tr>
 					<td>
                         <h2 style="color:#004D7D">Terms Of Service</h2>
-                        <p style="line-height:20px">In order to access or use the OrangeScrum,
+                        <p style="line-height:20px">In order to access or use the OpenTask,
                 you must login to <a href="<?php echo HTTP_HOME; ?>" ><?php echo SITE_NAME; ?></a>. Your access to and use of the Website creates a legally binding agreement between you and <a href="<?php echo HTTP_HOME; ?>" ><?php echo SITE_NAME; ?></a></p>
                         <p style="line-height:20px">By accessing the <a href="<?php echo HTTP_HOME; ?>" ><?php echo SITE_NAME; ?></a> website or registering with <a href="<?php echo HTTP_HOME; ?>" ><?php echo SITE_NAME; ?></a>, you acknowledge to have read, understood and accepted the General Terms and Conditions set forth below (these 'Terms' or this 'Agreement').</p>
                         <p style="line-height:20px">Our varied services, which can be customized as per the client's requirements, are another reason which draws them towards us. We also provide round-the-clock support to answer our client's queries. Please contact us to know more about our services.</p>

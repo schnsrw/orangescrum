@@ -1,7 +1,7 @@
 <div id="crt_new_user" class="onbording_main_div" style="margin-top:-10%;">
 	<div class="on_brd">
 		<div class="on_brd">Looks like it's just you in here</div>
-		<div>Orangescrum works best when you add your coworkers.</div>
+		<div>OpenTask works best when you add your coworkers.</div>
 		<div class=" fl"   style="padding:7px 12px;background:#ff7800;color:#fff;border:1px solid #fff;font-size:15px; margin-top:20px">
 			<div style="background: url('<?php echo HTTP_ROOT;?>img/html5/icons/team_n.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);height: 16px;left: -3px;position: relative;top: 2px; width: 16px;" class="fl" ></div>	
 			<div class="fl" style="margin: 2px;">

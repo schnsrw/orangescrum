@@ -51,7 +51,7 @@ body.open_hellobar .on-boarding-page {margin-top: -95px;}
 <div class="on-boarding-page">
 <div class="row gs_top_sec">
 	<div class="gs_top_bnr">
-		<h1><span>Welcome to</span> Orangescrum.</h1>
+		<h1><span>Welcome to</span> OpenTask.</h1>
 		<h4>Let's get started on<br/>how you can start managing your projects as easy as eating a doughnut!</h4>
 	</div>
 </div>
@@ -75,7 +75,7 @@ body.open_hellobar .on-boarding-page {margin-top: -95px;}
     </div>
 <div class="get_started_outer">
     <?php if(SES_TYPE<3) { ?>
-    <div class="get_hd_bg">Getting Started with Orangescrum
+    <div class="get_hd_bg">Getting Started with OpenTask
 	<span style="float:right;">Need Help? <a href="https://helpdesk.orangescrum.com/cloud/" target="_blank" onclick="return trackEventLeadTracker('Getting Started','Need Help','<?php echo $_SESSION['SES_EMAIL_USER_LOGIN'];?>');">Click here!</a></span>
     <?php if (isset($first_login) && $first_login == 1) { /* ?>
         <span class="skip-to-list">
@@ -206,7 +206,7 @@ body.open_hellobar .on-boarding-page {margin-top: -95px;}
                     You can respond to the task Email sent from notify&#64;orangescrum&#46;com.
                 </li>
                 <li>
-                    Your Email response will be posted on Orangescrum against that task.
+                    Your Email response will be posted on OpenTask against that task.
                 </li>
                 <li>
                     Respond on a task even on-the-go from your mobile via Email.
@@ -233,7 +233,7 @@ body.open_hellobar .on-boarding-page {margin-top: -95px;}
                    Firefox 22 and above, Chrome 32 and above, Safari 6 on Mac OSX 10.8+
                 </li>
                 <li>
-                   You'll see a pop-up when a new task or reply arrives so you can keep track of your Tasks even when you're not looking at Orangescrum.
+                   You'll see a pop-up when a new task or reply arrives so you can keep track of your Tasks even when you're not looking at OpenTask.
                 </li>
                 <li>
                     Turn the desktop notification On or Off in the "<?php echo $this->Html->link('Notifications','/users/email_notifications');?>" page.
@@ -256,7 +256,7 @@ body.open_hellobar .on-boarding-page {margin-top: -95px;}
             <div class="get_title"><?php echo $this->Html->link('Timezone & Profile','/users/profile',array('class'=>'get_title'));?></div>
             <ul>
                 <li>
-                    Personalize your Orangescrum account by setting up your Profile details and Timezone.
+                    Personalize your OpenTask account by setting up your Profile details and Timezone.
                 </li>
                 <li>
                     The Timezone settings help you to keep stay up-to-date while working with a virtual or remote team.
@@ -278,7 +278,7 @@ body.open_hellobar .on-boarding-page {margin-top: -95px;}
                     The Email Notification is set to "No" by default, to get email those email only when selected when task is posted.
                 </li>
                 <li>
-                    Set to "Yes", to get all the Task related Emails from all your assigned projects from Orangescrum.
+                    Set to "Yes", to get all the Task related Emails from all your assigned projects from OpenTask.
                 </li>
                 <li>
                     You can enable or disable Google Chrome Desktop Notification on the "Notification" page.

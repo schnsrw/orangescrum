@@ -21,7 +21,7 @@
 				<p>Fie size: <?php echo $f_size;?> </p>				
 				<br/>
 				<p>Regards,<br/>
-				The Orangescrum Team</p>
+				The OpenTask Team</p>
                             </td>
                         </tr>
                    </table>
@@ -35,12 +35,12 @@
 									if($existing_user)
 									{
 									?>
-										You are receiving this email notification because you have subscribed to Orangescrum, to unsubscribe, please email with subject 'Unsubscribe' to <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
+										You are receiving this email notification because you have subscribed to OpenTask, to unsubscribe, please email with subject 'Unsubscribe' to <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
 									<?php
 									}
 									else {
 									?>
-										Your email address is used to invite you on Orangescrum. If you didn't intend to do this, just ignore this email; no account has been created yet.
+										Your email address is used to invite you on OpenTask. If you didn't intend to do this, just ignore this email; no account has been created yet.
 									<?php
 									}
 									?>

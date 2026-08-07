@@ -52,17 +52,17 @@
 	<tbody>
 		<tr>
 			<td>
-				<h5><?php echo __('How is Orangescrum different from other tools or systems');?>?</h5>
+				<h5><?php echo __('How is OpenTask different from other tools or systems');?>?</h5>
 				<p>
-					<?php echo __('Orangescrum combines work management + team collaboration & file sharing + invoicing + timelog, so that you can do more with the help of just one app');?>. <?php echo __('Orangescrum, to accelerate your business without the botheration of managing multiple apps');?>. <br /><br />
-					<?php echo __('Check in the');?> <a href="https://www.orangescrum.com/success-story/" target="_blank"><?php echo __('success story');?></a> <?php echo __('of SARAL using Orangescrum');?>. 
+					<?php echo __('OpenTask combines work management + team collaboration & file sharing + invoicing + timelog, so that you can do more with the help of just one app');?>. <?php echo __('OpenTask, to accelerate your business without the botheration of managing multiple apps');?>. <br /><br />
+					<?php echo __('Check in the');?> <a href="https://www.orangescrum.com/success-story/" target="_blank"><?php echo __('success story');?></a> <?php echo __('of SARAL using OpenTask');?>.
 				</p>
 			</td>
 			<td class="space_td"></td>
 			<td>
 				<h5><?php echo __('Can I avail a free trial plan with all features');?>?</h5>
 				<p>
-				<?php echo __("As soon as you sign up, you can enjoy Orangescrum's free trial for 30 days with all its features");?>.
+				<?php echo __("As soon as you sign up, you can enjoy OpenTask's free trial for 30 days with all its features");?>.
 				</p>
 			</td>
 		</tr>
@@ -86,9 +86,9 @@
 			</td>
 			<td class="space_td"></td>
 			<td>
-				<h5><?php echo __('Can I opt for an Annual Orangescrum Cloud Subscription');?>?</h5>
+				<h5><?php echo __('Can I opt for an Annual OpenTask Cloud Subscription');?>?</h5>
 				<p>
-					<?php echo __('Yes, you can! Orangescrum Cloud is available on an annual subscription plan in addition to monthly plan');?>.
+					<?php echo __('Yes, you can! OpenTask Cloud is available on an annual subscription plan in addition to monthly plan');?>.
 				</p>
 			</td>
 			
@@ -105,7 +105,7 @@
 			<td>
 				<h5><?php echo __('Do you have any quick guide or getting started page');?>?</h5>
 				<p>
-					<?php echo __("Yes, we do. It's known as");?> "<a href='http://helpdesk.orangescrum.com/' target="_blank"><?php echo __('Orangescrum Helpdesk');?></a>" - <?php echo __("you will find all the answers to your questions with screenshots that will guide you in getting started with Orangescrum as well as rescue you if you're stuck somewhere");?>.   
+					<?php echo __("Yes, we do. It's known as");?> "<a href='http://helpdesk.orangescrum.com/' target="_blank"><?php echo __('OpenTask Helpdesk');?></a>" - <?php echo __("you will find all the answers to your questions with screenshots that will guide you in getting started with OpenTask as well as rescue you if you're stuck somewhere");?>.
 				</p>
 			</td>
 			
@@ -151,9 +151,9 @@
 			</td>
                         <td class="space_td"></td>
 			<td>
-				<h5><?php echo __('Is there any option to have Orangescrum on my premises');?>?</h5>
+				<h5><?php echo __('Is there any option to have OpenTask on my premises');?>?</h5>
 				<p>
-					<?php echo __('Of course, we can install Orangescrum in your environment with a customized price');?>. <a href="mailto:support@orangescrum.com?subject=Is there any option to have Orangescrum on my premises?"><?php echo __('Contact us');?></a> <?php echo __('for on-premises solutions');?>.
+					<?php echo __('Of course, we can install OpenTask in your environment with a customized price');?>. <a href="mailto:support@orangescrum.com?subject=Is there any option to have OpenTask on my premises?"><?php echo __('Contact us');?></a> <?php echo __('for on-premises solutions');?>.
 				</p>
 			</td>
 			
@@ -185,9 +185,9 @@
 			</td>
                         <td class="space_td"></td>
 			<td>
-				<h5><?php echo __('Can I use multiple Orangescrum accounts');?>? </h5>
+				<h5><?php echo __('Can I use multiple OpenTask accounts');?>? </h5>
 				<p>
-					<?php echo __('You can create only one Orangescrum account but if you are the owner of the account, it is possible to operate multiple companies');?>. 
+					<?php echo __('You can create only one OpenTask account but if you are the owner of the account, it is possible to operate multiple companies');?>.
 				</p>
 			</td>
 			
@@ -207,10 +207,10 @@
 			</td>
                         <td class="space_td"></td>
 			<td>
-				<h5><?php echo __('Can I customize my Orangescrum');?>?</h5>
+				<h5><?php echo __('Can I customize my OpenTask');?>?</h5>
 				<p>
 					<?php echo __('We do not accept any customization request for the cloud version. However, you can request us for a new feature');?>. <br />
-					<?php echo __('Note: Customization request is possible if you are using or interested for the Orangescrum Community or Enterprise (on-Premises) Version');?>. 
+					<?php echo __('Note: Customization request is possible if you are using or interested for the OpenTask Community or Enterprise (on-Premises) Version');?>.
 				</p>
 			</td>
 			

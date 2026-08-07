@@ -29,15 +29,15 @@
 							
 						?>
 					<?php if($sup_amt == ''){ ?>
-                        <p>We have received your enquiry for Orangescrum Self-Hosted Edition. We appreciate for taking out time to write to us.</p>
-                        <p>We will get back to you shortly – an Orangescrum expert will get in touch with you; we certainly look forward to discover more about your interests and challenges.</p>
+                        <p>We have received your enquiry for OpenTask Self-Hosted Edition. We appreciate for taking out time to write to us.</p>
+                        <p>We will get back to you shortly – an OpenTask expert will get in touch with you; we certainly look forward to discover more about your interests and challenges.</p>
                     <?php } else{ ?>
-                        <p>My name is Omkar; I wanted to personally welcome you to Orangescrum. I really appreciate you joining us, and I know you will love the convenience of being able to monitor your entire business from one place using our all-in-one project management collaboration tool.</p>
-                        <p>We have received your request for - <?php echo $users; ?> Users Orangescrum Enterprise Annual Plan. You will soon receive an invoice for <b><?php echo $sup_amt;?></b> from Andolasoft Inc. Once you have made the payment, one of our Orangescrum expert will contact you; guide you further with the process and deliver the package.</p>
+                        <p>My name is Omkar; I wanted to personally welcome you to OpenTask. I really appreciate you joining us, and I know you will love the convenience of being able to monitor your entire business from one place using our all-in-one project management collaboration tool.</p>
+                        <p>We have received your request for - <?php echo $users; ?> Users OpenTask Enterprise Annual Plan. You will soon receive an invoice for <b><?php echo $sup_amt;?></b> from Andolasoft Inc. Once you have made the payment, one of our OpenTask expert will contact you; guide you further with the process and deliver the package.</p>
                     <?php } ?>
 					    <p>
-						Cheers!<br/> 
-						The Orangescrum Team<br />
+						Cheers!<br/>
+						The OpenTask Team<br />
                         <img style="vertical-align: middle" src="https://www.orangescrum.com/img/skype_ico.png" />andola.priyank
 					    </p>
 					</td>

@@ -14,10 +14,10 @@
 						Hi <?php echo $data['name']; ?>,                    
 					    </p>
 					    <p>
-						Thank you for your Download <b>Orangescrum v1.0</b>.
+						Thank you for your Download <b>OpenTask v1.0</b>.
 					    </p>
 					    <p>
-						Please click the big button below to start downloading <b>Orangescrum Community Edition</b>
+						Please click the big button below to start downloading <b>OpenTask Community Edition</b>
 					    </p>
 					    <a style="font-weight:bold; text-decoration:none;" href="<?php echo $data['url']; ?>">
 						<div style="display:block; max-width:100% !important; width:95% !important;margin:auto; height:auto !important;background-color:#0EA426;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;border-radius:10px;color:#ffffff;font-size:16px;text-align:center">Download</div>
@@ -25,10 +25,10 @@
 					    <br/>
 					    <br/>
 					    <p>
-						Just 5 simple steps to start using Orangescrum in your premises. This procedure is well-tested on Windows, Linux and Mac operating system.
+						Just 5 simple steps to start using OpenTask in your premises. This procedure is well-tested on Windows, Linux and Mac operating system.
 						<br/>
 						<a href="<?php echo $data['manual_url']; ?>" target="_blank">
-						    Download Orangescrum installation manual
+						    Download OpenTask installation manual
 						</a>
 					    </p>
                                             <p>
@@ -54,7 +54,7 @@
 					    </p>
 					    <p>
 						Have a great day!<br/>
-						The Orangescrum Team
+						The OpenTask Team
 					    </p>
 					</td>
 				    </tr>

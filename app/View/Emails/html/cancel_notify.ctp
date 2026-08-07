@@ -20,13 +20,13 @@
 								
 								<p><?php echo __("To activate your account, you just need to login and resubscribe again.");?></p>
 								
-								<p><?php echo __("If you have a minute, we'd appreciate your thoughts on how we can do better. Your feedback will help us to improve Orangescrum :)");?></p>
+								<p><?php echo __("If you have a minute, we'd appreciate your thoughts on how we can do better. Your feedback will help us to improve OpenTask :)");?></p>
 								
 								<p><?php echo __("We look forward to hearing from you. Please write us at");?> <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a><?php echo __("or just reply to this email.");?></p>
 								<br/>
 								
 								<p><?php echo __("Regards,");?><br/>
-								<?php echo __("The Orangescrum Team");?></p>
+								<?php echo __("The OpenTask Team");?></p>
                             </td>
                         </tr>
                    </table>
@@ -61,7 +61,7 @@
    <tr><td align='left' style='font-family:Arial;font-size:14px;'>We will be happy to hear more about the reason of cancellation.</td></tr>
    <tr><td align='left' style='font-family:Arial;font-size:14px;'>You can send your feedback on support&#64;orangescrum&#46;com</td></tr>
    <tr height='15px'><td align='left' style='font-family:Arial;font-size:14px;'>&nbsp;</td></tr>
-   <tr><td align='left' style='font-family:Arial;font-size:14px;'>Thank you for using Orangescrum.</td></tr>
+   <tr><td align='left' style='font-family:Arial;font-size:14px;'>Thank you for using OpenTask.</td></tr>
    <?php echo EMAIL_FOOTER;?>
 </table><?php */?>
 

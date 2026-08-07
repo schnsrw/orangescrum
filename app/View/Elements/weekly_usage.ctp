@@ -184,7 +184,7 @@ function PrintDiv() {
 	var divToPrint = document.getElementById('divToPrint');
 	var popupWin = window.open('', '_blank', 'width=800,height=600');
 	popupWin.document.open();
-	popupWin.document.write('<html><title><?php echo __('Orangescrum Weekly Usage Report');?> <?php echo date("D, M d",  (strtotime($dateCurnt)-($days_diff*24*60*60)))."&nbsp;-&nbsp;".date("D, M d",strtotime($dateCurnt));?> </title><body onload="window.print()">' + divToPrint.innerHTML + '</html>');
+	popupWin.document.write('<html><title><?php echo __('OpenTask Weekly Usage Report');?> <?php echo date("D, M d",  (strtotime($dateCurnt)-($days_diff*24*60*60)))."&nbsp;-&nbsp;".date("D, M d",strtotime($dateCurnt));?> </title><body onload="window.print()">' + divToPrint.innerHTML + '</html>');
 	popupWin.document.close();
 }
 $(document).ready(function(){

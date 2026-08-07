@@ -60,7 +60,7 @@
                         <ul class="chk_desc">
                             <li><b><?php echo __('Note');?>:</b></li>
                             <ul>
-                                <li><?php echo __('Please validate your data twice before importing to Orangescrum');?>.</li>
+                                <li><?php echo __('Please validate your data twice before importing to OpenTask');?>.</li>
                                 <li><?php echo __('Can only import comment for existing tasks');?>.</li>
                             </ul>					
                         </ul>

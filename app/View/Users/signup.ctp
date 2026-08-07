@@ -44,7 +44,7 @@ h5 a.btn-link.tearms_of_ser,h5 a.btn-link.tearms_of_ser:hover {color: #2a59a9;}
 <div id="donot_refresh" class="donot_refresh" style="display:none;"><span style="margin-top: 3px;">Just a moment... we're setting up your account.<br/>Please don't refresh or close this page.</span><br/><span><img src="<?php echo HTTP_ROOT;?>img/payment_loading.gif" style="padding:5px;"/></span></div>
 <?php if(defined('RELEASE_V') && RELEASE_V){
 	$file_not_exist = 0;
-	if(!$this->Format->is_url_exist(HTTP_ROOT.'img/header/orangescrum-logo.svg')){
+	if(!$this->Format->is_url_exist(HTTP_ROOT.'img/logo/opentask-logo.svg')){
 		$file_not_exist = 1;
 	}
 	?>
@@ -71,14 +71,14 @@ h5 a.btn-link.tearms_of_ser,h5 a.btn-link.tearms_of_ser:hover {color: #2a59a9;}
 		</div>
             <div  class="col-lg-3" style="padding-right:0"></div>
 		<div  class="col-lg-7" style="padding-right:0">
-                    <div class="satsf_img"><a href="<?php echo HTTP_ROOT; ?>"><img src="<?php echo HTTP_ROOT; ?>img/header/orangescrum-logo.svg" alt="Orangescrum"/></a></div>
+                    <div class="satsf_img"><a href="<?php echo HTTP_ROOT; ?>"><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" alt="OpenTask"/></a></div>
         <div class="cmn_bdr_shadow">
             <div id="signupsuccess" style="text-align:center;width:100%;border:0px solid #666666;height:450px;display:none;">
                 <img src="<?php echo HTTP_ROOT; ?>img/inbox.png" title="Inbox(1)" alt="Inbox(1)"/>
                 <h3 class="reg" style="text-align:center;color:#FF7E00;font-size:30px;padding-top:10px;">Thanks for Signing up</h3>
                 <h3 class="reg" style="text-align:center;color:#5B767D;font-size:24px;padding-top:10px;">Just one more step...</h3>
                 <div id="msgsuccess" class="sml_hd_1 faq_ans" style="text-align:center;color:#333333;padding-top:10px;font-size:20px;">
-                    A confirmation email is sent,<br/>please activate your account and start using Orangescrum right away.
+                    A confirmation email is sent,<br/>please activate your account and start using OpenTask right away.
                 </div>
                 <div class="faq_an" style="text-align:center;color:#333333;font-size:18px;padding-top:30px;">
                     If you do not receive any email, please feel free to <br/><a href="mailto:support@orangescrum.com?subject=Please activate my Account" style="color:#FF7E00">contact us</a> and we'll activate it for you.
@@ -389,9 +389,9 @@ function validateForm() {
                                      $('#donot_refresh').hide();
 
                                      //$(".success_msg").show('slow');
-                                     //$(".success_msg").html("Thanks for Signing up. An activation link is sent to '"+email+"' for confirmation,<br/> Please click that and start using Orangescrum rightaway.");
+                                     //$(".success_msg").html("Thanks for Signing up. An activation link is sent to '"+email+"' for confirmation,<br/> Please click that and start using OpenTask rightaway.");
 
-                                     $("#msgsuccess").html("A confirmation link is sent to '"+email+"',<br/>please activate your account and start using Orangescrum rightaway.");
+                                     $("#msgsuccess").html("A confirmation link is sent to '"+email+"',<br/>please activate your account and start using OpenTask rightaway.");
                                      $("#signupsuccess").slideDown('slow');
                                      $("#login_dialog").hide();
 

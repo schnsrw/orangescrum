@@ -70,5 +70,5 @@
 	<div> You needs to delete files of size <b><?php echo $this->Format->displaystorage($limitation['used_space']- $subscription['Subscription']['storage']); ?> </b></div>
 	<?php } ?>
 	<div>After deleting above things it is possible to downgrade your current plan</div>
-	<div><font style="color: #EF439B;font-size: 16px;">Tips: <i>You can take backup of your data and delete them from Orangescrum.</i></div>
+	<div><font style="color: #EF439B;font-size: 16px;">Tips: <i>You can take backup of your data and delete them from OpenTask.</i></div>
 </div>

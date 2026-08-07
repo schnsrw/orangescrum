@@ -25,7 +25,7 @@
 								
 								
 								<p><?php echo __("Regards,");?><br/>
-								<?php echo __("The Orangescrum Team");?></p>
+								<?php echo __("The OpenTask Team");?></p>
                             </td>
                         </tr>
                    </table>
@@ -36,7 +36,7 @@
                             	<p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; margin-top:0; padding:0; font-weight:normal;padding-top:5px;">
 									<?php echo NEW_EMAIL_FOOTER; ?>
 
-									<?php echo __("You are receiving this email notification because you have subscribed to Orangescrum, to unsubscribe, please email with subject 'Unsubscribe' to");?> <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
+									<?php echo __("You are receiving this email notification because you have subscribed to OpenTask, to unsubscribe, please email with subject 'Unsubscribe' to");?> <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>
 									
                                 </p>
                             </td>
@@ -68,8 +68,8 @@
 		</p>
 		<p style="display:block;margin:0">
 			Regards,<br/>
-			The Orangescrum Team
-		</p>				
+			The OpenTask Team
+		</p>
 	</div>
       </td>
     </tr>

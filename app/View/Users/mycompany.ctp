@@ -30,7 +30,7 @@
 			</div>
 			<div class="mtop20">
             <div class="form-group form-group-lg label-floating company-url">
-                <label class="control-label" for="secsite"><?php echo __('Orangescrum URL');?></label>
+                <label class="control-label" for="secsite"><?php echo __('OpenTask URL');?></label>
                 <?php echo $this->Form->text('secsite', array('value' => HTTP_ROOT, 'name' => 'securesite', 'class' => 'form-control', 'id' => 'secsite', 'autocomplete' => 'off', 'disabled' => 'disabled')); ?>
             </div>
 					</div>

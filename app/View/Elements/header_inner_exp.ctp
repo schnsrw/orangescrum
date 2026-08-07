@@ -80,7 +80,7 @@ if( $is_active_proj || (SES_TYPE==3)){
                         <span class="icon-bar"></span>
                   </button>
                         <a class="navbar-brand nav-logo" href="<?php if ($_COOKIE['FIRST_LOGIN_1']) {echo 'javascript:void(0);';}else{ echo HTTP_ROOT . Configure::read('default_action');} ?>">
-                                <img src="<?php echo HTTP_IMAGES; ?>logo/orangescrum-100-100.png" height="32" width="32"/>
+                                <img src="<?php echo HTTP_IMAGES; ?>logo/opentask-icon.svg" height="32" width="32" alt="OpenTask"/>
                         </a>
                   <div class="logo_cmpany_name">
                   <ul class="nav navbar-nav">
@@ -195,7 +195,7 @@ if( $is_active_proj || (SES_TYPE==3)){
                   </ul>
                   <?php //if(ACCOUNT_STATUS !=2 && $is_active_proj){ ?>
                   <?php if(PAGE_NAME !== "work_load"){ ?>
-									<a href="javascript:void(0);" id="new_onboarding_link" class="tour_top_txt" onclick="newOnboarding();" <?php if(isset($_COOKIE['FIRST_INVITE_2'])){ ?> style="display:inline-block;"<?php }else{ ?> style="display:none;" <?php } ?>><?php echo __('Take a Tour of Orangescrum');?></a>																		
+									<a href="javascript:void(0);" id="new_onboarding_link" class="tour_top_txt" onclick="newOnboarding();" <?php if(isset($_COOKIE['FIRST_INVITE_2'])){ ?> style="display:inline-block;"<?php }else{ ?> style="display:none;" <?php } ?>><?php echo __('Take a Tour of OpenTask');?></a>
                   <form class="navbar-form navbar-search top_search header-search-box" role="search">
                         <div id="tour_proj_srch" class="form-group" <?php if(in_array(PAGE_NAME,$priving_arr_fun)){ ?>style="display:none;" <?php } ?>>
                             <div id="srch_remv" onclick="clearSearch('outer');"> 
@@ -572,7 +572,7 @@ if( $is_active_proj || (SES_TYPE==3)){
                 <span class="cmn_lh_sp refer_frnd"></span>
                 </a>
 							</li> */ ?>
-							<li <?php if(isset($_COOKIE['FIRST_INVITE_2'])){ ?> style="display:none;"<?php } ?>class="quick_tour vline" rel="tooltip_down_btm" title="<?php echo __('Take a Tour of Orangescrum'); ?>" id="tour_after_onboarding">
+							<li <?php if(isset($_COOKIE['FIRST_INVITE_2'])){ ?> style="display:none;"<?php } ?>class="quick_tour vline" rel="tooltip_down_btm" title="<?php echo __('Take a Tour of OpenTask'); ?>" id="tour_after_onboarding">
 									<a class="" href="javascript:void(0);" onclick="newOnboarding();return trackEventLeadTracker('Left Panel', 'Quick Tour', '<?php echo $_SESSION['SES_EMAIL_USER_LOGIN']; ?>');">
 									<span class="cmn_lh_sp refer_frnd"></span>
 									</a>
@@ -803,7 +803,7 @@ if( $is_active_proj || (SES_TYPE==3)){
                                                             <?php } ?>
                                                     </ul>
                                             </li>
-                                <li><a href="javascript:void(0)" class="grp_ttle togle_link"><span class="cmn_cstm_set"><i class="material-icons">info</i></span> <?php echo __('Orangescrum Info');?></a>
+                                <li><a href="javascript:void(0)" class="grp_ttle togle_link"><span class="cmn_cstm_set"><i class="material-icons">info</i></span> <?php echo __('OpenTask Info');?></a>
                                     <ul class="grp_sub_item">
                                                             <li><a href="javascript:void(0);" onclick="trackEventLeadTracker('Top Setting','Getting Started Page','<?php echo $_SESSION['SES_EMAIL_USER_LOGIN'];?>');gettingStarted();"><?php echo __('Getting Started');?></a></li>
                                         <li><a href="<?php echo HTTP_ROOT;?>mobile-device"><?php echo __('Get free Mobile Apps');?></a></li> 

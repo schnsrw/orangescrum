@@ -4821,7 +4821,7 @@ class ProjectsController extends AppController
         header("Pragma: no-cache");
         header("Expires: 0");
         header("Content-type: text/csv");
-        header("Content-Disposition: attachment; filename=Orangescrum_Task_Sample.csv");
+        header("Content-Disposition: attachment; filename=OpenTask_Task_Sample.csv");
         readfile(CSV_PATH . "task_milstone/" . $myFile);
         exit;
     }
@@ -4835,7 +4835,7 @@ class ProjectsController extends AppController
         header("Pragma: no-cache");
         header("Expires: 0");
         header("Content-type: text/csv");
-        header("Content-Disposition: attachment; filename=Orangescrum_Project_Template_Task_Sample.csv");
+        header("Content-Disposition: attachment; filename=OpenTask_Project_Template_Task_Sample.csv");
         readfile(CSV_PATH . "project_template/" . $myFile);
         exit;
     }
@@ -5154,7 +5154,7 @@ class ProjectsController extends AppController
             $projUniqId = $prjArr['Project']['uniq_id'];
         }
 
-        $subject = __("You have been added to ") . $projName . __(" on ")."Orangescrum";
+        $subject = __("You have been added to ") . $projName . __(" on ")."OpenTask";
         $uEmail = $this->User->getLoginUserEmail(SES_ID);
         $this->Email->delivery = 'smtp';
         $this->Email->to = $to_email;
@@ -7396,7 +7396,7 @@ class ProjectsController extends AppController
         header("Pragma: no-cache");
         header("Expires: 0");
         header("Content-type: application/vnd.ms-excel");
-        header("Content-Disposition: attachment; filename=Orangescrum_Import_Task_Sample.xlsx");
+        header("Content-Disposition: attachment; filename=OpenTask_Import_Task_Sample.xlsx");
         readfile(CSV_PATH . "task_milstone/" . $myFile);
         exit;
     }

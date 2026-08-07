@@ -30,7 +30,7 @@ h1{margin:0px}
 	<?php $avl_discount = 0; ?> 
 	<div style="width:1040px;min-height:500px;margin:50px auto;">
     <div class="fl">
-		<div><img src="<?php echo HTTP_ROOT; ?>img/logo/orangescrum-134-40.png"  border="0" alt="Orangescrum.com" title="Orangescrum.com"/></div>
+		<div><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" border="0" alt="OpenTask" title="OpenTask"/></div>
         <div>
         <table cellpadding="2" cellspacing="2" style="font-size:17px;margin-top:30px;">
         <tr>

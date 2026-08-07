@@ -1,7 +1,7 @@
 <span style="font-family: Arial;font-size:  14px">
     <p><?php echo __("Dear site administrator,");?></p>
 	
-    <p><?php echo __("Below are the details of the Community Customer who purchased the one-time installation and support for orangescrum community edition,");?></p>
+    <p><?php echo __("Below are the details of the Community Customer who purchased the one-time installation and support for opentask community edition,");?></p>
     <p><b><?php echo __("Name:");?></b><?php echo ucwords($data['name']); ?></p>
     <p><b><?php echo __("Email:");?></b><?php echo $data['email']; ?></p>
     <p><b><?php echo __("Industry:");?></b><?php echo $data['industry']; ?></p>
@@ -11,5 +11,5 @@
     <p><b><?php echo __("GMT Offset:");?></b><?php echo $data['gmt_offset']; ?></p>
         
     <p><?php echo __("Thanks,");?></p>
-    <p><?php echo __("The Orangescrum Team");?></p>
+    <p><?php echo __("The OpenTask Team");?></p>
 </span>

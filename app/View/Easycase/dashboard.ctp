@@ -4,7 +4,7 @@
 <?php if(isset($first_login) && $first_login == 1 && !isset($_SESSION['Auth']['User']['dt_last_login'])){ ?>
     <div class="common-user-overlay onboard-overlay"></div>
     <div class="top-onboard-div">
-        <b><?php echo __('Welcome to Orangescrum');?>!</b> <?php echo __('Let’s Make Your Project Collaboration Simpler');?>.
+        <b><?php echo __('Welcome to OpenTask');?>!</b> <?php echo __('Let’s Make Your Project Collaboration Simpler');?>.
         <a class="top_project_btn btn btn_cmn_efect cmn_bg btn-info cmn_size" href="<?php echo HTTP_ROOT;?>dashboard#tasks"><?php echo __("I'M Ready to Get Started");?></a>
     </div>
     <div class="onboard-div onboard-nav"><?php echo __('This is your "Quick Navigation" menu, from Kanban View to Calendar View and more');?>. </div>
@@ -15,7 +15,7 @@
     <div class="onboard-div onboard-usr"><?php echo __('Here you can invite or add new "User(s)" and manage the existing ones');?>.</div>
     <div class="onboard-div onboard-tsk"><?php echo __('This button helps you create "Task(s)" in a click');?>.</div>
     <div class="onboard-div onboard-actn"><?php echo __('This section helps you perform all "Task" actions');?>.</div>
-    <div class="onboard-div onboard-help"><?php echo __('Give a buzz to our helpdesk. Orangescrum experts will walk you through');?>.</div>
+    <div class="onboard-div onboard-help"><?php echo __('Give a buzz to our helpdesk. OpenTask experts will walk you through');?>.</div>
     <script type="text/javascript">
         $(document).ready(function(){
             $('body').css({'overflow':'hidden'});
@@ -46,9 +46,9 @@
 						<div class="latest_release_info">
 							<strong><?php echo __('Info!');?></strong> 
 							<?php if($this->Format->isGithubOn(SES_COMP)){ ?>
-								<?php echo __("Sync Orangescrum tasks with GitHub & vice versa!");?> <a href="<?php echo HTTP_ROOT;?>github/gitconnect" class="btn btn_cmn_efect cmn_bg btn-info cmn_size" style="margin-left: 14px;" onclick="closeInfodiv(0);"><?php echo __("Try it Now");?></a>
+								<?php echo __("Sync OpenTask tasks with GitHub & vice versa!");?> <a href="<?php echo HTTP_ROOT;?>github/gitconnect" class="btn btn_cmn_efect cmn_bg btn-info cmn_size" style="margin-left: 14px;" onclick="closeInfodiv(0);"><?php echo __("Try it Now");?></a>
 							<?php }else{ ?>
-									<?php echo __("Sync Orangescrum tasks with GitHub & vice versa! Available only in Standard Plan & above.");?> <a href="<?php echo HTTP_ROOT;?>pricing" class="btn btn_cmn_efect cmn_bg btn-info cmn_size" style="margin-left: 14px;" onclick="closeInfodiv(0);"><?php echo __("Upgrade Now");?></a>
+									<?php echo __("Sync OpenTask tasks with GitHub & vice versa! Available only in Standard Plan & above.");?> <a href="<?php echo HTTP_ROOT;?>pricing" class="btn btn_cmn_efect cmn_bg btn-info cmn_size" style="margin-left: 14px;" onclick="closeInfodiv(0);"><?php echo __("Upgrade Now");?></a>
 							<?php } ?>
 							<span class="close_info" onclick="closeInfodiv(0);"><i class="material-icons">&#xE14C;</i></span>
 						</div>

@@ -228,9 +228,9 @@
                          $('#donot_refresh').hide();
                          
                          //$(".success_msg").show('slow');
-                         //$(".success_msg").html("Thanks for Signing up. An activation link is sent to '"+email+"' for confirmation,<br/> Please click that and start using Orangescrum rightaway.");
+                         //$(".success_msg").html("Thanks for Signing up. An activation link is sent to '"+email+"' for confirmation,<br/> Please click that and start using OpenTask rightaway.");
                          
-                         $("#msgsuccess").html("A confirmation link is sent to '"+email+"',<br/>please activate your account and start using Orangescrum rightaway.");
+                         $("#msgsuccess").html("A confirmation link is sent to '"+email+"',<br/>please activate your account and start using OpenTask rightaway.");
                          $("#signupsuccess").slideDown('slow');
                          $("#login_dialog").hide();
                          

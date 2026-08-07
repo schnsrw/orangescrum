@@ -26,7 +26,7 @@
 #myModalSignup .showafteremail {display:none;}
 
 #myModalSignup .goole_btn a {text-decoration: none; font-size: 12px;line-height: 30px;color: #F34A38;font-weight: 500;letter-spacing: 1px; display: inline-block;text-align: center;outline: none;background: #F5F5F5;padding: 4px 20px;border-radius: 3px;}
-#myModalSignup .g_plus {background: url(../img/home_outer/fld-icon-sp.png) no-repeat 0px 0px;display: inline-block;position: relative;    vertical-align: middle;background-position: 0px -182px;top: -1px;height: 30px;width: 46px;}
+#myModalSignup .g_plus {display: inline-block;position: relative;    vertical-align: middle;background-position: 0px -182px;top: -1px;height: 30px;width: 46px;}
 
 
 </style>
@@ -40,13 +40,13 @@
         </div>
         <div class="modal-body">
 			<div id="login_dialog_signup" style="display:block">
-                    <h4><strong>76,000+</strong> <?php echo __('companies use Orangescrum to collaborate and manage projects everyday');?>.</h4>
+                    <h4><strong>76,000+</strong> <?php echo __('companies use OpenTask to collaborate and manage projects everyday');?>.</h4>
                     <div id="signupsuccess_nps" style="text-align:center;width:100%;border:0px solid #666666;height:450px;display:none;">
 						<img src="<?php echo HTTP_ROOT; ?>img/inbox.png" title="Inbox(1)" alt="Inbox(1)"/>
 						<h3 class="reg" style="text-align:center;color:#FF7E00;font-size:30px;padding-top:10px;"><?php echo __('Thanks for Signing up');?></h3>
 						<h3 class="reg" style="text-align:center;color:#5B767D;font-size:24px;padding-top:10px;"><?php echo __('Just one more step');?>...</h3>
 						<div id="msgsuccess_nps" class="sml_hd_1 faq_ans" style="text-align:center;color:#333333;padding-top:10px;font-size:20px;">
-							<?php echo __('A confirmation email is sent');?>,<br/><?php echo __('please activate your account and start using Orangescrum right away');?>.
+							<?php echo __('A confirmation email is sent');?>,<br/><?php echo __('please activate your account and start using OpenTask right away');?>.
 						</div>
 						<div class="faq_an" style="text-align:center;color:#333333;font-size:18px;padding-top:30px;">
 							<?php echo __('If you do not receive any email');?>, <?php echo __('please feel free to');?> <br/><a href="mailto:support&#64;orangescrum&#46;com?subject=Please activate my Account" style="color:#FF7E00"><?php echo __('contact us');?></a> <?php echo __("and we'll activate it for you");?>.
@@ -133,7 +133,7 @@
 							</div>
 							<div class="cb"></div>
 							<div id="seo_url_exist_nps" style="display:none;font-size:14px;color:#FF0000;margin-top:5px;"></div>
-							<p class="signup-g-text"><?php echo __("Each Orangescrum account gets a unique web address. For example, if you want your Orangescrum address to be apple.orangescrum.com, you'd enter apple");?>".</p>
+							<p class="signup-g-text"><?php echo __("Each OpenTask account gets a unique web address. For example, if you want your OpenTask address to be apple.orangescrum.com, you'd enter apple");?>".</p>
 							<div class="question-mark"></div>
 						</div>
 						<input type="hidden" name="data[User][timezone_id]" id="timezone_id_nps" value="">
@@ -423,7 +423,7 @@ function validateForm_nps(obj) {
                             $('#cover').hide();
                             $('#donot_refresh').hide();
 							
-                            $("#msgsuccess_nps").html("A confirmation link is sent to '" + email + "',<br/>please activate your account and start using Orangescrum rightaway.");
+                            $("#msgsuccess_nps").html("A confirmation link is sent to '" + email + "',<br/>please activate your account and start using OpenTask rightaway.");
                             $("#signupsuccess_nps").slideDown('slow');
                             $("#login_dialog_nps").hide();
 

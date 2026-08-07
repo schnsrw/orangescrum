@@ -27,7 +27,7 @@ display: inline-block; background: #fff; padding: 0 5px;}
 <div class="login_sup_page fpwd_page">
     <div class="wrapper_sup">
         <div class="cmn_bdr_shadow forget_password_wrap">
-        <div class="center_logo"><a href="<?php echo HTTPS_HOME; ?>"><img src="<?php echo HTTP_ROOT; ?>img/header/orangescrum-cloud-logo.svg"  alt="#1 Productivity Tool" title="#1 Productivity Tool" width="142" height="42"/></a></div>
+        <div class="center_logo"><a href="<?php echo HTTPS_HOME; ?>"><img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" alt="OpenTask" title="OpenTask" width="142" height="42"/></a></div>
         <?php if($chkemail=="11" && $passemail=="10") {?>
 				<style type="text/css">
 				.forgot_pwd_page .inpfld_grp .cmn_inp,
@@ -37,7 +37,7 @@ display: inline-block; background: #fff; padding: 0 5px;}
 				</style>
         <?php echo $this->Form->create('User',array('url'=>'/users/forgotpassword','onsubmit'=>'return validpwd(\'txt_email\')')); ?>
             <h1>Not a problem, sometimes it happens with all of us.</h1>
-            <div class="punch_line">Enter the email id registered with Orangescrum. <br/>
+            <div class="punch_line">Enter the email id registered with OpenTask. <br/>
             We'll send you the link to reset your password.</div>
                                       
 			                                             

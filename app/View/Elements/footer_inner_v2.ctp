@@ -486,7 +486,7 @@ function subscribeClient(){
 				$("#pubnub_notf").slideDown("1000");
 				setTimeout('removePubnubMsg()',3000);
 				//if (window.webkitNotifications) {
-				notify(getImNotifyMsg(projShName, caseNum, caseTtl, caseTyp),'Orangescrum.com');
+				notify(getImNotifyMsg(projShName, caseNum, caseTtl, caseTyp),'OpenTask');
 				//}
 			}
                     }	
@@ -1208,7 +1208,7 @@ function extendTrialByUser(){
 		if(res.status != 'success'){
 			showTopErrSucc('error',res.message);
 		}else{
-			showTopErrSucc('success', 'Congratulations! Your Orangescrum FREE trial has been exttended to another <?php echo EXTEND_TRIAL_USER_DAYS; ?> days');
+			showTopErrSucc('success', 'Congratulations! Your OpenTask FREE trial has been exttended to another <?php echo EXTEND_TRIAL_USER_DAYS; ?> days');
 			setTimeout(function(){ 
 				window.location.reload();
 			}, 8000);
@@ -1282,7 +1282,7 @@ function extendTrialByUser(){
 	.upgrade_plan_popup h6{font-size:18px;line-height:30px;font-weight:300;margin:20px 0 15px;}
 	.upgrade_plan_popup .upgrade_now{display:inline-block;text-decoration:none;font-size:16px;padding:10px 30px;background:#1CC760;color:#fff;font-weight:500;border-radius:5px;margin:20px 0 15px}
 	.upgrade_plan_popup .no_thanks{text-decoration:underline;font-size:15px;line-height:25px;color:#666;}
-	.upgrade_plan_popup .upgrade_arw{background:url(<?php echo HTTP_ROOT; ?>img/home/upgrade-arrow.png) no-repeat 0px 0px;width:100px;height:50px;background-size:100% auto;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;}
+	.upgrade_plan_popup .upgrade_arw{width:100px;height:50px;background-size:100% auto;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;}
 </style>
 <?php if($GLOBALS['user_subscription']['subscription_id'] == CURRENT_EXPIRED_PLAN){ ?>
 <?php
@@ -1544,13 +1544,13 @@ echo $this->element('server_down_wanr');
 	<div class="cmn_dasktop_notify cmn_dasktop_notify6">
   <?php /*<article>
     <h5><strong><?php echo __("Just Released");?></strong><?php echo __("Google Calendar Integration");?></h5>
-    <p><?php echo __("Take control of your project deadlines, appointments & tasks scheduled on your Google Calendar with a real-time, two-way integration with Orangescrum.");?> <a href="<?php echo HTTP_ROOT;?>users/syncGoogleCalendar" style="color:#1A73E8;"><?php echo __("Try it Now");?></a></p>
+    <p><?php echo __("Take control of your project deadlines, appointments & tasks scheduled on your Google Calendar with a real-time, two-way integration with OpenTask.");?> <a href="<?php echo HTTP_ROOT;?>users/syncGoogleCalendar" style="color:#1A73E8;"><?php echo __("Try it Now");?></a></p>
     <a href="javascript:void(0);" class="okey_not" title="<?php echo __('OK, GOT IT');?>" onclick="checkDskClear();"><?php echo __('OK, GOT IT');?></a>
     <span class="clear_not" onclick="checkDskClear();"><i class="material-icons">clear</i></span>
   </article> 
   <article>
     <h5><strong><?php echo __("Just Released");?> - </strong><?php echo __("GitHub integration");?></h5>
-    <p><?php echo __("Manage your GitHub issues with Orangescrum seamlessly. Auto sync enables realtime access to issues and comments without logging in to GitHub.");?> <a href="<?php echo HTTP_ROOT;?>github/gitconnect" class="okey_not"><?php echo __("Try it Now");?></a></p>
+    <p><?php echo __("Manage your GitHub issues with OpenTask seamlessly. Auto sync enables realtime access to issues and comments without logging in to GitHub.");?> <a href="<?php echo HTTP_ROOT;?>github/gitconnect" class="okey_not"><?php echo __("Try it Now");?></a></p>
     <?php //<a href="javascript:void(0);" class="okey_not" title="<?php echo __('OK, GOT IT');?>" onclick="checkDskClear(2);"><?php echo __('OK, GOT IT');?></a>  ?>
 		<span class="clear_not" onclick="checkDskClear(2);"><i class="material-icons">clear</i></span>
 	  </article>
@@ -1566,7 +1566,7 @@ echo $this->element('server_down_wanr');
 	  <?php /* <div class="cmn_dasktop_notify cmn_dasktop_notify1">
 	  <article>
 		<h5><strong><?php echo __("Just Released");?></strong><?php echo __("Google Calendar Integration");?></h5>
-		<p><?php echo __("Take control of your project deadlines, appointments & tasks scheduled on your Google Calendar with a real-time, two-way integration with Orangescrum.");?> <a href="<?php echo HTTP_ROOT;?>users/syncGoogleCalendar" style="color:#1A73E8;"><?php echo __("Try it Now");?></a></p>
+		<p><?php echo __("Take control of your project deadlines, appointments & tasks scheduled on your Google Calendar with a real-time, two-way integration with OpenTask.");?> <a href="<?php echo HTTP_ROOT;?>users/syncGoogleCalendar" style="color:#1A73E8;"><?php echo __("Try it Now");?></a></p>
 		<a href="javascript:void(0);" class="okey_not" title="<?php echo __('OK, GOT IT');?>" onclick="checkDskClear(1);"><?php echo __('OK, GOT IT');?></a>
 		<span class="clear_not" onclick="checkDskClear(1);"><i class="material-icons">clear</i></span>
   </article>
@@ -1575,7 +1575,7 @@ echo $this->element('server_down_wanr');
 	
 			<article>
 			<h5><strong><?php echo __("Just Released");?> - </strong><?php echo __("Project Templates");?></h5>
-			<p><?php echo __("Create your next project with Orangescrum templates to fit your team's need and project use case.");?> 
+			<p><?php echo __("Create your next project with OpenTask templates to fit your team's need and project use case.");?> 
 			 <a href="<?php echo HTTP_ROOT;?>project-templates" class="okey_not"><?php echo __("Try it Now");?></a>
 			</p>
 			<?php //<a href="javascript:void(0);" class="okey_not" title="<?php echo __('OK, GOT IT');?>" onclick="checkDskClear(1);"><?php echo __('OK, GOT IT');?></a>  ?>

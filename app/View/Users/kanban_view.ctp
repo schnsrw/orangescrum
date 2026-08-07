@@ -26,7 +26,6 @@ $(document).ready(function() {
 				<div class="bnr_video">
 					<!--<a id="play-video" href="#"></a>-->
 					<figure class="text-right wow flipInX play_video_img" data-wow-delay="0.5s" data-toggle="modal" data-target="#video_modal">
-						<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/Kanban-video.png" alt="Kanban video" title="Kanban video" width="" height="">
 					</figure>
 				</div>
 			</div>
@@ -46,9 +45,6 @@ $(document).ready(function() {
 							</p>
 						</div>
 						<div class="col-md-6 dtbl_cell cell_60">
-							<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-								<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/hwtknban2.png" alt="Conversation Threads" title="Conversation Threads" width="" height="">
-							</figure>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -61,14 +57,11 @@ $(document).ready(function() {
 					<div class="col-md-6 dtbl_cell cell_40">
 						<h3>Collaborate in Real-Time</h3>
 						<p>
-							As soon as any of your team makes a change to the OrangeScrum’s Kanban Board, the change immediately gets reflected to everyone those who are part of the Project or task.
+							As soon as any of your team makes a change to the OpenTask’s Kanban Board, the change immediately gets reflected to everyone those who are part of the Project or task.
 						</p>
-						<a href="<?php echo HTTP_ROOT;?><?php echo SIGNUP_CTA_LINK; ?>" title="Try OrangeScrum" class="bdy_try_os_btn">Try OrangeScrum</a>
+						<a href="<?php echo HTTP_ROOT;?><?php echo SIGNUP_CTA_LINK; ?>" title="Try OpenTask" class="bdy_try_os_btn">Try OpenTask</a>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-left wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/hwtknban3.png" alt="Collaborate in Real-Time" title="Collaborate in Real-Time" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -85,9 +78,6 @@ $(document).ready(function() {
 						<a href="<?php echo HTTP_ROOT;?>schedule-a-demo" target="_blank" title="Request A Demo" class="bdy_rqst_demo_btn">Request A Demo</a>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-right wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/hwtknban4.png" alt="Speed up your process" title="Speed up your process" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -103,9 +93,6 @@ $(document).ready(function() {
 						</p>
 					</div>
 					<div class="col-md-6 dtbl_cell cell_60">
-						<figure class="text-left wow flipInX" data-wow-delay="0.5s">
-							<img src="<?php echo HTTP_ROOT ;?>img/home_outer/how-it-works/hwtknban5.png" alt="Drag and Drop" title="Drag and Drop" width="" height="">
-						</figure>
 					</div>
 					<div class="clearfix"></div>
 				</div>

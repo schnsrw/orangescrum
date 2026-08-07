@@ -7,7 +7,7 @@
 			class="resend-email"><a
 				href="<?php echo HTTP_ROOT . "pricing"; ?>"><?php echo __('Upgrade');?></a></span>
 		<?php echo __('on or before');?> <span
-			style="font-weight:bold;"><?php echo $sun_error; ?></span> <?php echo __('to continue uninterrupted orangescrum');?>.
+			style="font-weight:bold;"><?php echo $sun_error; ?></span> <?php echo __('to continue uninterrupted opentask');?>.
 		<span class="fr" style="background-color:#FFE5CA;margin-right:30px;width:20px;display:block;">
 			<a id="closevarifybtn" href="javascript:void(0);" class="close" onclick="closesubscription()">
 				<i class="material-icons">&#xE14C;</i>

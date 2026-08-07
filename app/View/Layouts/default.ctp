@@ -39,7 +39,7 @@
 			<table cellpadding="8" cellspacing="8" style="border:1px solid #999999;color:#000000" align="center" width="520px">
 				<tr>
 					<td align="center">
-						<img src="<?php echo HTTP_ROOT; ?>img/logo/orangescrum-134-40.png"  border="0" alt="Orangescrum.com" title="Orangescrum.com"/>
+						<img src="<?php echo HTTP_ROOT; ?>img/logo/opentask-logo.svg" border="0" alt="OpenTask" title="OpenTask"/>
 					</td>
 				</tr>
 				<tr>

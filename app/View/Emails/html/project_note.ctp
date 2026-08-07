@@ -21,7 +21,7 @@
 											<br/>
 											
 											<p><?php echo __('Regards');?>,<br/>
-											<?php echo __('The Orangescrum Team');?></p>
+											<?php echo __('The OpenTask Team');?></p>
 										</td>
 									</tr>
 								</table>

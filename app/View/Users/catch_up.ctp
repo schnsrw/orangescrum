@@ -17,17 +17,17 @@ $(document).ready(function() {
     });
 });
 var Metattl = {
-	"resource-management":"Resource Management Tool | Time and Resource Management | Orangescrum",
+	"resource-management":"Resource Management Tool | Time and Resource Management | OpenTask",
 	"time-tracking":"Time Tracking Software | Time Tracking Tool | Time and Resource  Management Software",
 	"agile-project-management":"Agile Project Management Software | Scrum Boards, Backlog & Sprints",
-	"task-management":"Task Management Tool | Task Management Software | Orangescrum",
-	"kanban-view":"Kanban View | Project Management Software Orangescrum",
-	"user-role-management":"User Role Management | Role Based Access Control | Orangescrum",
-	"invoice-how-it-works":"Invoice Management | Project and Task Management Tool | Orangescrum",
-	"mobile-app":"THE ORANGESCRUM | Project and Task Management Software Mobile App",
+	"task-management":"Task Management Tool | Task Management Software | OpenTask",
+	"kanban-view":"Kanban View | Project Management Software OpenTask",
+	"user-role-management":"User Role Management | Role Based Access Control | OpenTask",
+	"invoice-how-it-works":"Invoice Management | Project and Task Management Tool | OpenTask",
+	"mobile-app":"THE OPENTASK | Project and Task Management Software Mobile App",
 	"gantt-chart":"Gantt Chart | Simplified & Visual Project Planning | Project Management Software",
-	"google-calendar-integration":"Google Calendar Integration with Orangescrum | SaaS Project Management Tool",
-	"custom-status-workflow":"Custom Task Status and Workflow | Create your Own Custom Task | Orangescrum",
+	"google-calendar-integration":"Google Calendar Integration with OpenTask | SaaS Project Management Tool",
+	"custom-status-workflow":"Custom Task Status and Workflow | Create your Own Custom Task | OpenTask",
 };
 
 var pagUrl = {
@@ -61,7 +61,7 @@ function go_next_prev(page){
   "@type": "WebPage",
   "url": "https://www.orangescrum.com/catch-up",
   "name": "Daily Catch Up",
-  "description": "Syncing your Google calendar with Orangescrum #1 Task Management Tool enhances your task management    capabilities, & ensures better task schedule management.",
+  "description": "Syncing your Google calendar with OpenTask #1 Task Management Tool enhances your task management    capabilities, & ensures better task schedule management.",
    "image": "https://www.orangescrum.com/img/features/gcalendar-feature.png"
   }
 </script>
@@ -95,7 +95,7 @@ function go_next_prev(page){
 	.newuser_freetrial .start_trailnow .sub_hero_title{margin:0 0 40px}
 
 	
-	.cmn_features_landing_page .intergration .wrapper{background: url(<?php echo HTTP_ROOT;?>img/features/integarion-bg-new.png) no-repeat 0px 0px;background-size: 100% 100%;padding:100px 80px}
+	.cmn_features_landing_page .intergration .wrapper{background-size: 100% 100%;padding:100px 80px}
 	
 	.cmn_features_landing_page .feature_step_sec{padding:100px 0 120px}
 	.cmn_features_landing_page .feature_tabs {margin: 0 auto 120px;}
@@ -106,9 +106,9 @@ function go_next_prev(page){
 	
 </style>
 <div itemscope itemtype="http://schema.org/Organization" style="display:none">
-	<a itemprop="url" href="https://www.orangescrum.com/catch-up"><div itemprop="name">Project and Task Management Software Daily Catch Up | Orangescrum</div>
+	<a itemprop="url" href="https://www.orangescrum.com/catch-up"><div itemprop="name">Project and Task Management Software Daily Catch Up | OpenTask</div>
 	</a>
-	<div itemprop="description">Orangescrum project and task management software daily catch-up helps you to track your team and their tasks without any physical follow-up. Helps to track a clear picture on how a smart team performs.</div>
+	<div itemprop="description">OpenTask project and task management software daily catch-up helps you to track your team and their tasks without any physical follow-up. Helps to track a clear picture on how a smart team performs.</div>
 </div>
 <main class="cmn_new_feature_page cmn_features_landing_page dailycatchup_page">
   <section class="feature_bnr_hero">
@@ -138,9 +138,6 @@ function go_next_prev(page){
         </div>
         <div class="hero_media_item">
               <div class="watch_feature_video nobg">
-			  <figure>
-					<img src="<?php echo HTTP_ROOT;?>img/home_outer/How-to-Setup-your-First-Project-in-Orangescrum.jpg" alt="Orangescrum Daily Catchup video" width="400" height="200">
-				</figure>
 			  <span class="video_action" data-video="https://www.youtube.com/embed/STT0bEn8ZLs" data-toggle="modal" data-target="#taskmgmtvideo" title="Watch the Video"></span></div>
           </div>
           <!-- Modal start -->
@@ -173,17 +170,11 @@ function go_next_prev(page){
 				<a href="javascript:void(0)" onclick="signUpModal()" title="Learn more" class="cmn_learnmore_btn">Learn more</a>
 			  </div>
 			  <div class="flex_column column_60">
-				<figure class="text-right wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.2s">				  
-				  <img src="<?php echo HTTP_ROOT ;?>img/features/Daily-Catch-Up1.png" class="magniflier" alt="Schedule Once & Relax" title="Schedule Once & Relax" width="831" height="520">
-				</figure>
-			  </div>
+							  </div>
 			</div>
 			<div class="flex_row">
 				<div class="flex_column column_60">
-					<figure class="text-left wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.2s">
-						 <img src="<?php echo HTTP_ROOT ;?>img/features/Drag-Drop-Task-Groups.png" class="magniflier" alt="GDrag and Drop Tasks to the Task Groups" title="Drag and Drop Tasks to the Task Groups" width="831" height="520">
-					</figure>
-				</div>
+									</div>
 				<div class="flex_column column_40">
 				<div class="sub_hero_title cmn_head_font">
 					<h3>Daily Team Updates</h3>
@@ -209,10 +200,7 @@ function go_next_prev(page){
 				<a href="javascript:void(0)" onclick="signUpModal()" title="Learn more" class="cmn_learnmore_btn">Learn more</a>
 			  </div>
 			  <div class="flex_column column_60">
-				<figure class="text-right wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.2s">				  
-				  <img src="<?php echo HTTP_ROOT ;?>img/features/Daily-Catch-Up3.png" class="magniflier" alt="Know what is being done" title="Know what is being done" width="831" height="520">
-				</figure>
-			  </div>
+							  </div>
 			</div>
 		</div>
 	</section>
@@ -220,7 +208,7 @@ function go_next_prev(page){
 		<div class="wrapper">
 			<div class="flex_row try_upnaxt">
 				<div class="flex_column left">
-					<a href="<?php echo HTTP_ROOT;?><?php echo SIGNUP_CTA_LINK; ?>" title="Try Orangescrum" class="try_os_cta cmn_right_slide_cta">Try Orangescrum <span class="arrow_right_icon"></span></a>
+					<a href="<?php echo HTTP_ROOT;?><?php echo SIGNUP_CTA_LINK; ?>" title="Try OpenTask" class="try_os_cta cmn_right_slide_cta">Try OpenTask <span class="arrow_right_icon"></span></a>
 				</div>
 				<?php /*<div class="flex_column right">	
 					<a <?php if($FEATURE_PAGES[PAGE_NAME]['next'] == ''){ ?>class="noprev"<?php } ?> href="<?php if($FEATURE_PAGES[PAGE_NAME]['next'] == ''){ ?>javascript:void(0);<?php }else{ ?>javascript:void(0);<?php } ?>" onclick="go_next_prev('<?php echo $FEATURE_PAGES[PAGE_NAME]['next'];?>');"><small>Up Next:</small> Kanban View <span class="arrow_next"></span></a>
@@ -234,7 +222,7 @@ function go_next_prev(page){
 	<section class="teams_can_use">
 		<div class="wrapper">
 			<div class="sub_hero_title cmn_head_font">
-				<h2><small>Teams that</small> benefit the most from Orangescrum</h2>
+				<h2><small>Teams that</small> benefit the most from OpenTask</h2>
 			</div>
 		
 		<div class="d-flex ticker_marquee">
@@ -246,7 +234,7 @@ function go_next_prev(page){
 						</figure>
 						<h4>IT Teams</h4>
 						<p>
-							Accelerate IT project delivery with Orangescrum. Organize tasks, track time & manage resources to maximize productivity & ROI.
+							Accelerate IT project delivery with OpenTask. Organize tasks, track time & manage resources to maximize productivity & ROI.
 						</p>
 						<div class="leranmore"><strong>Learn More</strong> <span class="use-case-more"></span></div>
 					</a>
@@ -258,7 +246,7 @@ function go_next_prev(page){
 						</figure>
 						<h4>Marketing Teams</h4>
 						<p>
-							Drive marketing strategy with Orangescrum. A single collaborative tool for your teams & clients for the marketing campaigns.
+							Drive marketing strategy with OpenTask. A single collaborative tool for your teams & clients for the marketing campaigns.
 						</p>
 						<div class="leranmore"><strong>Learn More</strong> <span class="use-case-more"></span></div>
 					</a>
@@ -270,7 +258,7 @@ function go_next_prev(page){
 						</figure>
 						<h4>Remote Teams</h4>
 						<p>
-							Stay updated by collaborating with your distributed teams in one place. Orangescrum makes your virtual teams real.
+							Stay updated by collaborating with your distributed teams in one place. OpenTask makes your virtual teams real.
 						</p>
 						<div class="leranmore"><strong>Learn More</strong> <span class="use-case-more"></span></div>
 					</a>
@@ -282,7 +270,7 @@ function go_next_prev(page){
 						</figure>
 						<h4>Creative Teams</h4>
 						<p>
-							Streamline & speed up digital, creative and marketing process with Orangescrum and deliver high quality projects.
+							Streamline & speed up digital, creative and marketing process with OpenTask and deliver high quality projects.
 						</p>
 						<div class="leranmore"><strong>Learn More</strong> <span class="use-case-more"></span></div>
 					</a>
@@ -291,40 +279,6 @@ function go_next_prev(page){
 		</div>
 	</section>
 	
-	<section class="intergration">
-		<div class="wrapper">
-			<div class="sub_hero_title cmn_head_font">
-				<h2><small>Integrate</small> Orangescrum with your favourite apps</h2>
-			</div>
-			<div class="flex_row">
-				<div class="flex_column">
-					<figure class="wow fadeInLeft" data-wow-delay="0.1s">
-						<img src="<?php echo HTTP_ROOT;?>img/features/orangescrum-slack-integration.svg" alt="Orangescrum slack integration" title="Orangescrum slack integration" width="58" height="64">
-					</figure>
-				</div>
-				<div class="flex_column">
-					<figure class="wow fadeInLeft" data-wow-delay="0.2s">
-						<img src="<?php echo HTTP_ROOT;?>img/features/orangescrum-github-integration.svg" alt="Orangescrum github integration" title="Orangescrum github integration" width="58" height="64">
-					</figure>
-				</div>
-				<div class="flex_column">
-					<figure class="wow fadeInLeft" data-wow-delay="0.3s">
-						<img src="<?php echo HTTP_ROOT;?>img/features/orangescrum-dropbox-integration.svg" alt="Orangescrum google dropbox integration" title="Orangescrum dropbox integration" width="58" height="64">
-					</figure>
-				</div>
-				<div class="flex_column">
-					<figure class="wow fadeInLeft" data-wow-delay="0.4s">
-						<img src="<?php echo HTTP_ROOT;?>img/features/orangescrum-google-drive-integration.svg" alt="Orangescrum google drive integration" title="Orangescrum google drive integration" width="58" height="64">
-					</figure>
-				</div>
-				<div class="flex_column">
-					<figure class="wow fadeInLeft" data-wow-delay="0.5s">
-						<img src="<?php echo HTTP_ROOT;?>img/features/orangescrum-google-calender-integration.svg" alt="Orangescrum google calendar integration" title="Orangescrum google calendar integration" width="58" height="64">
-					</figure>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section class="testimonial">
 		<div class="wrapper">
 			<div class="sub_hero_title cmn_head_font margin-bottom-60">
@@ -335,11 +289,10 @@ function go_next_prev(page){
 					<div class="flex_row">
 						<div class="flex_column">
 							<div class="quote_desc">
-								<span class="lt_qt">&#8220;</span>My team (Hailstorm-Development) and I LOVE Orangescrum! We are a flextime remote business solution specialist agency, and this tool has enabled us to actually create this company. Without you all, we wouldn't even exist!<span class="rt_qt">&#8221;</span>
+								<span class="lt_qt">&#8220;</span>My team (Hailstorm-Development) and I LOVE OpenTask! We are a flextime remote business solution specialist agency, and this tool has enabled us to actually create this company. Without you all, we wouldn't even exist!<span class="rt_qt">&#8221;</span>
 							</div>
 							<div class="cmny_logo_postion">
-                <figure> <img src="<?php echo HTTP_ROOT;?>img/home_outer/success-story/Hayley-Turner-400.png" alt="Hayley Turner" width="300" height="300"> </figure>
-								<div class="tmonial_owner">
+  								<div class="tmonial_owner">
 									<h5 class="name">Hayley Turner</h5>
 									<div class="address">(Founder & CEO, United States, Michigan)</div>
 								</div>
@@ -351,12 +304,9 @@ function go_next_prev(page){
 					<div class="flex_row">
 						<div class="flex_column">
 						<div class="quote_desc">
-							<span class="lt_qt">&#8220;</span>Orangescrum simplifies the process of project management for our organization with its power collaboration tools and provides seamless support and on-boarding We couldn't be happier with Orangescrum!<span class="rt_qt">&#8221;</span>
+							<span class="lt_qt">&#8220;</span>OpenTask simplifies the process of project management for our organization with its power collaboration tools and provides seamless support and on-boarding We couldn't be happier with OpenTask!<span class="rt_qt">&#8221;</span>
 						</div>
 						<div class="cmny_logo_postion">	
-              <figure>
-								<img src="<?php echo HTTP_ROOT;?>img/home_outer/success-story/Jamie-400.jpg" alt="Jamie Smith" width="300" height="300">
-							</figure>
 							<div class="tmonial_owner">
 								<h5 class="name">Jamie Smith</h5>
 								<div class="address">(Director of Marketing Automation, SFCG, Texas, USA)</div>
@@ -369,10 +319,9 @@ function go_next_prev(page){
 					<div class="flex_row">
 						<div class="flex_column">
 						<div class="quote_desc">
-							<span class="lt_qt">&#8220;</span>I work with Freelancers to get the CAD jobs done. Orangescrum provided my team with a way to track and bill their time directly on the project they are working on. This saved me a lot of administrative work.<span class="rt_qt">&#8221;</span>
+							<span class="lt_qt">&#8220;</span>I work with Freelancers to get the CAD jobs done. OpenTask provided my team with a way to track and bill their time directly on the project they are working on. This saved me a lot of administrative work.<span class="rt_qt">&#8221;</span>
 						</div>
 						<div class="cmny_logo_postion">
-              <figure> <img src="<?php echo HTTP_ROOT;?>img/home_outer/success-story/brent-kerr-400.png" alt="Brent Kerr" width="300" height="300"> </figure>
 							<div class="tmonial_owner">
 								<h5 class="name">Brent Kerr</h5>
 								<div class="address">(CEO, Kewico GmbH)</div>
@@ -385,10 +334,9 @@ function go_next_prev(page){
 					<div class="flex_row">
 						<div class="flex_column">
 						<div class="quote_desc">
-							<span class="lt_qt">&#8220;</span>I was very impressed with the ease of use of its interface and all its features to manage projects. It is a platform that can be customized to our needs. Migrating my projects to Orangescrum was super easy. <span class="rt_qt">&#8221;</span>
+							<span class="lt_qt">&#8220;</span>I was very impressed with the ease of use of its interface and all its features to manage projects. It is a platform that can be customized to our needs. Migrating my projects to OpenTask was super easy. <span class="rt_qt">&#8221;</span>
 						</div>
 						<div class="cmny_logo_postion">
-              <figure> <img src="<?php echo HTTP_ROOT;?>img/home_outer/success-story/clotilde.png" alt="Clotilde Jolimaitre Rodriguez" width="300" height="300"> </figure>
 							<div class="tmonial_owner">
 								<h5 class="name">Clotilde Jolimaitre Rodriguez</h5>
 								<div class="address">(Digital Project Manage, Imagevo France)</div>
@@ -405,7 +353,6 @@ function go_next_prev(page){
 							<span class="lt_qt">&#8220;</span>Our major chellenge was to manage multiple Projects/multiple clients at the same time. So we needed something more than excel sheets to manage the development velocity and make things automated.<span class="rt_qt">&#8221;</span>
 						</div>
 						<div class="cmny_logo_postion">
-              <figure> <img src="<?php echo HTTP_ROOT;?>img/home_outer/success-story/Shan.jpg" alt="Shan Sashidharan" width="300" height="300"> </figure>
 							<div class="tmonial_owner">
 								<h5 class="name">Shan Sashidharan</h5>
 								<div class="address">(Director Of Technology At Techuva Solutions)</div>
@@ -418,10 +365,9 @@ function go_next_prev(page){
 					<div class="flex_row">
 						<div class="flex_column">
 						<div class="quote_desc">
-							<span class="lt_qt">&#8220;</span>The most beautiful thing about Orangescrum is easy in its approach which makes it a lot simpler to use. Orangescrum makes a complicated project way easier to run within my team.<span class="rt_qt">&#8221;</span>
+							<span class="lt_qt">&#8220;</span>The most beautiful thing about OpenTask is easy in its approach which makes it a lot simpler to use. OpenTask makes a complicated project way easier to run within my team.<span class="rt_qt">&#8221;</span>
 						</div>
 						<div class="cmny_logo_postion">
-              <figure> <img src="<?php echo HTTP_ROOT;?>img/home_outer/success-story/Kuda-Msipa.jpg" alt="Kuda Msipa" width="300" height="300"> </figure>
 							<div class="tmonial_owner">	
 								<h5 class="name">Kuda Msipa</h5>
 								<div class="address">(CEO Cutmec Group, Bristol, United Kingdom)</div>
@@ -431,11 +377,6 @@ function go_next_prev(page){
 					</div>
 				</article> 
 			</div>
-      <div>
-        <figure>
-					<img src="<?php echo HTTP_ROOT;?>img/features/orangescrum-clients-logo.png" alt="Orangescrum Happy Customers" width="901" height="120">
-				</figure>
-      </div>
 		</div>
 	</section>
   <?php echo $this->element('signup_modal'); ?>

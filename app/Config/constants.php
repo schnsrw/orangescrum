@@ -99,8 +99,8 @@ define("PHPMAILER", getenv('PHPMAILER') !== false ? (int)getenv('PHPMAILER') : 0
 /* SMTP credentials SET Ups end*/
 
 define("WEB_DOMAIN", getenv('WEB_DOMAIN') !== false ? getenv('WEB_DOMAIN') : "YourDomain.com"); //ex. demo.orangescrum.com
-define('EMAIL_SUBJ', '[Orangescrum]');
-define('EMAIL_SUBJC', 'Orangescrum');
+define('EMAIL_SUBJ', '[OpenTask]');
+define('EMAIL_SUBJC', 'OpenTask');
 define('SITE_NAME', '');
 
 define("PDF_LIB_PATH", ""); ///usr/bin/wkhtmltopdf

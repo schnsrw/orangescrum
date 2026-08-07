@@ -171,7 +171,7 @@
                                     <li><?php echo __('Invalid Estimated Hour');?></li>
                                     <li><?php echo __('Invalid start time or end time or break time or spent hour');?></li>
                                     <li><?php echo __('If');?> "<?php echo __('Project Name');?>" <?php echo __('are showing in red color then project does not exits in your application, it will be created as new project');?></li>
-                                    <li>"<?php echo __('Assigned To');?>" <?php echo __('must be a valid email address of an existing/invited user in Orangescrum');?>.</li>
+                                    <li>"<?php echo __('Assigned To');?>" <?php echo __('must be a valid email address of an existing/invited user in OpenTask');?>.</li>
                                 </ul>
 																<?php if($is_ttl_length){ ?> 
 																<div style="position: absolute;font-size: 15px;color: #ff0000;"> 

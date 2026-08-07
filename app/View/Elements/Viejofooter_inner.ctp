@@ -399,7 +399,7 @@ function subscribeClient(){
 				$("#pubnub_notf").slideDown("1000");
 				setTimeout('removePubnubMsg()',3000);
 				//if (window.webkitNotifications) {
-				notify(getImNotifyMsg(projShName, caseNum, caseTtl, caseTyp),'Orangescrum.com');
+				notify(getImNotifyMsg(projShName, caseNum, caseTtl, caseTyp),'OpenTask.com');
 				//}
 			}
                     }	

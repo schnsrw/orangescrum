@@ -58,7 +58,7 @@
 									<tr>
                                         <td style="background:#FFF;width:100%;text-align:left;">
                                             <p>Thanks & Regards<br/>
-											The Orangescrum Team</p>
+											The OpenTask Team</p>
                                         </td>
                                     </tr>
                                 </table>

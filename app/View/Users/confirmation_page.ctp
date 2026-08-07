@@ -34,7 +34,7 @@ if(stristr($_SERVER['SERVER_NAME'],"orangescrum.com") || stristr($_SERVER['SERVE
 	ga('require', 'ecommerce');
 	ga('ecommerce:addTransaction', {
 	  'id': '<?php echo $owner_id; ?>',
-	  'affiliation': 'Orangescrum SAAS <?php echo $sub_lavel; ?>',
+	  'affiliation': 'OpenTask SAAS <?php echo $sub_lavel; ?>',
 	  'revenue': '<?php echo $subscription['UserSubscriptions']['price']; ?>',
 	  'currency': 'USD'
 	});

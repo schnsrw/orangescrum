@@ -29,13 +29,13 @@ $addon = stristr($data['request_addon'], 'combo') ? $comboaddon_nams[$data['requ
 						<?php echo __("Hi");?> <?php echo ucwords($data['name']); ?>,                    
 					    </p>
 					   <p><?php echo __("Thank you for purchasing");?> <?php echo $addon; ?><?php echo __("add-on");?><?php echo (stristr($data['request_addon'], 'combo') || stristr($data['request_addon'], 'prebuild')) ? 's':''; ?>.</p>
-					   <p><?php echo __("We're writing to let you know that your Orangescrum invoice");?>(INV<?php echo $data['invoice_id']; ?>)<?php echo __(", is attached to this message as a PDF file. Your credit card has been charged ");?><b>$<?php echo $data['amount']; ?></b><?php echo __(" USD.");?></p>
+					   <p><?php echo __("We're writing to let you know that your OpenTask invoice");?>(INV<?php echo $data['invoice_id']; ?>)<?php echo __(", is attached to this message as a PDF file. Your credit card has been charged ");?><b>$<?php echo $data['amount']; ?></b><?php echo __(" USD.");?></p>
 					   
 					   <p><?php echo __("If you have any questions regarding this invoice, please contact us at");?> <a href='mailto:support&#64;orangescrum&#46;com'>support&#64;orangescrum&#46;com</a>.</p>
 					   
 					    <p>
 						<?php echo __("Cheers!");?><br/> 
-						<?php echo __("The Orangescrum Team");?> 
+						<?php echo __("The OpenTask Team");?> 
 					    </p>
 					</td>
 				    </tr>

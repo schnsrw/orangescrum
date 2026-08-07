@@ -30,14 +30,14 @@
 		<span class="cmn_profile_holder <?php echo $random_bgclr; ?>"><?php echo $usr_name_fst; ?></span>
 		<?php } ?>
 	</div>
-	<h2>Get OrangeScrum on your mobile device</h2>
-	<p>OrangeScrum is with you everywhere. Get our free apps for iOS & Android. Manage your project tasks on the go. <br/>Save time and stay updated on what’s happening in your project.</p>
+	<h2>Get OpenTask on your mobile device</h2>
+	<p>OpenTask is with you everywhere. Get our free apps for iOS & Android. Manage your project tasks on the go. <br/>Save time and stay updated on what’s happening in your project.</p>
 	<div class="app_btn">
 		<a href="https://itunes.apple.com/ph/app/id1132539893" target="_blank">
-			<img src="<?php echo HTTP_ROOT;?>images/app-store.png" alt="The Orangescrum in App Store" title="The Orangescrum in App Store">
+			<img src="<?php echo HTTP_ROOT;?>images/app-store.png" alt="The OpenTask in App Store" title="The OpenTask in App Store">
 		</a>
 		<a href="https://play.google.com/store/apps/details?id=com.andolasoft.orangescrum&hl=en" target="_blank">
-			<img src="<?php echo HTTP_ROOT;?>images/google-play.png" alt="The Orangescrum in Play Store" title="The Orangescrum in Play Store">
+			<img src="<?php echo HTTP_ROOT;?>images/google-play.png" alt="The OpenTask in Play Store" title="The OpenTask in Play Store">
 		</a>
 	</div>
 </div>

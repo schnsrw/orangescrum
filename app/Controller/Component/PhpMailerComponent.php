@@ -126,8 +126,8 @@ class PhpMailerComponent extends Component {
 			$mail->Port = $email_setting['EmailSetting']['port'];
 			$mail->SMTPAuth = false;
 			$mail->SMTPSecure = $this->smtpSecureForPort($mail->Port);
-			$mail->setFrom($from, 'OrangeScrum');
-			$mail->addReplyTo($from_reply, 'OrangeScrum');
+			$mail->setFrom($from, 'OpenTask');
+			$mail->addReplyTo($from_reply, 'OpenTask');
 			$mail->addAddress($to);
 			$mail->Subject = $subject;
 			$mail->msgHTML($message);
@@ -261,8 +261,8 @@ class PhpMailerComponent extends Component {
 			$mail->Port = $email_setting['EmailSetting']['port'];
 			$mail->SMTPAuth = false;
 			$mail->SMTPSecure = $this->smtpSecureForPort($mail->Port);
-			$mail->setFrom($from, 'OrangeScrum');
-			$mail->addReplyTo($from_reply, 'OrangeScrum');
+			$mail->setFrom($from, 'OpenTask');
+			$mail->addReplyTo($from_reply, 'OpenTask');
 			$mail->addAddress($email->to);
 			$mail->Subject = $email->subject;
 			$mail->msgHTML($email->set_variables);
