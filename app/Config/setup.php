@@ -1480,6 +1480,12 @@ exit;
 exit;
 }
 function check_subfolder() {
+    // Disabled: SUB_FOLDER is now driven by the SUB_FOLDER environment
+    // variable (see app/Config/constants.php), so this install-era routine
+    // must not rewrite constants.php on every request. Its str_replace()
+    // corrupts the file (cascading "SUB_FOLDER" -> the detected path),
+    // producing a fatal parse error. Left as a no-op intentionally.
+    return;
     include_once("constants.php");
     include_once(CAKE_CORE_INCLUDE_PATH . DS . 'Cake' . DS . 'Utility' . DS . 'File.php');
     include_once(CAKE_CORE_INCLUDE_PATH . DS . 'Cake' . DS . 'Utility' . DS . 'Folder.php');
