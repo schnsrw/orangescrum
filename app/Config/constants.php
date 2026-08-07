@@ -43,10 +43,14 @@ define("TASK_GROUP_CASE_PAGE_LIMIT", 25);
 $ht = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? "https://" : "http://";
 define('PROTOCOL', $ht);
 
-if(stristr($_SERVER['SERVER_NAME'], '/') && substr($_SERVER['SERVER_NAME'], -1) == '/'){
-	define('DOMAIN', $_SERVER['SERVER_NAME']);
+// Use HTTP_HOST (includes the port, e.g. "localhost:8080") rather than
+// SERVER_NAME (bare host, no port) so asset URLs built from HTTP_ROOT/
+// HTTP_IMAGES resolve correctly when the app runs on any non-80 port.
+$os_host = !empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
+if(stristr($os_host, '/') && substr($os_host, -1) == '/'){
+	define('DOMAIN', $os_host);
 }else{
-	define('DOMAIN', $_SERVER['SERVER_NAME'] . "/");
+	define('DOMAIN', $os_host . "/");
 }
 /*Subfolder set up */
 define('SUB_FOLDER', getenv('SUB_FOLDER') !== false ? getenv('SUB_FOLDER') : '');

@@ -44,16 +44,8 @@ h5 a.btn-link.tearms_of_ser,h5 a.btn-link.tearms_of_ser:hover {color: #2a59a9;}
 <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
 <div id="donot_refresh" class="donot_refresh" style="display:none;"><span style="margin-top: 3px;">Just a moment... we're setting up your account.<br/>Please don't refresh or close this page.</span><br/><span><img src="<?php echo HTTP_ROOT;?>img/payment_loading.gif" style="padding:5px;"/></span></div>
 <?php if(defined('RELEASE_V') && RELEASE_V){
-	$file_not_exist = 0;
-	if(!$this->Format->is_url_exist(HTTP_ROOT.'img/logo/opentask-logo.svg')){
-		$file_not_exist = 1;
-	}
 	?>
 	<script type="text/javascript">
-	var flext_t = "<?php echo $file_not_exist; ?>";
-	if(parseInt(flext_t)){
-	   window.location.reload();
-	}
     $(function(){
         $.material.init();
         $(".select").dropdown({"optionClass": "withripple"});
